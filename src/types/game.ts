@@ -2,6 +2,8 @@
 export interface WordOption {
   text: string;
   isCorrect: boolean;
+  correctTip: string;
+  incorrectTip: string;
 }
 
 export interface WordChoice {
@@ -22,3 +24,4 @@ export interface GameState {
   currentSentenceIndex: number;
   currentWordIndex: number;
 }
+

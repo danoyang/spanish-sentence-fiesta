@@ -1,6 +1,7 @@
 
 import { cn } from "@/lib/utils";
 import { WordOption as WordOptionType } from "@/types/game";
+import { useState } from "react";
 
 interface WordOptionProps {
   option: WordOptionType;
@@ -10,6 +11,8 @@ interface WordOptionProps {
   showFeedback?: boolean;
   isCorrect?: boolean;
   lastSelected?: boolean;
+  showTip?: boolean;
+  tipText?: string;
 }
 
 export const WordOption = ({
@@ -20,7 +23,11 @@ export const WordOption = ({
   showFeedback = false,
   isCorrect,
   lastSelected,
+  showTip = false,
+  tipText = "",
 }: WordOptionProps) => {
+  const [internalTip, setInternalTip] = useState("");
+
   const handleClick = () => {
     if (disabled) return;
     onClick(option.isCorrect);
@@ -29,15 +36,12 @@ export const WordOption = ({
   let buttonClasses =
     "px-4 py-2 rounded-lg transition-all border-2 font-medium text-lg";
 
+  // 不提前显示答案颜色
   if (showFeedback) {
     if (selected && isCorrect) {
       buttonClasses += " bg-correct text-white border-correct";
     } else if (selected && !isCorrect) {
       buttonClasses += " bg-incorrect text-white border-incorrect";
-    } else if (isCorrect && lastSelected) {
-      buttonClasses += " border-correct text-correct";
-    } else if (!isCorrect && lastSelected) {
-      buttonClasses += " border-incorrect text-incorrect";
     } else {
       buttonClasses += " border-gray-300";
     }
@@ -50,12 +54,19 @@ export const WordOption = ({
   }
 
   return (
-    <button
-      className={cn(buttonClasses)}
-      disabled={disabled && !selected}
-      onClick={handleClick}
-    >
-      {option.text}
-    </button>
+    <div className="flex flex-col items-center">
+      <button
+        className={cn(buttonClasses)}
+        disabled={disabled && !selected}
+        onClick={handleClick}
+      >
+        {option.text}
+      </button>
+      {showTip && tipText && (
+        <div className="mt-1 px-2 text-sm text-gray-700 text-center min-h-5">
+          {tipText}
+        </div>
+      )}
+    </div>
   );
 };

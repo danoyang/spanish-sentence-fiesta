@@ -19,21 +19,29 @@ export const SentenceBuilder = ({
   const [selectedOptions, setSelectedOptions] = useState<(boolean | undefined)[]>([]);
   const [showFeedback, setShowFeedback] = useState(false);
   const [isLastCorrect, setIsLastCorrect] = useState<boolean | null>(null);
+  const [showTip, setShowTip] = useState(false);
+  const [tipText, setTipText] = useState("");
 
   const currentWordChoice: WordChoice | undefined =
     sentence.wordChoices[currentWordIndex];
 
+  // 西班牙语末尾标点
   const spanishPunctuation = (sentence.spanish.match(/[.，,。!?¡¿]/g) || []).join("");
 
-  // 去掉最后一个单词后面的标点（准确提取拼句，不让它出现在选项里）
-  const fullSentenceWithoutPunctuation = sentence.spanish.replace(/[.，,。!?¡¿]\s*$/, "");
+  // 构造的句子。
+  const constructed = selectedWords.join(" ");
+  const fullConstructed = currentWordIndex === sentence.wordChoices.length
+    ? constructed + spanishPunctuation
+    : constructed;
 
-  const handleOptionClick = (isCorrect: boolean, optionText: string) => {
-    // 只有选择后才显示反馈色
+  // 点击选项
+  const handleOptionClick = (isCorrect: boolean, optionText: string, correctTip: string, incorrectTip: string) => {
     setIsLastCorrect(isCorrect);
     setShowFeedback(true);
+    setShowTip(true);
 
     if (isCorrect) {
+      setTipText(correctTip);
       setTimeout(() => {
         setSelectedWords([...selectedWords, optionText]);
         setSelectedOptions((prev) => {
@@ -48,8 +56,11 @@ export const SentenceBuilder = ({
         }
         setShowFeedback(false);
         setIsLastCorrect(null);
-      }, 450);
+        setShowTip(false);
+        setTipText("");
+      }, 1200);
     } else {
+      setTipText(incorrectTip);
       setTimeout(() => {
         setSelectedOptions((prev) => {
           const next = [...prev];
@@ -58,30 +69,26 @@ export const SentenceBuilder = ({
         });
         setShowFeedback(false);
         setIsLastCorrect(null);
-      }, 450);
+        setShowTip(false);
+        setTipText("");
+      }, 1200);
     }
   };
 
-  // Reset when sentence changes
+  // 题目变化时重置
   useEffect(() => {
     setCurrentWordIndex(0);
     setSelectedWords([]);
     setSelectedOptions([]);
     setShowFeedback(false);
     setIsLastCorrect(null);
+    setShowTip(false);
+    setTipText("");
   }, [sentence.id]);
 
   if (!currentWordChoice) {
     return null;
   }
-
-  // 完整答案拼接（不包含标点）
-  const constructed = selectedWords.join(" ");
-
-  // 拼接最后的标点
-  const fullConstructed = currentWordIndex === sentence.wordChoices.length
-    ? constructed + spanishPunctuation
-    : constructed;
 
   return (
     <div className="p-6 bg-white rounded-lg shadow-lg border border-spain-yellow max-w-2xl mx-auto">
@@ -91,7 +98,7 @@ export const SentenceBuilder = ({
         </h2>
         <p className="text-xl mb-4 font-medium">{sentence.chinese}</p>
         
-        {/* Constructed sentence so far */}
+        {/* 已拼写的句子 */}
         <div className="mb-6 min-h-16 p-3 bg-gray-50 rounded-md border border-gray-200">
           <p className="text-lg break-words">
             {constructed}
@@ -113,8 +120,14 @@ export const SentenceBuilder = ({
               <WordOption
                 key={index}
                 option={option}
-                onClick={(isCorrect) => handleOptionClick(isCorrect, option.text)}
-                // 只有作答后才展示颜色
+                onClick={(isCorrect) =>
+                  handleOptionClick(
+                    isCorrect,
+                    option.text,
+                    option.correctTip,
+                    option.incorrectTip
+                  )
+                }
                 disabled={selectedOptions[currentWordIndex] !== undefined || showFeedback}
                 selected={
                   showFeedback &&
@@ -124,28 +137,33 @@ export const SentenceBuilder = ({
                 }
                 showFeedback={showFeedback && isLastCorrect !== null}
                 isCorrect={option.isCorrect}
-                lastSelected={
-                  showFeedback &&
-                  isLastCorrect !== null &&
-                  selectedOptions[currentWordIndex] === undefined &&
-                  ((isLastCorrect && option.isCorrect) || (!isLastCorrect && !option.isCorrect))
+                showTip={
+                  showTip &&
+                  ((isLastCorrect === true && option.isCorrect) ||
+                    (isLastCorrect === false && !option.isCorrect))
+                }
+                tipText={
+                  showTip
+                    ? isLastCorrect
+                      ? option.correctTip
+                      : option.incorrectTip
+                    : ""
                 }
               />
             ))}
           </div>
-          {/* 反馈信息，仅作选后的瞬时显示 */}
-          <div className="mt-3 h-6 flex items-center justify-center">
-            {showFeedback && isLastCorrect === true && (
-              <span className="text-correct font-medium">选择正确！</span>
-            )}
-            {showFeedback && isLastCorrect === false && (
-              <span className="text-incorrect font-medium">再试一次！</span>
+          {/* 反馈信息及理由 */}
+          <div className="mt-3 h-9 flex flex-col items-center justify-center">
+            {showTip && tipText && (
+              <span className={isLastCorrect ? "text-correct" : "text-incorrect"} style={{ fontWeight: "500" }}>
+                {tipText}
+              </span>
             )}
           </div>
         </div>
       )}
 
-      {/* Progress indicators */}
+      {/* 进度指示 */}
       <div className="flex justify-center gap-2 mt-4">
         {sentence.wordChoices.map((_, index) => (
           <div
@@ -162,7 +180,7 @@ export const SentenceBuilder = ({
         ))}
       </div>
 
-      {/* Completion marker */}
+      {/* 完成标记 */}
       {sentence.completed && (
         <div className="mt-4 flex items-center justify-center text-correct">
           <CheckCircle className="mr-1" />

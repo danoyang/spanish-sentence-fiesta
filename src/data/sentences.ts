@@ -1,3 +1,4 @@
+
 import { Sentence } from "@/types/game";
 import { basicSentences } from "./sentences/basicSentences";
 import { presenteTenseSentences } from "./sentences/presenteTenseSentences";
@@ -12,6 +13,7 @@ import { imperativoSentences } from "./sentences/imperativoSentences";
 import { erVerbsPresenteSentences } from "./sentences/erVerbsPresenteSentences";
 import { erVerbsPreteriteSentences } from "./sentences/erVerbsPreteriteSentences";
 import { irVerbsPresenteSentences } from "./sentences/irVerbsPresenteSentences";
+import { irVerbsPreteriteSentences } from "./sentences/irVerbsPreteriteSentences";
 import { irVerbsImperfectoSentences } from "./sentences/irVerbsImperfectoSentences";
 import { irVerbsFuturoSentences } from "./sentences/irVerbsFuturoSentences";
 import { erVerbsPresentePerfectoSentences } from "./sentences/erVerbsPresentePerfectoSentences";

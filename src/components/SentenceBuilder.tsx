@@ -1,9 +1,9 @@
-
 import { useState, useEffect } from "react";
 import { WordChoice, Sentence } from "@/types/game";
 import { WordOption } from "./WordOption";
 import { cn } from "@/lib/utils";
 import { CheckCircle } from "lucide-react";
+import { speakAzure } from "@/audio/azureTTS";
 
 interface SentenceBuilderProps {
   sentence: Sentence;
@@ -25,39 +25,50 @@ export const SentenceBuilder = ({
   const currentWordChoice: WordChoice | undefined =
     sentence.wordChoices[currentWordIndex];
 
-  // 西班牙语末尾标点
   const spanishPunctuation = (sentence.spanish.match(/[.，,。!?¡¿]/g) || []).join("");
 
-  // 构造的句子。
   const constructed = selectedWords.join(" ");
   const fullConstructed = currentWordIndex === sentence.wordChoices.length
     ? constructed + spanishPunctuation
     : constructed;
 
-  // 点击选项
-  const handleOptionClick = (isCorrect: boolean, optionText: string, correctTip: string, incorrectTip: string) => {
+  const handleOptionClick = async (
+    isCorrect: boolean,
+    optionText: string,
+    correctTip: string,
+    incorrectTip: string
+  ) => {
     setIsLastCorrect(isCorrect);
     setShowFeedback(true);
     setShowTip(true);
 
     if (isCorrect) {
       setTipText(correctTip);
-      setTimeout(() => {
+      speakAzure(optionText);
+
+      setTimeout(async () => {
         setSelectedWords([...selectedWords, optionText]);
         setSelectedOptions((prev) => {
           const next = [...prev];
           next[currentWordIndex] = true;
           return next;
         });
+        let isFinished = false;
         if (currentWordIndex < sentence.wordChoices.length - 1) {
           setCurrentWordIndex(currentWordIndex + 1);
         } else {
           onComplete(sentence.id);
+          isFinished = true;
         }
         setShowFeedback(false);
         setIsLastCorrect(null);
         setShowTip(false);
         setTipText("");
+
+        if (isFinished) {
+          let finalSent = [...selectedWords, optionText].join(" ") + spanishPunctuation;
+          speakAzure(finalSent);
+        }
       }, 1200);
     } else {
       setTipText(incorrectTip);
@@ -75,7 +86,6 @@ export const SentenceBuilder = ({
     }
   };
 
-  // 题目变化时重置
   useEffect(() => {
     setCurrentWordIndex(0);
     setSelectedWords([]);
@@ -98,7 +108,6 @@ export const SentenceBuilder = ({
         </h2>
         <p className="text-xl mb-4 font-medium">{sentence.chinese}</p>
         
-        {/* 已拼写的句子 */}
         <div className="mb-6 min-h-16 p-3 bg-gray-50 rounded-md border border-gray-200">
           <p className="text-lg break-words">
             {constructed}
@@ -109,7 +118,6 @@ export const SentenceBuilder = ({
           </p>
         </div>
       </div>
-      {/* 当前单词选择 */}
       {currentWordIndex < sentence.wordChoices.length && (
         <div className="mb-6">
           <h3 className="text-md font-medium mb-2 text-gray-700">
@@ -152,7 +160,6 @@ export const SentenceBuilder = ({
               />
             ))}
           </div>
-          {/* 反馈信息及理由 */}
           <div className="mt-3 h-9 flex flex-col items-center justify-center">
             {showTip && tipText && (
               <span className={isLastCorrect ? "text-correct" : "text-incorrect"} style={{ fontWeight: "500" }}>
@@ -162,8 +169,6 @@ export const SentenceBuilder = ({
           </div>
         </div>
       )}
-
-      {/* 进度指示 */}
       <div className="flex justify-center gap-2 mt-4">
         {sentence.wordChoices.map((_, index) => (
           <div
@@ -179,8 +184,6 @@ export const SentenceBuilder = ({
           />
         ))}
       </div>
-
-      {/* 完成标记 */}
       {sentence.completed && (
         <div className="mt-4 flex items-center justify-center text-correct">
           <CheckCircle className="mr-1" />

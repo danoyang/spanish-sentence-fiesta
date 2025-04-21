@@ -11,6 +11,13 @@ import { subjuntivoPasadoSentences } from "./sentences/subjuntivoPasadoSentences
 import { imperativoSentences } from "./sentences/imperativoSentences";
 import { erVerbsPresenteSentences } from "./sentences/erVerbsPresenteSentences";
 import { erVerbsPreteriteSentences } from "./sentences/erVerbsPreteriteSentences";
+import { irVerbsPresenteSentences } from "./sentences/irVerbsPresenteSentences";
+import { irVerbsImperfectoSentences } from "./sentences/irVerbsImperfectoSentences";
+import { irVerbsFuturoSentences } from "./sentences/irVerbsFuturoSentences";
+import { erVerbsPresentePerfectoSentences } from "./sentences/erVerbsPresentePerfectoSentences";
+import { irVerbsPresentePerfectoSentences } from "./sentences/irVerbsPresentePerfectoSentences";
+import { erVerbsPluscuamperfectoSentences } from "./sentences/erVerbsPluscuamperfectoSentences";
+import { irVerbsPluscuamperfectoSentences } from "./sentences/irVerbsPluscuamperfectoSentences";
 
 // 将所有句子数据合并到一个数组中
 export const sentencesData: Sentence[] = [
@@ -25,5 +32,13 @@ export const sentencesData: Sentence[] = [
   ...subjuntivoPasadoSentences,
   ...imperativoSentences,
   ...erVerbsPresenteSentences,
-  ...erVerbsPreteriteSentences
+  ...erVerbsPreteriteSentences,
+  ...irVerbsPresenteSentences,
+  ...irVerbsPreteriteSentences,
+  ...irVerbsImperfectoSentences,
+  ...irVerbsFuturoSentences,
+  ...erVerbsPresentePerfectoSentences,
+  ...irVerbsPresentePerfectoSentences,
+  ...erVerbsPluscuamperfectoSentences,
+  ...irVerbsPluscuamperfectoSentences
 ];

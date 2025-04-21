@@ -78,7 +78,6 @@ export const SentenceBuilder = ({
         setIsLastCorrect(null);
         setShowTip(false);
         setTipText("");
-        // We no longer update selectedOptions for incorrect answers
       }, 1200);
     }
   };
@@ -120,53 +119,57 @@ export const SentenceBuilder = ({
           <h3 className="text-md font-medium mb-2 text-gray-700">
             请选择正确的单词:
           </h3>
-          <div className="flex gap-4 justify-center">
-            {currentWordChoice.options.map((option, index) => (
-              <WordOption
-                key={index}
-                option={option}
-                onClick={(isCorrect) =>
-                  handleOptionClick(
-                    isCorrect,
-                    option.text,
-                    option.correctTip,
-                    option.incorrectTip
-                  )
-                }
-                disabled={showFeedback}
-                selected={
-                  showFeedback &&
-                  isLastCorrect !== null &&
-                  isLastCorrect &&
-                  option.isCorrect
-                }
-                showFeedback={showFeedback && isLastCorrect !== null}
-                isCorrect={option.isCorrect}
-                showTip={
-                  showTip &&
-                  ((isLastCorrect === true && option.isCorrect) ||
-                    (isLastCorrect === false && !option.isCorrect))
-                }
-                tipText={
-                  showTip
-                    ? isLastCorrect
-                      ? option.correctTip
-                      : option.incorrectTip
-                    : ""
-                }
-              />
-            ))}
+          {/* 固定高度和宽度的选项容器 */}
+          <div className="flex justify-center mb-2" style={{ minHeight: "48px" }}>
+            <div className="grid grid-cols-2 gap-4 w-full max-w-md">
+              {currentWordChoice.options.map((option, index) => (
+                <WordOption
+                  key={index}
+                  option={option}
+                  onClick={(isCorrect) =>
+                    handleOptionClick(
+                      isCorrect,
+                      option.text,
+                      option.correctTip,
+                      option.incorrectTip
+                    )
+                  }
+                  disabled={showFeedback}
+                  selected={
+                    showFeedback &&
+                    isLastCorrect !== null &&
+                    isLastCorrect &&
+                    option.isCorrect
+                  }
+                  showFeedback={showFeedback && isLastCorrect !== null}
+                  isCorrect={option.isCorrect}
+                  showTip={
+                    showTip &&
+                    ((isLastCorrect === true && option.isCorrect) ||
+                      (isLastCorrect === false && !option.isCorrect))
+                  }
+                  tipText={
+                    showTip
+                      ? isLastCorrect
+                        ? option.correctTip
+                        : option.incorrectTip
+                      : ""
+                  }
+                />
+              ))}
+            </div>
           </div>
           {/* 固定高度的答题结果提示区域【答对/答错】 */}
           <div
             className="mt-3 flex flex-col items-center justify-center"
-            style={{ height: "36px" }} // 固定高度
+            style={{ height: "48px", minHeight: "48px" }} // 增加固定高度
           >
             {showTip && tipText && (
               <span className={isLastCorrect ? "text-correct" : "text-incorrect"} style={{ fontWeight: "500" }}>
                 {tipText}
               </span>
             )}
+            {!showTip && <span style={{ opacity: 0 }}>&nbsp;</span>}
           </div>
         </div>
       )}
@@ -194,4 +197,3 @@ export const SentenceBuilder = ({
     </div>
   );
 };
-

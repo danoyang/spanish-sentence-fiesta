@@ -34,7 +34,7 @@ export const WordOption = ({
   };
 
   let buttonClasses =
-    "px-4 py-2 rounded-lg transition-all border-2 font-medium text-lg";
+    "px-4 py-2 rounded-lg transition-all border-2 font-medium text-lg w-full";
 
   // 不提前显示答案颜色
   if (showFeedback) {
@@ -54,7 +54,7 @@ export const WordOption = ({
   }
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center w-full">
       <button
         className={cn(buttonClasses)}
         disabled={disabled}
@@ -62,11 +62,6 @@ export const WordOption = ({
       >
         {option.text}
       </button>
-      {showTip && tipText && (
-        <div className="mt-1 px-2 text-sm text-gray-700 text-center min-h-5">
-          {tipText}
-        </div>
-      )}
     </div>
   );
 };

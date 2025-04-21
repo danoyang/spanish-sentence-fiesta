@@ -1,3 +1,4 @@
+
 import { Sentence } from "@/types/game";
 
 // 基础句子 (1-5)
@@ -282,7 +283,7 @@ export const basicSentences: Sentence[] = [
             text: "taza",
             isCorrect: false,
             correctTip: "",
-            incorrectTip: ""taza\"一般是\"茶杯\"，这里表达\"一杯水\"要用\"vaso\"。",
+            incorrectTip: "\"taza\"一般是\"茶杯\"，这里表达\"一杯水\"要用\"vaso\"。",
           },
         ],
       },
@@ -293,7 +294,7 @@ export const basicSentences: Sentence[] = [
             text: "con",
             isCorrect: false,
             correctTip: "",
-            incorrectTip: ""con\"是\"和、带\"，一杯水用\"vaso de agua\"。",
+            incorrectTip: "\"con\"是\"和、带\"，一杯水用\"vaso de agua\"。",
           },
           {
             text: "de",
@@ -316,7 +317,7 @@ export const basicSentences: Sentence[] = [
             text: "vino",
             isCorrect: false,
             correctTip: "",
-            incorrectTip: ""vino\"是\"葡萄酒\"，题目为水应选\"agua\"。",
+            incorrectTip: "\"vino\"是\"葡萄酒\"，题目为水应选\"agua\"。",
           },
         ],
       },
@@ -327,12 +328,12 @@ export const basicSentences: Sentence[] = [
             text: "gracias",
             isCorrect: false,
             correctTip: "",
-            incorrectTip: ""gracias\"是\"谢谢\"，表达\"请\"要用\"por favor\"。",
+            incorrectTip: "\"gracias\"是\"谢谢\"，表达\"请\"要用\"por favor\"。",
           },
           {
             text: "por favor",
             isCorrect: true,
-            correctTip: ""por favor\"是\"请\"。",
+            correctTip: "\"por favor\"是\"请\"。",
             incorrectTip: "",
           },
         ],

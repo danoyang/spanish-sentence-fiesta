@@ -66,15 +66,15 @@ export const presenteTenseSentences: Sentence[] = [
       { 
         correctWord: "Tú",
         options: [
-          { text: "Tú", isCorrect: true, correctTip: ""Tú"表示"你"。", incorrectTip: "" }
+          { text: "Tú", isCorrect: true, correctTip: "\"Tú\"表示\"你\"。", incorrectTip: "" }
         ]
       },
       { 
         correctWord: "trabajas",
         options: [
-          { text: "trabajas", isCorrect: true, correctTip: ""trabajas"是动词"trabajar"的第二人称现在时变位。", incorrectTip: "" },
-          { text: "trabajamos", isCorrect: false, correctTip: "", incorrectTip: ""trabajamos"是"我们"的变位。" },
-          { text: "trabaja", isCorrect: false, correctTip: "", incorrectTip: ""trabaja"是"他/她/您"的变位。" }
+          { text: "trabajas", isCorrect: true, correctTip: "\"trabajas\"是动词\"trabajar\"的第二人称现在时变位。", incorrectTip: "" },
+          { text: "trabajamos", isCorrect: false, correctTip: "", incorrectTip: "\"trabajamos\"是\"我们\"的变位。" },
+          { text: "trabaja", isCorrect: false, correctTip: "", incorrectTip: "\"trabaja\"是\"他/她/您\"的变位。" }
         ]
       },
       {
@@ -95,15 +95,15 @@ export const presenteTenseSentences: Sentence[] = [
       { 
         correctWord: "Él",
         options: [
-          { text: "Él", isCorrect: true, correctTip: ""Él"表示"他"。", incorrectTip: "" }
+          { text: "Él", isCorrect: true, correctTip: "\"Él\"表示\"他\"。", incorrectTip: "" }
         ]
       },
       { 
         correctWord: "estudia",
         options: [
-          { text: "estudia", isCorrect: true, correctTip: ""estudia"是"estudiar"第三人称现在时", incorrectTip: "" },
-          { text: "estudio", isCorrect: false, correctTip: "", incorrectTip: ""estudio"是"我"的变位。" },
-          { text: "estudias", isCorrect: false, correctTip: "", incorrectTip: ""estudias"是"你"的变位。" }
+          { text: "estudia", isCorrect: true, correctTip: "\"estudia\"是\"estudiar\"第三人称现在时", incorrectTip: "" },
+          { text: "estudio", isCorrect: false, correctTip: "", incorrectTip: "\"estudio\"是\"我\"的变位。" },
+          { text: "estudias", isCorrect: false, correctTip: "", incorrectTip: "\"estudias\"是\"你\"的变位。" }
         ]
       },
       {
@@ -124,15 +124,15 @@ export const presenteTenseSentences: Sentence[] = [
       { 
         correctWord: "Nosotros",
         options: [
-          { text: "Nosotros", isCorrect: true, correctTip: ""Nosotros"表示"我们"。", incorrectTip: "" }
+          { text: "Nosotros", isCorrect: true, correctTip: "\"Nosotros\"表示\"我们\"。", incorrectTip: "" }
         ]
       },
       { 
         correctWord: "caminamos",
         options: [
-          { text: "caminamos", isCorrect: true, correctTip: ""caminamos"是"caminar"的第一人称复数现在时变位。", incorrectTip: "" },
-          { text: "camina", isCorrect: false, correctTip: "", incorrectTip: ""camina"指第三人称单数，不是"我们"的用法。" },
-          { text: "camináis", isCorrect: false, correctTip: "", incorrectTip: ""camináis"是"你们"的用法。" }
+          { text: "caminamos", isCorrect: true, correctTip: "\"caminamos\"是\"caminar\"的第一人称复数现在时变位。", incorrectTip: "" },
+          { text: "camina", isCorrect: false, correctTip: "", incorrectTip: "\"camina\"指第三人称单数，不是\"我们\"的用法。" },
+          { text: "camináis", isCorrect: false, correctTip: "", incorrectTip: "\"camináis\"是\"你们\"的用法。" }
         ]
       },
       {
@@ -153,15 +153,15 @@ export const presenteTenseSentences: Sentence[] = [
       { 
         correctWord: "Vosotros",
         options: [
-          { text: "Vosotros", isCorrect: true, correctTip: ""Vosotros"代表"你们"。", incorrectTip: "" }
+          { text: "Vosotros", isCorrect: true, correctTip: "\"Vosotros\"代表\"你们\"。", incorrectTip: "" }
         ]
       },
       { 
         correctWord: "miráis",
         options: [
-          { text: "miráis", isCorrect: true, correctTip: ""miráis"是"vosotros"现在时变位。", incorrectTip: "" },
-          { text: "miras", isCorrect: false, correctTip: "", incorrectTip: ""miras"是"你"的用法。" },
-          { text: "miramos", isCorrect: false, correctTip: "", incorrectTip: ""miramos"是"我们"的用法。" }
+          { text: "miráis", isCorrect: true, correctTip: "\"miráis\"是\"vosotros\"现在时变位。", incorrectTip: "" },
+          { text: "miras", isCorrect: false, correctTip: "", incorrectTip: "\"miras\"是\"你\"的用法。" },
+          { text: "miramos", isCorrect: false, correctTip: "", incorrectTip: "\"miramos\"是\"我们\"的用法。" }
         ]
       },
       {
@@ -182,15 +182,15 @@ export const presenteTenseSentences: Sentence[] = [
       { 
         correctWord: "Ellos",
         options: [
-          { text: "Ellos", isCorrect: true, correctTip: ""Ellos"表示"他们"。", incorrectTip: "" }
+          { text: "Ellos", isCorrect: true, correctTip: "\"Ellos\"表示\"他们\"。", incorrectTip: "" }
         ]
       },
       { 
         correctWord: "escuchan",
         options: [
-          { text: "escuchan", isCorrect: true, correctTip: ""escuchan"是"ellos"现在时。", incorrectTip: "" },
-          { text: "escucho", isCorrect: false, correctTip: "", incorrectTip: ""escucho"是"我"的过去时变位。" },
-          { text: "escucháis", isCorrect: false, correctTip: "", incorrectTip: ""escucháis"是"你们"的变位。" }
+          { text: "escuchan", isCorrect: true, correctTip: "\"escuchan\"是\"ellos\"现在时。", incorrectTip: "" },
+          { text: "escucho", isCorrect: false, correctTip: "", incorrectTip: "\"escucho\"是\"我\"的过去时变位。" },
+          { text: "escucháis", isCorrect: false, correctTip: "", incorrectTip: "\"escucháis\"是\"你们\"的变位。" }
         ]
       },
       {

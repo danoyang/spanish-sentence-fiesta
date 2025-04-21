@@ -66,15 +66,15 @@ export const imperfectoTenseSentences: Sentence[] = [
       { 
         correctWord: "Tú",
         options: [
-          { text: "Tú", isCorrect: true, correctTip: ""Tú"="你"。", incorrectTip: "" }
+          { text: "Tú", isCorrect: true, correctTip: "\"Tú\"=\"你\"。", incorrectTip: "" }
         ]
       },
       { 
         correctWord: "bailabas",
         options: [
-          { text: "bailabas", isCorrect: true, correctTip: "动词"bailar"未完成过去时：你。", incorrectTip: "" },
-          { text: "bailaba", isCorrect: false, correctTip: "", incorrectTip: ""bailaba"本身也对，但指"我/他/她"，题干主语为你。" },
-          { text: "bailaron", isCorrect: false, correctTip: "", incorrectTip: ""bailaron"是"他们"简单过去时。" }
+          { text: "bailabas", isCorrect: true, correctTip: "动词\"bailar\"未完成过去时：你。", incorrectTip: "" },
+          { text: "bailaba", isCorrect: false, correctTip: "", incorrectTip: "\"bailaba\"本身也对，但指\"我/他/她\"，题干主语为你。" },
+          { text: "bailaron", isCorrect: false, correctTip: "", incorrectTip: "\"bailaron\"是\"他们\"简单过去时。" }
         ]
       },
       {
@@ -95,15 +95,15 @@ export const imperfectoTenseSentences: Sentence[] = [
       { 
         correctWord: "Él",
         options: [
-          { text: "Él", isCorrect: true, correctTip: ""Él"="他"。", incorrectTip: "" }
+          { text: "Él", isCorrect: true, correctTip: "\"Él\"=\"他\"。", incorrectTip: "" }
         ]
       },
       { 
         correctWord: "cantaba",
         options: [
-          { text: "cantaba", isCorrect: true, correctTip: ""cantaba"动词未完成过去时：他。", incorrectTip: "" },
-          { text: "cantabas", isCorrect: false, correctTip: "", incorrectTip: ""cantabas"是"你"未完成过去时。" },
-          { text: "canto", isCorrect: false, correctTip: "", incorrectTip: ""canto"是现在时"我"变位。" }
+          { text: "cantaba", isCorrect: true, correctTip: "\"cantaba\"动词未完成过去时：他。", incorrectTip: "" },
+          { text: "cantabas", isCorrect: false, correctTip: "", incorrectTip: "\"cantabas\"是\"你\"未完成过去时。" },
+          { text: "canto", isCorrect: false, correctTip: "", incorrectTip: "\"canto\"是现在时\"我\"变位。" }
         ]
       },
       {
@@ -124,15 +124,15 @@ export const imperfectoTenseSentences: Sentence[] = [
       { 
         correctWord: "Nosotros",
         options: [
-          { text: "Nosotros", isCorrect: true, correctTip: ""Nosotros"="我们"。", incorrectTip: "" }
+          { text: "Nosotros", isCorrect: true, correctTip: "\"Nosotros\"=\"我们\"。", incorrectTip: "" }
         ]
       },
       { 
         correctWord: "limpiábamos",
         options: [
-          { text: "limpiábamos", isCorrect: true, correctTip: "动词"limpiar"未完成过去时：我们。", incorrectTip: "" },
-          { text: "limpiaban", isCorrect: false, correctTip: "", incorrectTip: ""limpiaban"是"他们"未完成过去时。" },
-          { text: "limpié", isCorrect: false, correctTip: "", incorrectTip: ""limpié"是"我"简单过去时。" }
+          { text: "limpiábamos", isCorrect: true, correctTip: "动词\"limpiar\"未完成过去时：我们。", incorrectTip: "" },
+          { text: "limpiaban", isCorrect: false, correctTip: "", incorrectTip: "\"limpiaban\"是\"他们\"未完成过去时。" },
+          { text: "limpié", isCorrect: false, correctTip: "", incorrectTip: "\"limpié\"是\"我\"简单过去时。" }
         ]
       },
       {
@@ -153,15 +153,15 @@ export const imperfectoTenseSentences: Sentence[] = [
       { 
         correctWord: "Vosotros",
         options: [
-          { text: "Vosotros", isCorrect: true, correctTip: ""Vosotros"="你们"。", incorrectTip: "" }
+          { text: "Vosotros", isCorrect: true, correctTip: "\"Vosotros\"=\"你们\"。", incorrectTip: "" }
         ]
       },
       { 
         correctWord: "tirabais",
         options: [
-          { text: "tirabais", isCorrect: true, correctTip: ""tirabais"未完成过去时：你们。", incorrectTip: "" },
-          { text: "tirábamos", isCorrect: false, correctTip: "", incorrectTip: ""tirábamos"是"我们"未完成过去时。" },
-          { text: "tiraba", isCorrect: false, correctTip: "", incorrectTip: ""tiraba"是"我/他/她"未完成过去时。" }
+          { text: "tirabais", isCorrect: true, correctTip: "\"tirabais\"未完成过去时：你们。", incorrectTip: "" },
+          { text: "tirábamos", isCorrect: false, correctTip: "", incorrectTip: "\"tirábamos\"是\"我们\"未完成过去时。" },
+          { text: "tiraba", isCorrect: false, correctTip: "", incorrectTip: "\"tiraba\"是\"我/他/她\"未完成过去时。" }
         ]
       },
       {
@@ -182,15 +182,15 @@ export const imperfectoTenseSentences: Sentence[] = [
       { 
         correctWord: "Ellos",
         options: [
-          { text: "Ellos", isCorrect: true, correctTip: ""Ellos"="他们"。", incorrectTip: "" }
+          { text: "Ellos", isCorrect: true, correctTip: "\"Ellos\"=\"他们\"。", incorrectTip: "" }
         ]
       },
       { 
         correctWord: "saltaban",
         options: [
-          { text: "saltaban", isCorrect: true, correctTip: ""saltaban"未完成过去时：他们。", incorrectTip: "" },
-          { text: "saltaba", isCorrect: false, correctTip: "", incorrectTip: ""saltaba"是"我/他/她"未完成过去时。" },
-          { text: "saltábamos", isCorrect: false, correctTip: "", incorrectTip: ""saltábamos"是"我们"未完成过去时。" }
+          { text: "saltaban", isCorrect: true, correctTip: "\"saltaban\"未完成过去时：他们。", incorrectTip: "" },
+          { text: "saltaba", isCorrect: false, correctTip: "", incorrectTip: "\"saltaba\"是\"我/他/她\"未完成过去时。" },
+          { text: "saltábamos", isCorrect: false, correctTip: "", incorrectTip: "\"saltábamos\"是\"我们\"未完成过去时。" }
         ]
       },
       {

@@ -1,4 +1,3 @@
-
 export interface WordOption {
   text: string;
   isCorrect: boolean;
@@ -9,6 +8,7 @@ export interface WordOption {
 export interface WordChoice {
   correctWord: string;
   options: WordOption[];
+  masteryLevel?: number;
 }
 
 export interface Sentence {
@@ -17,6 +17,8 @@ export interface Sentence {
   spanish: string;
   wordChoices: WordChoice[];
   completed: boolean;
+  hasMistakesInCurrentAttempt?: boolean;
+  perfectlyCompleted?: boolean;
 }
 
 export interface GameState {
@@ -25,3 +27,8 @@ export interface GameState {
   currentWordIndex: number;
 }
 
+export interface WordMasteryData {
+  wordText: string;
+  masteryLevel: number;
+  lastPracticed: string;
+}

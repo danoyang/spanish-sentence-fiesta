@@ -4,12 +4,18 @@ import { WordOption } from "./WordOption";
 import { cn } from "@/lib/utils";
 import { CheckCircle, ArrowRight } from "lucide-react";
 import { speakAzure } from "@/audio/azureTTS";
+import { 
+  getWordMasteryLevel, 
+  updateWordMastery, 
+  getMasteryColorClass 
+} from "@/services/masteryService";
 
 interface SentenceBuilderProps {
   sentence: Sentence;
-  onComplete: (sentenceId: number) => void;
+  onComplete: (sentenceId: number, perfectlyCompleted: boolean) => void;
   onNextSentence?: () => void;
   hasNextIncompleteSentence: boolean;
+  onUpdateSentence: (sentenceId: number, updates: Partial<Sentence>) => void;
 }
 
 export const SentenceBuilder = ({
@@ -17,6 +23,7 @@ export const SentenceBuilder = ({
   onComplete,
   onNextSentence,
   hasNextIncompleteSentence,
+  onUpdateSentence,
 }: SentenceBuilderProps) => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [selectedWords, setSelectedWords] = useState<string[]>([]);
@@ -25,6 +32,12 @@ export const SentenceBuilder = ({
   const [isLastCorrect, setIsLastCorrect] = useState<boolean | null>(null);
   const [showTip, setShowTip] = useState(false);
   const [tipText, setTipText] = useState("");
+  // 新增: 记录当前尝试是否有错误
+  const [hasMistakesInCurrentAttempt, setHasMistakesInCurrentAttempt] = useState(
+    sentence.hasMistakesInCurrentAttempt || false
+  );
+  // 新增: 跟踪单词掌握程度
+  const [wordMasteryLevels, setWordMasteryLevels] = useState<number[]>([]);
 
   const currentWordChoice: WordChoice | undefined =
     sentence.wordChoices[currentWordIndex];
@@ -36,6 +49,17 @@ export const SentenceBuilder = ({
     ? constructed + spanishPunctuation
     : constructed;
 
+  // 新增: 初始化加载单词掌握程度
+  useEffect(() => {
+    if (sentence?.wordChoices) {
+      const masteryLevels = sentence.wordChoices.map(wordChoice => {
+        // 使用正确的单词文本来获取掌握度
+        return getWordMasteryLevel(wordChoice.correctWord);
+      });
+      setWordMasteryLevels(masteryLevels);
+    }
+  }, [sentence.id]);
+
   // 修改：点击选项后不再让选项区域 disabled（showFeedback也可点）
   const handleOptionClick = async (
     isCorrect: boolean,
@@ -46,6 +70,16 @@ export const SentenceBuilder = ({
     setIsLastCorrect(isCorrect);
     setShowFeedback(true);
     setShowTip(true);
+
+    // 如果当前词组存在，更新掌握度
+    if (currentWordChoice) {
+      const newMasteryLevel = updateWordMastery(currentWordChoice.correctWord, isCorrect);
+      
+      // 更新本地掌握度状态
+      const newMasteryLevels = [...wordMasteryLevels];
+      newMasteryLevels[currentWordIndex] = newMasteryLevel;
+      setWordMasteryLevels(newMasteryLevels);
+    }
 
     if (isCorrect) {
       setTipText(correctTip);
@@ -72,14 +106,16 @@ export const SentenceBuilder = ({
           setTipText("");
         }, 200); // 快速过渡
       } else {
-        onComplete(sentence.id);
+        // 句子完成时，根据是否有错误来决定完美完成状态
+        const perfectlyCompleted = !hasMistakesInCurrentAttempt;
+        onComplete(sentence.id, perfectlyCompleted);
         isFinished = true;
         setTimeout(() => {
           setShowFeedback(false);
           setIsLastCorrect(null);
           setShowTip(false);
           setTipText("");
-        }, 1200);
+        }, 3000); // 增加到3秒
       }
 
       // Speak the full sentence if finished
@@ -88,13 +124,19 @@ export const SentenceBuilder = ({
         speakAzure(finalSent);
       }
     } else {
+      // 更新当前尝试中有错误的状态
+      if (!hasMistakesInCurrentAttempt) {
+        setHasMistakesInCurrentAttempt(true);
+        onUpdateSentence(sentence.id, { hasMistakesInCurrentAttempt: true });
+      }
+      
       setTipText(incorrectTip);
       setTimeout(() => {
         setShowFeedback(false);
         setIsLastCorrect(null);
         setShowTip(false);
         setTipText("");
-      }, 1200);
+      }, 3000); // 增加到3秒
     }
   };
 
@@ -106,7 +148,9 @@ export const SentenceBuilder = ({
     setIsLastCorrect(null);
     setShowTip(false);
     setTipText("");
-  }, [sentence.id]);
+    // 重置当前尝试中的错误状态，使用句子中存储的值
+    setHasMistakesInCurrentAttempt(sentence.hasMistakesInCurrentAttempt || false);
+  }, [sentence.id, sentence.hasMistakesInCurrentAttempt]);
 
   if (!currentWordChoice) {
     return null;
@@ -188,26 +232,40 @@ export const SentenceBuilder = ({
         </div>
       )}
       <div className="flex justify-center gap-2 mt-4">
-        {sentence.wordChoices.map((_, index) => (
-          <div
-            key={index}
-            className={cn(
-              "w-3 h-3 rounded-full",
-              index < currentWordIndex
-                ? "bg-correct"
-                : index === currentWordIndex
-                ? "bg-spain-yellow"
-                : "bg-gray-300"
-            )}
-          />
-        ))}
+        {sentence.wordChoices.map((_, index) => {
+          // 基本类名
+          let dotClassNames = "w-3 h-3 rounded-full";
+          
+          // 基于当前位置的样式
+          if (index < currentWordIndex) {
+            // 已完成单词 - 使用掌握度颜色
+            const masteryClass = getMasteryColorClass(wordMasteryLevels[index] || 0);
+            dotClassNames = `${dotClassNames} ${masteryClass}`;
+          } else if (index === currentWordIndex) {
+            // 当前单词 - 黄色
+            dotClassNames = `${dotClassNames} bg-spain-yellow`;
+          } else {
+            // 未开始单词 - 灰色
+            dotClassNames = `${dotClassNames} bg-gray-300`;
+          }
+          
+          return (
+            <div
+              key={index}
+              className={dotClassNames}
+              title={`掌握度: ${wordMasteryLevels[index] || 0}%`}
+            />
+          );
+        })}
       </div>
       <div className="mt-4 flex items-center justify-center">
         {sentence.completed && (
           <>
-            <div className="flex items-center text-correct mr-4">
-              <CheckCircle className="mr-1" />
-              <span className="font-medium">已完成</span>
+            <div className="flex items-center mr-4">
+              <CheckCircle className={sentence.perfectlyCompleted ? "text-green-500 mr-1" : "text-yellow-500 mr-1"} />
+              <span className="font-medium">
+                {sentence.perfectlyCompleted ? "完美完成" : "已完成"}
+              </span>
             </div>
             {hasNextIncompleteSentence && (
               <button 

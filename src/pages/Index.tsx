@@ -32,6 +32,21 @@ const Index = () => {
     setCurrentSentenceIndex(0);
   };
 
+  // 查找下一个未完成的句子
+  const findNextIncompleteSentence = () => {
+    const nextIncompleteIndex = sentences.findIndex(
+      (s, index) => index > currentSentenceIndex && !s.completed
+    );
+    if (nextIncompleteIndex !== -1) {
+      setCurrentSentenceIndex(nextIncompleteIndex);
+    }
+  };
+
+  // 检查是否有下一个未完成的句子
+  const hasNextIncompleteSentence = sentences.some(
+    (s, index) => index > currentSentenceIndex && !s.completed
+  );
+
   const completedCount = sentences.filter((s) => s.completed).length;
 
   return (
@@ -48,6 +63,8 @@ const Index = () => {
         <SentenceBuilder 
           sentence={sentences[currentSentenceIndex]} 
           onComplete={handleSentenceComplete}
+          onNextSentence={findNextIncompleteSentence}
+          hasNextIncompleteSentence={hasNextIncompleteSentence}
         />
 
         {/* 句子列表放在做题区下方 */}

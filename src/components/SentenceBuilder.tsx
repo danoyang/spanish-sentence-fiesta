@@ -3,17 +3,21 @@ import { useState, useEffect } from "react";
 import { WordChoice, Sentence } from "@/types/game";
 import { WordOption } from "./WordOption";
 import { cn } from "@/lib/utils";
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, ArrowRight } from "lucide-react";
 import { speakAzure } from "@/audio/azureTTS";
 
 interface SentenceBuilderProps {
   sentence: Sentence;
   onComplete: (sentenceId: number) => void;
+  onNextSentence?: () => void;
+  hasNextIncompleteSentence: boolean;
 }
 
 export const SentenceBuilder = ({
   sentence,
   onComplete,
+  onNextSentence,
+  hasNextIncompleteSentence,
 }: SentenceBuilderProps) => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [selectedWords, setSelectedWords] = useState<string[]>([]);
@@ -45,32 +49,39 @@ export const SentenceBuilder = ({
 
     if (isCorrect) {
       setTipText(correctTip);
+      
+      // Play audio but don't wait - allow user to continue immediately
       speakAzure(optionText);
 
-      setTimeout(async () => {
-        setSelectedWords([...selectedWords, optionText]);
-        setSelectedOptions((prev) => {
-          const next = [...prev];
-          next[currentWordIndex] = true;
-          return next;
-        });
-        let isFinished = false;
-        if (currentWordIndex < sentence.wordChoices.length - 1) {
-          setCurrentWordIndex(currentWordIndex + 1);
-        } else {
-          onComplete(sentence.id);
-          isFinished = true;
-        }
+      // Update state immediately, don't wait for audio to finish
+      setSelectedWords([...selectedWords, optionText]);
+      setSelectedOptions((prev) => {
+        const next = [...prev];
+        next[currentWordIndex] = true;
+        return next;
+      });
+      
+      let isFinished = false;
+      if (currentWordIndex < sentence.wordChoices.length - 1) {
+        setCurrentWordIndex(currentWordIndex + 1);
+      } else {
+        onComplete(sentence.id);
+        isFinished = true;
+      }
+
+      // Only feedback needs a timeout
+      setTimeout(() => {
         setShowFeedback(false);
         setIsLastCorrect(null);
         setShowTip(false);
         setTipText("");
-
-        if (isFinished) {
-          let finalSent = [...selectedWords, optionText].join(" ") + spanishPunctuation;
-          speakAzure(finalSent);
-        }
       }, 1200);
+
+      // Speak the full sentence if finished, but don't block the UI
+      if (isFinished) {
+        let finalSent = [...selectedWords, optionText].join(" ") + spanishPunctuation;
+        speakAzure(finalSent);
+      }
     } else {
       setTipText(incorrectTip);
       setTimeout(() => {
@@ -188,12 +199,28 @@ export const SentenceBuilder = ({
           />
         ))}
       </div>
-      {sentence.completed && (
-        <div className="mt-4 flex items-center justify-center text-correct">
-          <CheckCircle className="mr-1" />
-          <span className="font-medium">已完成</span>
-        </div>
-      )}
+      
+      {/* 添加句子完成状态和下一句按钮 */}
+      <div className="mt-4 flex items-center justify-center">
+        {sentence.completed && (
+          <>
+            <div className="flex items-center text-correct mr-4">
+              <CheckCircle className="mr-1" />
+              <span className="font-medium">已完成</span>
+            </div>
+            
+            {hasNextIncompleteSentence && (
+              <button 
+                onClick={onNextSentence}
+                className="flex items-center bg-spain-yellow hover:bg-spain-darkred text-white px-4 py-2 rounded-lg transition-colors"
+              >
+                <span className="font-medium">下一句</span>
+                <ArrowRight className="ml-1 w-4 h-4" />
+              </button>
+            )}
+          </>
+        )}
+      </div>
     </div>
   );
 };

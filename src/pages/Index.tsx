@@ -4,8 +4,8 @@ import { sentencesData } from "@/data/sentences";
 import { Sentence } from "@/types/game";
 import { SentenceBuilder } from "@/components/SentenceBuilder";
 import { SentenceList } from "@/components/SentenceList";
-import { GameCompletion } from "@/components/GameCompletion";
-import { GameHeader } from "@/components/GameHeader";
+// import { GameCompletion } from "@/components/GameCompletion";
+// import { GameHeader } from "@/components/GameHeader";
 
 const Index = () => {
   const [sentences, setSentences] = useState<Sentence[]>(sentencesData);
@@ -37,23 +37,24 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-amber-50 py-8 px-4">
       <div className="max-w-4xl mx-auto">
-        <GameHeader />
-        
-        <GameCompletion 
+        {/* <GameHeader /> */}
+        {/* <GameCompletion 
           completedCount={completedCount} 
           totalCount={sentences.length}
           onReset={handleResetGame}
-        />
+        /> */}
         
+        {/* 做题区域（SentenceBuilder）先展示 */}
+        <SentenceBuilder 
+          sentence={sentences[currentSentenceIndex]} 
+          onComplete={handleSentenceComplete}
+        />
+
+        {/* 句子列表放在做题区下方 */}
         <SentenceList 
           sentences={sentences} 
           currentSentenceIndex={currentSentenceIndex}
           onSelectSentence={handleSelectSentence}
-        />
-        
-        <SentenceBuilder 
-          sentence={sentences[currentSentenceIndex]} 
-          onComplete={handleSentenceComplete}
         />
         
         <footer className="mt-12 text-center text-gray-600 text-sm">

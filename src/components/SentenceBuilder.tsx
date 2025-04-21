@@ -74,7 +74,6 @@ export const SentenceBuilder = ({
     } else {
       setTipText(incorrectTip);
       setTimeout(() => {
-        // Only update the feedback state, but don't disable further selections
         setShowFeedback(false);
         setIsLastCorrect(null);
         setShowTip(false);
@@ -158,7 +157,11 @@ export const SentenceBuilder = ({
               />
             ))}
           </div>
-          <div className="mt-3 h-9 flex flex-col items-center justify-center">
+          {/* 固定高度的答题结果提示区域【答对/答错】 */}
+          <div
+            className="mt-3 flex flex-col items-center justify-center"
+            style={{ height: "36px" }} // 固定高度
+          >
             {showTip && tipText && (
               <span className={isLastCorrect ? "text-correct" : "text-incorrect"} style={{ fontWeight: "500" }}>
                 {tipText}
@@ -191,3 +194,4 @@ export const SentenceBuilder = ({
     </div>
   );
 };
+

@@ -68,11 +68,13 @@ const Index = () => {
         />
 
         {/* 句子列表放在做题区下方 */}
-        <SentenceList 
-          sentences={sentences} 
-          currentSentenceIndex={currentSentenceIndex}
-          onSelectSentence={handleSelectSentence}
-        />
+        <div className="mt-8 max-h-96 overflow-y-auto">
+          <SentenceList 
+            sentences={sentences} 
+            currentSentenceIndex={currentSentenceIndex}
+            onSelectSentence={handleSelectSentence}
+          />
+        </div>
         
         <footer className="mt-12 text-center text-gray-600 text-sm">
           <p>© 2025 西班牙语拼句子挑战 | 快乐学习西班牙语！</p>

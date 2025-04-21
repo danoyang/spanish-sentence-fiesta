@@ -52,6 +52,14 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+        spain: {
+          red: '#C60B1E',
+          yellow: '#FFC400',
+          darkred: '#7F0000',
+          gold: '#FFD700'
+        },
+        correct: '#4CAF50',
+        incorrect: '#F44336',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',

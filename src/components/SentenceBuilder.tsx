@@ -104,7 +104,7 @@ export const SentenceBuilder = ({
           setIsLastCorrect(null);
           setShowTip(false);
           setTipText("");
-        }, 200); // 快速过渡
+        }, 1000); // 增加到1秒，让用户看到正确的反馈
       } else {
         // 句子完成时，根据是否有错误来决定完美完成状态
         const perfectlyCompleted = !hasMistakesInCurrentAttempt;
@@ -115,7 +115,7 @@ export const SentenceBuilder = ({
           setIsLastCorrect(null);
           setShowTip(false);
           setTipText("");
-        }, 3000); // 增加到3秒
+        }, 3000); // 保持3秒
       }
 
       // Speak the full sentence if finished
@@ -131,12 +131,19 @@ export const SentenceBuilder = ({
       }
       
       setTipText(incorrectTip);
-      setTimeout(() => {
+      
+      // 错误答案增加禁用时间，确保反馈显示完整3秒
+      const disableOptionsTimeout = setTimeout(() => {
         setShowFeedback(false);
         setIsLastCorrect(null);
         setShowTip(false);
         setTipText("");
-      }, 3000); // 增加到3秒
+      }, 3000); // 确保反馈显示3秒
+      
+      // 添加返回函数清除超时，防止组件卸载时出现问题
+      return () => {
+        clearTimeout(disableOptionsTimeout);
+      };
     }
   };
 
@@ -192,8 +199,8 @@ export const SentenceBuilder = ({
                       option.incorrectTip
                     )
                   }
-                  // 立即可点，不因 showFeedback 而 disabled
-                  disabled={false}
+                  // 当显示错误反馈时，暂时禁用所有选项，确保用户看到完整反馈
+                  disabled={showFeedback && isLastCorrect === false}
                   selected={
                     showFeedback &&
                     isLastCorrect !== null &&

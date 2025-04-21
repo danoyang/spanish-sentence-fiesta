@@ -1,4 +1,6 @@
 
+// Corrected the inner quotes for proper string syntax to fix TS1005 errors
+
 import { Sentence } from "@/types/game";
 
 // Futuro (Future Tense) and Condicional (Conditional Tense) sentences
@@ -15,7 +17,7 @@ export const futuroCondicionalSentences: Sentence[] = [
           {
             text: "Yo",
             isCorrect: true,
-            correctTip: ""Yo" 表示"我"。",
+            correctTip: '"Yo" 表示"我"。',
             incorrectTip: ""
           }
         ]
@@ -26,14 +28,14 @@ export const futuroCondicionalSentences: Sentence[] = [
           {
             text: "esperaré",
             isCorrect: true,
-            correctTip: ""esperaré"是动词"esperar"的第一人称将来时，表示"我将会等待"。",
+            correctTip: '"esperaré"是动词"esperar"的第一人称将来时，表示"我将会等待"。',
             incorrectTip: ""
           },
           {
             text: "espero",
             isCorrect: false,
             correctTip: "",
-            incorrectTip: ""espero" 是现在时，这里要用"esperaré"表示将来时。"
+            incorrectTip: '"espero" 是现在时，这里要用"esperaré"表示将来时。'
           }
         ]
       },
@@ -64,7 +66,7 @@ export const futuroCondicionalSentences: Sentence[] = [
           {
             text: "Tú",
             isCorrect: true,
-            correctTip: ""Tú" 表示"你"。",
+            correctTip: '"Tú" 表示"你"。',
             incorrectTip: ""
           }
         ]
@@ -75,14 +77,14 @@ export const futuroCondicionalSentences: Sentence[] = [
           {
             text: "entrarás",
             isCorrect: true,
-            correctTip: ""entrarás"是"你将进入"的将来时。",
+            correctTip: '"entrarás"是"你将进入"的将来时。',
             incorrectTip: ""
           },
           {
             text: "entras",
             isCorrect: false,
             correctTip: "",
-            incorrectTip: ""entras"是现在时，这里要用"entrarás"表示将来。"
+            incorrectTip: '"entras"是现在时，这里要用"entrarás"表示将来。'
           }
         ]
       },
@@ -113,7 +115,7 @@ export const futuroCondicionalSentences: Sentence[] = [
           {
             text: "Él",
             isCorrect: true,
-            correctTip: ""Él" 表示"他"。",
+            correctTip: '"Él" 表示"他"。',
             incorrectTip: ""
           }
         ]
@@ -124,14 +126,14 @@ export const futuroCondicionalSentences: Sentence[] = [
           {
             text: "llegará",
             isCorrect: true,
-            correctTip: ""llegará"是"他将到达"的将来时。",
+            correctTip: '"llegará"是"他将到达"的将来时。',
             incorrectTip: ""
           },
           {
             text: "llega",
             isCorrect: false,
             correctTip: "",
-            incorrectTip: ""llega"是现在时，这里应选"llegará"。"
+            incorrectTip: '"llega"是现在时，这里应选"llegará"。'
           }
         ]
       },
@@ -162,7 +164,7 @@ export const futuroCondicionalSentences: Sentence[] = [
           {
             text: "Nosotros",
             isCorrect: true,
-            correctTip: ""Nosotros" 表示"我们"。",
+            correctTip: '"Nosotros" 表示"我们"。',
             incorrectTip: ""
           }
         ]
@@ -173,14 +175,14 @@ export const futuroCondicionalSentences: Sentence[] = [
           {
             text: "necesitaremos",
             isCorrect: true,
-            correctTip: ""necesitaremos"是"我们将需要"的将来时。",
+            correctTip: '"necesitaremos"是"我们将需要"的将来时。',
             incorrectTip: ""
           },
           {
             text: "necesitamos",
             isCorrect: false,
             correctTip: "",
-            incorrectTip: ""necesitamos"是现在时，这里应选"necesitaremos"。"
+            incorrectTip: '"necesitamos"是现在时，这里应选"necesitaremos"。'
           }
         ]
       },
@@ -211,7 +213,7 @@ export const futuroCondicionalSentences: Sentence[] = [
           {
             text: "Vosotros",
             isCorrect: true,
-            correctTip: ""Vosotros" 表示"你们"。",
+            correctTip: '"Vosotros" 表示"你们"。',
             incorrectTip: ""
           }
         ]
@@ -222,14 +224,14 @@ export const futuroCondicionalSentences: Sentence[] = [
           {
             text: "pagaréis",
             isCorrect: true,
-            correctTip: ""pagaréis"是"你们将付钱"的将来时。",
+            correctTip: '"pagaréis"是"你们将付钱"的将来时。',
             incorrectTip: ""
           },
           {
             text: "pagáis",
             isCorrect: false,
             correctTip: "",
-            incorrectTip: ""pagáis"是现在时，这里应选"pagaréis"。"
+            incorrectTip: '"pagáis"是现在时，这里应选"pagaréis"。'
           }
         ]
       },
@@ -260,7 +262,7 @@ export const futuroCondicionalSentences: Sentence[] = [
           {
             text: "Ellos",
             isCorrect: true,
-            correctTip: ""Ellos" 表示"他们"。",
+            correctTip: '"Ellos" 表示"他们"。',
             incorrectTip: ""
           }
         ]
@@ -271,14 +273,14 @@ export const futuroCondicionalSentences: Sentence[] = [
           {
             text: "prepararán",
             isCorrect: true,
-            correctTip: ""prepararán"是"他们将准备"的将来时。",
+            correctTip: '"prepararán"是"他们将准备"的将来时。',
             incorrectTip: ""
           },
           {
             text: "preparan",
             isCorrect: false,
             correctTip: "",
-            incorrectTip: ""preparan"是现在时，这里应选"prepararán"。"
+            incorrectTip: '"preparan"是现在时，这里应选"prepararán"。'
           }
         ]
       },
@@ -310,7 +312,7 @@ export const futuroCondicionalSentences: Sentence[] = [
           {
             text: "Yo",
             isCorrect: true,
-            correctTip: ""Yo" 表示"我"。",
+            correctTip: '"Yo" 表示"我"。',
             incorrectTip: ""
           }
         ]
@@ -321,14 +323,14 @@ export const futuroCondicionalSentences: Sentence[] = [
           {
             text: "tocaría",
             isCorrect: true,
-            correctTip: ""tocaría"是"我会弹"的条件式。",
+            correctTip: '"tocaría"是"我会弹"的条件式。',
             incorrectTip: ""
           },
           {
             text: "toco",
             isCorrect: false,
             correctTip: "",
-            incorrectTip: ""toco"是现在时，这里应选"tocaría"。"
+            incorrectTip: '"toco"是现在时，这里应选"tocaría"。'
           }
         ]
       },
@@ -359,7 +361,7 @@ export const futuroCondicionalSentences: Sentence[] = [
           {
             text: "Tú",
             isCorrect: true,
-            correctTip: ""Tú" 表示"你"。",
+            correctTip: '"Tú" 表示"你"。',
             incorrectTip: ""
           }
         ]
@@ -370,14 +372,14 @@ export const futuroCondicionalSentences: Sentence[] = [
           {
             text: "sacarías",
             isCorrect: true,
-            correctTip: ""sacarías"是"你会拿"的条件式。",
+            correctTip: '"sacarías"是"你会拿"的条件式。',
             incorrectTip: ""
           },
           {
             text: "sacas",
             isCorrect: false,
             correctTip: "",
-            incorrectTip: ""sacas"是现在时，这里应选"sacarías"。"
+            incorrectTip: '"sacas"是现在时，这里应选"sacarías"。'
           }
         ]
       },
@@ -408,7 +410,7 @@ export const futuroCondicionalSentences: Sentence[] = [
           {
             text: "Él",
             isCorrect: true,
-            correctTip: ""Él" 表示"他"。",
+            correctTip: '"Él" 表示"他"。',
             incorrectTip: ""
           }
         ]
@@ -419,14 +421,14 @@ export const futuroCondicionalSentences: Sentence[] = [
           {
             text: "buscaría",
             isCorrect: true,
-            correctTip: ""buscaría"是"他会找"的条件式。",
+            correctTip: '"buscaría"是"他会找"的条件式。',
             incorrectTip: ""
           },
           {
             text: "busca",
             isCorrect: false,
             correctTip: "",
-            incorrectTip: ""busca"是现在时，这里应选"buscaría"。"
+            incorrectTip: '"busca"是现在时，这里应选"buscaría"。'
           }
         ]
       },
@@ -457,7 +459,7 @@ export const futuroCondicionalSentences: Sentence[] = [
           {
             text: "Nosotros",
             isCorrect: true,
-            correctTip: ""Nosotros" 表示"我们"。",
+            correctTip: '"Nosotros" 表示"我们"。',
             incorrectTip: ""
           }
         ]
@@ -468,14 +470,14 @@ export const futuroCondicionalSentences: Sentence[] = [
           {
             text: "lavaríamos",
             isCorrect: true,
-            correctTip: ""lavaríamos"是"我们会洗"的条件式。",
+            correctTip: '"lavaríamos"是"我们会洗"的条件式。',
             incorrectTip: ""
           },
           {
             text: "lavamos",
             isCorrect: false,
             correctTip: "",
-            incorrectTip: ""lavamos"是现在时，这里应选"lavaríamos"。"
+            incorrectTip: '"lavamos"是现在时，这里应选"lavaríamos"。'
           }
         ]
       },
@@ -506,7 +508,7 @@ export const futuroCondicionalSentences: Sentence[] = [
           {
             text: "Vosotros",
             isCorrect: true,
-            correctTip: ""Vosotros" 表示"你们"。",
+            correctTip: '"Vosotros" 表示"你们"。',
             incorrectTip: ""
           }
         ]
@@ -517,14 +519,14 @@ export const futuroCondicionalSentences: Sentence[] = [
           {
             text: "ganaríais",
             isCorrect: true,
-            correctTip: ""ganaríais"是"你们会赢"的条件式。",
+            correctTip: '"ganaríais"是"你们会赢"的条件式。',
             incorrectTip: ""
           },
           {
             text: "ganáis",
             isCorrect: false,
             correctTip: "",
-            incorrectTip: ""ganáis"是现在时，这里应选"ganaríais"。"
+            incorrectTip: '"ganáis"是现在时，这里应选"ganaríais"。'
           }
         ]
       },
@@ -555,7 +557,7 @@ export const futuroCondicionalSentences: Sentence[] = [
           {
             text: "Ellos",
             isCorrect: true,
-            correctTip: ""Ellos" 表示"他们"。",
+            correctTip: '"Ellos" 表示"他们"。',
             incorrectTip: ""
           }
         ]
@@ -566,14 +568,14 @@ export const futuroCondicionalSentences: Sentence[] = [
           {
             text: "terminarían",
             isCorrect: true,
-            correctTip: ""terminarían"是"他们会完成"的条件式。",
+            correctTip: '"terminarían"是"他们会完成"的条件式。',
             incorrectTip: ""
           },
           {
             text: "terminan",
             isCorrect: false,
             correctTip: "",
-            incorrectTip: ""terminan"是现在时，这里应选"terminarían"。"
+            incorrectTip: '"terminan"是现在时，这里应选"terminarían"。'
           }
         ]
       },
@@ -592,3 +594,4 @@ export const futuroCondicionalSentences: Sentence[] = [
     completed: false
   }
 ];
+

@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { sentencesData } from "@/data/sentences";
 import { Sentence } from "@/types/game";
@@ -44,11 +45,12 @@ const Index = () => {
     (s, index) => index > currentSentenceIndex && !s.completed
   );
 
-  const completedCount = sentences.filter((s) => s.completed).length;
+  // const completedCount = sentences.filter((s) => s.completed).length;
 
   return (
     <div className="min-h-screen bg-amber-50 py-8 px-4">
       <div className="max-w-4xl mx-auto">
+        {/* 顶部提示区域和进度区域已移除 */}
         <SentenceBuilder 
           sentence={sentences[currentSentenceIndex]} 
           onComplete={handleSentenceComplete}

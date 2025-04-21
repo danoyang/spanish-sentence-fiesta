@@ -49,7 +49,7 @@ export const WordOption = ({
     buttonClasses += " border-gray-300 hover:border-spain-yellow";
   }
 
-  if (disabled && !selected) {
+  if (disabled) {
     buttonClasses += " opacity-50 cursor-not-allowed";
   }
 
@@ -57,7 +57,7 @@ export const WordOption = ({
     <div className="flex flex-col items-center">
       <button
         className={cn(buttonClasses)}
-        disabled={disabled && !selected}
+        disabled={disabled}
         onClick={handleClick}
       >
         {option.text}

@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { WordChoice, Sentence } from "@/types/game";
 import { WordOption } from "./WordOption";
@@ -73,15 +74,12 @@ export const SentenceBuilder = ({
     } else {
       setTipText(incorrectTip);
       setTimeout(() => {
-        setSelectedOptions((prev) => {
-          const next = [...prev];
-          next[currentWordIndex] = false;
-          return next;
-        });
+        // Only update the feedback state, but don't disable further selections
         setShowFeedback(false);
         setIsLastCorrect(null);
         setShowTip(false);
         setTipText("");
+        // We no longer update selectedOptions for incorrect answers
       }, 1200);
     }
   };
@@ -136,7 +134,7 @@ export const SentenceBuilder = ({
                     option.incorrectTip
                   )
                 }
-                disabled={selectedOptions[currentWordIndex] !== undefined || showFeedback}
+                disabled={showFeedback}
                 selected={
                   showFeedback &&
                   isLastCorrect !== null &&

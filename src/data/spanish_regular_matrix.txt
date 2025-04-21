@@ -1,0 +1,183 @@
+### Verbos -AR
+Presente | Yo | Yo hablo muy bien hoy.
+Presente | Tú | Tú trabajas muy bien hoy.
+Presente | Él | Él estudia muy bien hoy.
+Presente | Nosotros | Nosotros caminamos muy bien hoy.
+Presente | Vosotros | Vosotros miráis muy bien hoy.
+Presente | Ellos | Ellos escuchan muy bien hoy.
+Pretérito | Yo | Yo compré muy bien ayer.
+Pretérito | Tú | Tú tomaste muy bien ayer.
+Pretérito | Él | Él llamó muy bien ayer.
+Pretérito | Nosotros | Nosotros usamos muy bien ayer.
+Pretérito | Vosotros | Vosotros viajasteis muy bien ayer.
+Pretérito | Ellos | Ellos ayudaron muy bien ayer.
+Imperfecto | Yo | Yo cocinaba muy bien cuando era niño.
+Imperfecto | Tú | Tú bailabas muy bien cuando era niño.
+Imperfecto | Él | Él cantaba muy bien cuando era niño.
+Imperfecto | Nosotros | Nosotros limpiábamos muy bien cuando era niño.
+Imperfecto | Vosotros | Vosotros tirabais muy bien cuando era niño.
+Imperfecto | Ellos | Ellos saltarían muy bien cuando era niño.
+Futuro | Yo | Yo esperaré muy bien mañana.
+Futuro | Tú | Tú entrarás muy bien mañana.
+Futuro | Él | Él llegará muy bien mañana.
+Futuro | Nosotros | Nosotros necesitaremos muy bien mañana.
+Futuro | Vosotros | Vosotros pagaréis muy bien mañana.
+Futuro | Ellos | Ellos prepararán muy bien mañana.
+Condicional | Yo | Yo tocaría muy bien si pudiera.
+Condicional | Tú | Tú sacarías muy bien si pudiera.
+Condicional | Él | Él buscaría muy bien si pudiera.
+Condicional | Nosotros | Nosotros lavaríamos muy bien si pudiera.
+Condicional | Vosotros | Vosotros ganaríais muy bien si pudiera.
+Condicional | Ellos | Ellos terminarían muy bien si pudiera.
+Presente perfecto | Yo | Yo he visitado muy bien esta semana.
+Presente perfecto | Tú | Tú has arreglado muy bien esta semana.
+Presente perfecto | Él | Él ha cambiado muy bien esta semana.
+Presente perfecto | Nosotros | Nosotros hemos enseñado muy bien esta semana.
+Presente perfecto | Vosotros | Vosotros habéis andado muy bien esta semana.
+Presente perfecto | Ellos | Ellos han descansado muy bien esta semana.
+Pluscuamperfecto | Yo | Yo había dibujado muy bien antes.
+Pluscuamperfecto | Tú | Tú habías enviado muy bien antes.
+Pluscuamperfecto | Él | Él había jugado muy bien antes.
+Pluscuamperfecto | Nosotros | Nosotros habíamos plantado muy bien antes.
+Pluscuamperfecto | Vosotros | Vosotros habíais reservado muy bien antes.
+Pluscuamperfecto | Ellos | Ellos habían regalado muy bien antes.
+Subjuntivo presente | Yo | Yo repare muy bien aunque sea necesario.
+Subjuntivo presente | Tú | Tú soñes muy bien aunque sea necesario.
+Subjuntivo presente | Él | Él trabaje muy bien aunque sea necesario.
+Subjuntivo presente | Nosotros | Nosotros viajemos muy bien aunque sea necesario.
+Subjuntivo presente | Vosotros | Vosotros apagéis muy bien aunque sea necesario.
+Subjuntivo presente | Ellos | Ellos celebren muy bien aunque sea necesario.
+Subjuntivo pasado | Yo | Yo disfrutara muy bien si hubiera sabido.
+Subjuntivo pasado | Tú | Tú explicaras muy bien si hubiera sabido.
+Subjuntivo pasado | Él | Él formara muy bien si hubiera sabido.
+Subjuntivo pasado | Nosotros | Nosotros guardáramos muy bien si hubiera sabido.
+Subjuntivo pasado | Vosotros | Vosotros imaginarais muy bien si hubiera sabido.
+Subjuntivo pasado | Ellos | Ellos juntaran muy bien si hubiera sabido.
+Imperativo | Yo | Yo mostre muy bien ahora.
+Imperativo | Tú | Tú nada muy bien ahora.
+Imperativo | Él | Él presente muy bien ahora.
+Imperativo | Nosotros | Nosotros quedemos muy bien ahora.
+Imperativo | Vosotros | Vosotros recordad muy bien ahora.
+Imperativo | Ellos | Ellos tomen muy bien ahora.
+### Verbos -ER
+Presente | Yo | Yo como muy bien hoy.
+Presente | Tú | Tú bebes muy bien hoy.
+Presente | Él | Él lee muy bien hoy.
+Presente | Nosotros | Nosotros aprendemos muy bien hoy.
+Presente | Vosotros | Vosotros corréis muy bien hoy.
+Presente | Ellos | Ellos venden muy bien hoy.
+Pretérito | Yo | Yo comprendí muy bien ayer.
+Pretérito | Tú | Tú respondiste muy bien ayer.
+Pretérito | Él | Él creió muy bien ayer.
+Pretérito | Nosotros | Nosotros debimos muy bien ayer.
+Pretérito | Vosotros | Vosotros visteis muy bien ayer.
+Pretérito | Ellos | Ellos rompieron muy bien ayer.
+Imperfecto | Yo | Yo barría muy bien cuando era niño.
+Imperfecto | Tú | Tú temías muy bien cuando era niño.
+Imperfecto | Él | Él cosía muy bien cuando era niño.
+Imperfecto | Nosotros | Nosotros metíamos muy bien cuando era niño.
+Imperfecto | Vosotros | Vosotros poseíais muy bien cuando era niño.
+Imperfecto | Ellos | Ellos prometían muy bien cuando era niño.
+Futuro | Yo | Yo sorprenderé muy bien mañana.
+Futuro | Tú | Tú dependerás muy bien mañana.
+Futuro | Él | Él protegerá muy bien mañana.
+Futuro | Nosotros | Nosotros resolveremos muy bien mañana.
+Futuro | Vosotros | Vosotros perderéis muy bien mañana.
+Futuro | Ellos | Ellos entenderán muy bien mañana.
+Condicional | Yo | Yo nacería muy bien si pudiera.
+Condicional | Tú | Tú ofrecerías muy bien si pudiera.
+Condicional | Él | Él parecería muy bien si pudiera.
+Condicional | Nosotros | Nosotros encenderíamos muy bien si pudiera.
+Condicional | Vosotros | Vosotros temblaríais muy bien si pudiera.
+Condicional | Ellos | Ellos torcerían muy bien si pudiera.
+Presente perfecto | Yo | Yo he movido muy bien esta semana.
+Presente perfecto | Tú | Tú has volvido muy bien esta semana.
+Presente perfecto | Él | Él ha llovido muy bien esta semana.
+Presente perfecto | Nosotros | Nosotros hemos mordido muy bien esta semana.
+Presente perfecto | Vosotros | Vosotros habéis extendido muy bien esta semana.
+Presente perfecto | Ellos | Ellos han crecido muy bien esta semana.
+Pluscuamperfecto | Yo | Yo había tejido muy bien antes.
+Pluscuamperfecto | Tú | Tú habías escogido muy bien antes.
+Pluscuamperfecto | Él | Él había mecido muy bien antes.
+Pluscuamperfecto | Nosotros | Nosotros habíamos sucedido muy bien antes.
+Pluscuamperfecto | Vosotros | Vosotros habíais cedido muy bien antes.
+Pluscuamperfecto | Ellos | Ellos habían aparecido muy bien antes.
+Subjuntivo presente | Yo | Yo obedeca muy bien aunque sea necesario.
+Subjuntivo presente | Tú | Tú emergas muy bien aunque sea necesario.
+Subjuntivo presente | Él | Él ergua muy bien aunque sea necesario.
+Subjuntivo presente | Nosotros | Nosotros encogamos muy bien aunque sea necesario.
+Subjuntivo presente | Vosotros | Vosotros detenáis muy bien aunque sea necesario.
+Subjuntivo presente | Ellos | Ellos recogan muy bien aunque sea necesario.
+Subjuntivo pasado | Yo | Yo manteniera muy bien si hubiera sabido.
+Subjuntivo pasado | Tú | Tú reconocieras muy bien si hubiera sabido.
+Subjuntivo pasado | Él | Él atendiera muy bien si hubiera sabido.
+Subjuntivo pasado | Nosotros | Nosotros advertiéramos muy bien si hubiera sabido.
+Subjuntivo pasado | Vosotros | Vosotros descendierais muy bien si hubiera sabido.
+Subjuntivo pasado | Ellos | Ellos defendieran muy bien si hubiera sabido.
+Imperativo | Yo | Yo permaneca muy bien ahora.
+Imperativo | Tú | Tú procede muy bien ahora.
+Imperativo | Él | Él retroceda muy bien ahora.
+Imperativo | Nosotros | Nosotros absolvamos muy bien ahora.
+Imperativo | Vosotros | Vosotros comprometed muy bien ahora.
+Imperativo | Ellos | Ellos concedan muy bien ahora.
+### Verbos -IR
+Presente | Yo | Yo vivo muy bien hoy.
+Presente | Tú | Tú escribes muy bien hoy.
+Presente | Él | Él abre muy bien hoy.
+Presente | Nosotros | Nosotros recibimos muy bien hoy.
+Presente | Vosotros | Vosotros asistís muy bien hoy.
+Presente | Ellos | Ellos suben muy bien hoy.
+Pretérito | Yo | Yo compartí muy bien ayer.
+Pretérito | Tú | Tú cumpliste muy bien ayer.
+Pretérito | Él | Él decidió muy bien ayer.
+Pretérito | Nosotros | Nosotros describimos muy bien ayer.
+Pretérito | Vosotros | Vosotros descubristeis muy bien ayer.
+Pretérito | Ellos | Ellos dividieron muy bien ayer.
+Imperfecto | Yo | Yo existía muy bien cuando era niño.
+Imperfecto | Tú | Tú insistías muy bien cuando era niño.
+Imperfecto | Él | Él ocurría muy bien cuando era niño.
+Imperfecto | Nosotros | Nosotros partíamos muy bien cuando era niño.
+Imperfecto | Vosotros | Vosotros permitíais muy bien cuando era niño.
+Imperfecto | Ellos | Ellos prohibían muy bien cuando era niño.
+Futuro | Yo | Yo uniré muy bien mañana.
+Futuro | Tú | Tú admitirás muy bien mañana.
+Futuro | Él | Él añadirá muy bien mañana.
+Futuro | Nosotros | Nosotros consumiremos muy bien mañana.
+Futuro | Vosotros | Vosotros discutiréis muy bien mañana.
+Futuro | Ellos | Ellos exigirán muy bien mañana.
+Condicional | Yo | Yo imprimiría muy bien si pudiera.
+Condicional | Tú | Tú invertirías muy bien si pudiera.
+Condicional | Él | Él omitiría muy bien si pudiera.
+Condicional | Nosotros | Nosotros resistiríamos muy bien si pudiera.
+Condicional | Vosotros | Vosotros cubriríais muy bien si pudiera.
+Condicional | Ellos | Ellos sufrirían muy bien si pudiera.
+Presente perfecto | Yo | Yo he suspendido muy bien esta semana.
+Presente perfecto | Tú | Tú has oido muy bien esta semana.
+Presente perfecto | Él | Él ha pulido muy bien esta semana.
+Presente perfecto | Nosotros | Nosotros hemos salido muy bien esta semana.
+Presente perfecto | Vosotros | Vosotros habéis venido muy bien esta semana.
+Presente perfecto | Ellos | Ellos han sentido muy bien esta semana.
+Pluscuamperfecto | Yo | Yo había dormido muy bien antes.
+Pluscuamperfecto | Tú | Tú habías pedido muy bien antes.
+Pluscuamperfecto | Él | Él había servido muy bien antes.
+Pluscuamperfecto | Nosotros | Nosotros habíamos medido muy bien antes.
+Pluscuamperfecto | Vosotros | Vosotros habíais repetido muy bien antes.
+Pluscuamperfecto | Ellos | Ellos habían competido muy bien antes.
+Subjuntivo presente | Yo | Yo asuma muy bien aunque sea necesario.
+Subjuntivo presente | Tú | Tú confundas muy bien aunque sea necesario.
+Subjuntivo presente | Él | Él inclua muy bien aunque sea necesario.
+Subjuntivo presente | Nosotros | Nosotros introducamos muy bien aunque sea necesario.
+Subjuntivo presente | Vosotros | Vosotros producáis muy bien aunque sea necesario.
+Subjuntivo presente | Ellos | Ellos traducan muy bien aunque sea necesario.
+Subjuntivo pasado | Yo | Yo conduciera muy bien si hubiera sabido.
+Subjuntivo pasado | Tú | Tú aburrieras muy bien si hubiera sabido.
+Subjuntivo pasado | Él | Él sacudiera muy bien si hubiera sabido.
+Subjuntivo pasado | Nosotros | Nosotros sugeriéramos muy bien si hubiera sabido.
+Subjuntivo pasado | Vosotros | Vosotros vestierais muy bien si hubiera sabido.
+Subjuntivo pasado | Ellos | Ellos adquirieran muy bien si hubiera sabido.
+Imperativo | Yo | Yo consenta muy bien ahora.
+Imperativo | Tú | Tú presume muy bien ahora.
+Imperativo | Él | Él reuna muy bien ahora.
+Imperativo | Nosotros | Nosotros repartamos muy bien ahora.
+Imperativo | Vosotros | Vosotros surgid muy bien ahora.
+Imperativo | Ellos | Ellos transferan muy bien ahora.

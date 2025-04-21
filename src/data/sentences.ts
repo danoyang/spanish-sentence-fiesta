@@ -6,6 +6,11 @@ import { imperfectoTenseSentences } from "./sentences/imperfectoTenseSentences";
 import { futuroCondicionalSentences } from "./sentences/futuroCondicionalSentences";
 import { presentePerfectoSentences } from "./sentences/presentePerfectoSentences";
 import { pluscuamperfectoSentences } from "./sentences/pluscuamperfectoSentences";
+import { subjuntivoPresenteSentences } from "./sentences/subjuntivoPresenteSentences";
+import { subjuntivoPasadoSentences } from "./sentences/subjuntivoPasadoSentences";
+import { imperativoSentences } from "./sentences/imperativoSentences";
+import { erVerbsPresenteSentences } from "./sentences/erVerbsPresenteSentences";
+import { erVerbsPreteriteSentences } from "./sentences/erVerbsPreteriteSentences";
 
 // 将所有句子数据合并到一个数组中
 export const sentencesData: Sentence[] = [
@@ -15,5 +20,10 @@ export const sentencesData: Sentence[] = [
   ...imperfectoTenseSentences,
   ...futuroCondicionalSentences,
   ...presentePerfectoSentences,
-  ...pluscuamperfectoSentences
+  ...pluscuamperfectoSentences,
+  ...subjuntivoPresenteSentences,
+  ...subjuntivoPasadoSentences,
+  ...imperativoSentences,
+  ...erVerbsPresenteSentences,
+  ...erVerbsPreteriteSentences
 ];

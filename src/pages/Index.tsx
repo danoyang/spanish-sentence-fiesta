@@ -7,13 +7,25 @@ import { SentenceList } from "@/components/SentenceList";
 // 本地存储键名
 const SENTENCES_STORAGE_KEY = 'spanish-sentence-fiesta-sentences';
 
+// 检查新增句子数据
+const checkAndUpdateSentences = (savedSentences: Sentence[]): Sentence[] => {
+  // 如果保存的句子数量少于最新的句子数据，则使用最新数据
+  if (savedSentences.length < sentencesData.length) {
+    console.log(`检测到新句子：本地存储 ${savedSentences.length} 句，最新数据 ${sentencesData.length} 句`);
+    return sentencesData;
+  }
+  return savedSentences;
+};
+
 const Index = () => {
   const [sentences, setSentences] = useState<Sentence[]>(() => {
     // 尝试从本地存储加载句子状态
     try {
       const savedData = localStorage.getItem(SENTENCES_STORAGE_KEY);
       if (savedData) {
-        return JSON.parse(savedData);
+        const parsedData = JSON.parse(savedData);
+        // 检查是否有新句子需要添加
+        return checkAndUpdateSentences(parsedData);
       }
     } catch (error) {
       console.error('Failed to load sentences data:', error);
@@ -65,8 +77,9 @@ const Index = () => {
   };
 
   const handleResetGame = () => {
+    // 重置为最新的句子数据，而不是使用当前状态
     setSentences(
-      sentences.map((sentence) => ({ 
+      sentencesData.map((sentence) => ({ 
         ...sentence, 
         completed: false,
         perfectlyCompleted: false,
@@ -74,6 +87,14 @@ const Index = () => {
       }))
     );
     setCurrentSentenceIndex(0);
+  };
+
+  // 手动强制刷新句子数据
+  const handleForceRefresh = () => {
+    setSentences(sentencesData);
+    setCurrentSentenceIndex(0);
+    // 清除本地存储
+    localStorage.removeItem(SENTENCES_STORAGE_KEY);
   };
 
   // 查找下一个未完成的句子
@@ -93,6 +114,7 @@ const Index = () => {
 
   const completedCount = sentences.filter((s) => s.completed).length;
   const perfectlyCompletedCount = sentences.filter((s) => s.perfectlyCompleted).length;
+  const totalSentences = sentences.length;
 
   return (
     <div className="min-h-screen bg-amber-50 py-8 px-4">
@@ -101,13 +123,19 @@ const Index = () => {
         <div className="mb-6 text-center">
           <h1 className="text-2xl font-bold text-spain-darkred mb-2">西班牙语拼句子挑战</h1>
           <div className="text-gray-700">
-            已完成: {completedCount}/{sentences.length} 句 | 
-            完美完成: {perfectlyCompletedCount}/{sentences.length} 句
+            已完成: {completedCount}/{totalSentences} 句 | 
+            完美完成: {perfectlyCompletedCount}/{totalSentences} 句
             <button 
               onClick={handleResetGame}
               className="ml-4 bg-gray-200 hover:bg-gray-300 text-gray-700 px-3 py-1 rounded text-sm"
             >
               重置
+            </button>
+            <button 
+              onClick={handleForceRefresh}
+              className="ml-2 bg-red-100 hover:bg-red-200 text-red-700 px-3 py-1 rounded text-sm"
+            >
+              强制更新数据 ({totalSentences})
             </button>
           </div>
         </div>

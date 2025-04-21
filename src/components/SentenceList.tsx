@@ -19,13 +19,13 @@ export const SentenceList = ({
       <h2 className="text-xl font-bold mb-4 text-center text-spain-darkred">
         西班牙语句子挑战
       </h2>
-      <div className="flex flex-wrap gap-2 justify-center">
+      <div className="flex flex-col gap-2">
         {sentences.map((sentence, index) => (
           <button
             key={sentence.id}
             className={cn(
-              "px-4 py-2 rounded-lg transition-all",
-              "border-2 font-medium text-sm",
+              "w-full px-4 py-2 rounded-lg transition-all text-left flex items-center justify-between",
+              "border-2 font-medium text-base",
               index === currentSentenceIndex
                 ? "bg-spain-yellow border-spain-yellow"
                 : sentence.completed
@@ -34,9 +34,9 @@ export const SentenceList = ({
             )}
             onClick={() => onSelectSentence(index)}
           >
-            句子 {sentence.id}
+            <span>{sentence.chinese}</span>
             {sentence.completed && (
-              <CheckCircle className="inline-block ml-1 w-4 h-4" />
+              <CheckCircle className="ml-2 w-4 h-4" />
             )}
           </button>
         ))}

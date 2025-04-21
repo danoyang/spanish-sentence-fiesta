@@ -35,13 +35,6 @@ export const sentencesData: Sentence[] = [
           { text: "inglés", isCorrect: false },
           { text: "español", isCorrect: true }
         ]
-      },
-      {
-        correctWord: ".",
-        options: [
-          { text: ".", isCorrect: true },
-          { text: "!", isCorrect: false }
-        ]
       }
     ],
     completed: false
@@ -78,13 +71,6 @@ export const sentencesData: Sentence[] = [
           { text: "tiempo", isCorrect: true },
           { text: "clima", isCorrect: false }
         ]
-      },
-      {
-        correctWord: ".",
-        options: [
-          { text: ".", isCorrect: true },
-          { text: "?", isCorrect: false }
-        ]
       }
     ],
     completed: false
@@ -120,13 +106,6 @@ export const sentencesData: Sentence[] = [
         options: [
           { text: "bonitos", isCorrect: true },
           { text: "grandes", isCorrect: false }
-        ]
-      },
-      {
-        correctWord: ".",
-        options: [
-          { text: ".", isCorrect: true },
-          { text: "!", isCorrect: false }
         ]
       }
     ],
@@ -173,24 +152,10 @@ export const sentencesData: Sentence[] = [
         ]
       },
       {
-        correctWord: ",",
-        options: [
-          { text: ",", isCorrect: true },
-          { text: ".", isCorrect: false }
-        ]
-      },
-      {
         correctWord: "por favor",
         options: [
           { text: "gracias", isCorrect: false },
           { text: "por favor", isCorrect: true }
-        ]
-      },
-      {
-        correctWord: ".",
-        options: [
-          { text: ".", isCorrect: true },
-          { text: "!", isCorrect: false }
         ]
       }
     ],
@@ -227,13 +192,6 @@ export const sentencesData: Sentence[] = [
         options: [
           { text: "Madrid", isCorrect: true },
           { text: "Barcelona", isCorrect: false }
-        ]
-      },
-      {
-        correctWord: ".",
-        options: [
-          { text: ".", isCorrect: true },
-          { text: "!", isCorrect: false }
         ]
       }
     ],

@@ -1,3 +1,4 @@
+
 import { Sentence } from "@/types/game";
 
 // 过去时动词变位句子 (12-17)
@@ -14,7 +15,7 @@ export const preteritoTenseSentences: Sentence[] = [
           { 
             text: "Yo", 
             isCorrect: true, 
-            correctTip: ""Yo"="我"。", 
+            correctTip: "\"Yo\"=\"我\"。", 
             incorrectTip: "" 
           }
         ]
@@ -25,20 +26,20 @@ export const preteritoTenseSentences: Sentence[] = [
           { 
             text: "compré", 
             isCorrect: true, 
-            correctTip: ""compré"是"comprar"动词过去时"我"的变位。", 
+            correctTip: "\"compré\"是\"comprar\"动词过去时\"我\"的变位。", 
             incorrectTip: "" 
           },
           { 
             text: "compró", 
             isCorrect: false, 
             correctTip: "", 
-            incorrectTip: ""compró"是"他/她"的过去时变位。" 
+            incorrectTip: "\"compró\"是\"他/她\"的过去时变位。" 
           },
           { 
             text: "compraste", 
             isCorrect: false, 
             correctTip: "", 
-            incorrectTip: ""compraste"是"你"的过去��变位。" 
+            incorrectTip: "\"compraste\"是\"你\"的过去时变位。" 
           }
         ]
       },

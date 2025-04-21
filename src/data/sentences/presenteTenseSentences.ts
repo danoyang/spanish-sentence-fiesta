@@ -1,3 +1,4 @@
+
 import { Sentence } from "@/types/game";
 
 // 一般现在时动词变位句子 (6-11)
@@ -14,7 +15,7 @@ export const presenteTenseSentences: Sentence[] = [
           { 
             text: "Yo", 
             isCorrect: true, 
-            correctTip: ""Yo"表示"我"，此句主语。", 
+            correctTip: "\"Yo\"表示\"我\"，此句主语。", 
             incorrectTip: "" 
           }
         ]
@@ -25,20 +26,20 @@ export const presenteTenseSentences: Sentence[] = [
           { 
             text: "hablo", 
             isCorrect: true, 
-            correctTip: ""hablo"是动词"hablar"（说）的第一人称现在时变位。", 
+            correctTip: "\"hablo\"是动词\"hablar\"（说）的第一人称现在时变位。", 
             incorrectTip: "" 
           },
           { 
             text: "habla", 
             isCorrect: false, 
             correctTip: "", 
-            incorrectTip: ""habla"是第三人称或您式，不是"我"对应变位。" 
+            incorrectTip: "\"habla\"是第三人称或您式，不是\"我\"对应变位。" 
           },
           { 
             text: "hablas", 
             isCorrect: false, 
             correctTip: "", 
-            incorrectTip: ""hablas"是"你"的变位，不是"我"用法。" 
+            incorrectTip: "\"hablas\"是\"你\"的变位，不是\"我\"用法。" 
           }
         ]
       },

@@ -1,3 +1,4 @@
+
 import { Sentence } from "@/types/game";
 
 // 未完成过去时动词变位句子 (18-23)
@@ -14,7 +15,7 @@ export const imperfectoTenseSentences: Sentence[] = [
           { 
             text: "Yo", 
             isCorrect: true, 
-            correctTip: ""Yo"="我"。", 
+            correctTip: "\"Yo\"=\"我\"。", 
             incorrectTip: "" 
           }
         ]
@@ -25,20 +26,20 @@ export const imperfectoTenseSentences: Sentence[] = [
           { 
             text: "cocinaba", 
             isCorrect: true, 
-            correctTip: "动词"cocinar"未完成过去时：我。", 
+            correctTip: "动词\"cocinar\"未完成过去时：我。", 
             incorrectTip: "" 
           },
           { 
             text: "cocinabas", 
             isCorrect: false, 
             correctTip: "", 
-            incorrectTip: ""cocinabas"是"你"未完成过去时。" 
+            incorrectTip: "\"cocinabas\"是\"你\"未完成过去时。" 
           },
           { 
             text: "cociné", 
             isCorrect: false, 
             correctTip: "", 
-            incorrectTip: ""cociné"是"我"简单过去时。" 
+            incorrectTip: "\"cociné\"是\"我\"简单过去时。" 
           }
         ]
       },

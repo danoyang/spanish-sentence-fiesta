@@ -1,4 +1,3 @@
-
 import { Sentence } from "@/types/game";
 
 // 过去时动词变位句子 (12-17)
@@ -12,21 +11,46 @@ export const preteritoTenseSentences: Sentence[] = [
       { 
         correctWord: "Yo",
         options: [
-          { text: "Yo", isCorrect: true, correctTip: ""Yo"="我"。", incorrectTip: "" }
+          { 
+            text: "Yo", 
+            isCorrect: true, 
+            correctTip: ""Yo"="我"。", 
+            incorrectTip: "" 
+          }
         ]
       },
       { 
         correctWord: "compré",
         options: [
-          { text: "compré", isCorrect: true, correctTip: ""compré"是"comprar"动词过去时"我"的变位。", incorrectTip: "" },
-          { text: "compró", isCorrect: false, correctTip: "", incorrectTip: ""compró"是"他/她"的过去时变位。" },
-          { text: "compraste", isCorrect: false, correctTip: "", incorrectTip: ""compraste"是"你"的过去时变位。" }
+          { 
+            text: "compré", 
+            isCorrect: true, 
+            correctTip: ""compré"是"comprar"动词过去时"我"的变位。", 
+            incorrectTip: "" 
+          },
+          { 
+            text: "compró", 
+            isCorrect: false, 
+            correctTip: "", 
+            incorrectTip: ""compró"是"他/她"的过去时变位。" 
+          },
+          { 
+            text: "compraste", 
+            isCorrect: false, 
+            correctTip: "", 
+            incorrectTip: ""compraste"是"你"的过去��变位。" 
+          }
         ]
       },
       {
         correctWord: "muy bien ayer",
         options: [
-          { text: "muy bien ayer", isCorrect: true, correctTip: "昨天，非常好。", incorrectTip: "" }
+          { 
+            text: "muy bien ayer", 
+            isCorrect: true, 
+            correctTip: "昨天，非常好。", 
+            incorrectTip: "" 
+          }
         ]
       }
     ],
@@ -105,7 +129,7 @@ export const preteritoTenseSentences: Sentence[] = [
       { 
         correctWord: "usamos",
         options: [
-          { text: "usamos", isCorrect: true, correctTip: ""usamos"是"我们"的一般过去时变位。", incorrectTip: "" },
+          { text: "usamos", isCorrect: true, correctTip: ""usamos"是"我们"��一般过去时变位。", incorrectTip: "" },
           { text: "usaste", isCorrect: false, correctTip: "", incorrectTip: ""usaste"是"你"的过去时变位。" },
           { text: "usó", isCorrect: false, correctTip: "", incorrectTip: ""usó"是"他/她"的过去时变位。" }
         ]

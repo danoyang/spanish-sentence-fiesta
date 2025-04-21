@@ -1,4 +1,3 @@
-
 import { Sentence } from "@/types/game";
 
 // 未完成过去时动词变位句子 (18-23)
@@ -12,21 +11,46 @@ export const imperfectoTenseSentences: Sentence[] = [
       { 
         correctWord: "Yo",
         options: [
-          { text: "Yo", isCorrect: true, correctTip: ""Yo"="我"。", incorrectTip: "" }
+          { 
+            text: "Yo", 
+            isCorrect: true, 
+            correctTip: ""Yo"="我"。", 
+            incorrectTip: "" 
+          }
         ]
       },
       { 
         correctWord: "cocinaba",
         options: [
-          { text: "cocinaba", isCorrect: true, correctTip: "动词"cocinar"未完成过去时：我。", incorrectTip: "" },
-          { text: "cocinabas", isCorrect: false, correctTip: "", incorrectTip: ""cocinabas"是"你"未完成过去时。" },
-          { text: "cociné", isCorrect: false, correctTip: "", incorrectTip: ""cociné"是"我"简单过去时。" }
+          { 
+            text: "cocinaba", 
+            isCorrect: true, 
+            correctTip: "动词"cocinar"未完成过去时：我。", 
+            incorrectTip: "" 
+          },
+          { 
+            text: "cocinabas", 
+            isCorrect: false, 
+            correctTip: "", 
+            incorrectTip: ""cocinabas"是"你"未完成过去时。" 
+          },
+          { 
+            text: "cociné", 
+            isCorrect: false, 
+            correctTip: "", 
+            incorrectTip: ""cociné"是"我"简单过去时。" 
+          }
         ]
       },
       {
         correctWord: "muy bien cuando era niño",
         options: [
-          { text: "muy bien cuando era niño", isCorrect: true, correctTip: "小时候，非常好。", incorrectTip: "" }
+          { 
+            text: "muy bien cuando era niño", 
+            isCorrect: true, 
+            correctTip: "小时候，非常好。", 
+            incorrectTip: "" 
+          }
         ]
       }
     ],

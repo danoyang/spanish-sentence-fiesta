@@ -1,4 +1,3 @@
-
 import { Sentence } from "@/types/game";
 
 // 一般现在时动词变位句子 (6-11)
@@ -12,21 +11,46 @@ export const presenteTenseSentences: Sentence[] = [
       { 
         correctWord: "Yo",
         options: [
-          { text: "Yo", isCorrect: true, correctTip: ""Yo"表示"我"，此句主语。", incorrectTip: "" }
+          { 
+            text: "Yo", 
+            isCorrect: true, 
+            correctTip: ""Yo"表示"我"，此句主语。", 
+            incorrectTip: "" 
+          }
         ]
       },
       { 
         correctWord: "hablo",
         options: [
-          { text: "hablo", isCorrect: true, correctTip: ""hablo"是动词"hablar"（说）的第一人称现在时变位。", incorrectTip: "" },
-          { text: "habla", isCorrect: false, correctTip: "", incorrectTip: ""habla"是第三人称或您式，不是"我"对应变位。" },
-          { text: "hablas", isCorrect: false, correctTip: "", incorrectTip: ""hablas"是"你"的变位，不是"我"用法。" }
+          { 
+            text: "hablo", 
+            isCorrect: true, 
+            correctTip: ""hablo"是动词"hablar"（说）的第一人称现在时变位。", 
+            incorrectTip: "" 
+          },
+          { 
+            text: "habla", 
+            isCorrect: false, 
+            correctTip: "", 
+            incorrectTip: ""habla"是第三人称或您式，不是"我"对应变位。" 
+          },
+          { 
+            text: "hablas", 
+            isCorrect: false, 
+            correctTip: "", 
+            incorrectTip: ""hablas"是"你"的变位，不是"我"用法。" 
+          }
         ]
       },
       {
         correctWord: "muy bien hoy",
         options: [
-          { text: "muy bien hoy", isCorrect: true, correctTip: "今天，非常好。", incorrectTip: "" }
+          { 
+            text: "muy bien hoy", 
+            isCorrect: true, 
+            correctTip: "今天，非常好。", 
+            incorrectTip: "" 
+          }
         ]
       }
     ],

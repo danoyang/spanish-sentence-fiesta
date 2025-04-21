@@ -1,4 +1,3 @@
-
 import { Sentence } from "@/types/game";
 
 // 5个西班牙语句子及其对应的中文翻译和选词游戏数据
@@ -416,5 +415,528 @@ export const sentencesData: Sentence[] = [
       },
     ],
     completed: false,
+  },
+  // ---------------- 新增12个动词变位重点句子 ------------------
+  // Presente | Yo | Yo hablo muy bien hoy.
+  {
+    id: 6,
+    chinese: "我今天说得非常好。",
+    spanish: "Yo hablo muy bien hoy.",
+    wordChoices: [
+      { 
+        correctWord: "Yo",
+        options: [
+          { text: "Yo", isCorrect: true, correctTip: "“Yo”表示“我”，此句主语。", incorrectTip: "" }
+        ]
+      },
+      { 
+        correctWord: "hablo",
+        options: [
+          { text: "hablo", isCorrect: true, correctTip: "“hablo”是动词“hablar”（说）的第一人称现在时变位。", incorrectTip: "" },
+          { text: "habla", isCorrect: false, correctTip: "", incorrectTip: "“habla”是第三人称或您式，不是“我”对应变位。" },
+          { text: "hablas", isCorrect: false, correctTip: "", incorrectTip: "“hablas”是“你”的变位，不是“我”用法。" }
+        ]
+      },
+      {
+        correctWord: "muy bien hoy",
+        options: [
+          { text: "muy bien hoy", isCorrect: true, correctTip: "今天，非常好。", incorrectTip: "" }
+        ]
+      }
+    ],
+    completed: false,
+  },
+  // Presente | Tú | Tú trabajas muy bien hoy.
+  {
+    id: 7,
+    chinese: "你今天工作得非常好。",
+    spanish: "Tú trabajas muy bien hoy.",
+    wordChoices: [
+      { 
+        correctWord: "Tú",
+        options: [
+          { text: "Tú", isCorrect: true, correctTip: "“Tú”表示“你”。", incorrectTip: "" }
+        ]
+      },
+      { 
+        correctWord: "trabajas",
+        options: [
+          { text: "trabajas", isCorrect: true, correctTip: "“trabajas”是动词“trabajar”的第二人称现在时变位。", incorrectTip: "" },
+          { text: "trabajamos", isCorrect: false, correctTip: "", incorrectTip: "“trabajamos”是“我们”的变位。" },
+          { text: "trabaja", isCorrect: false, correctTip: "", incorrectTip: "“trabaja”是“他/她/您”的变位。" }
+        ]
+      },
+      {
+        correctWord: "muy bien hoy",
+        options: [
+          { text: "muy bien hoy", isCorrect: true, correctTip: "今天，非常好。", incorrectTip: "" }
+        ]
+      }
+    ],
+    completed: false,
+  },
+  // Presente | Él | Él estudia muy bien hoy.
+  {
+    id: 8,
+    chinese: "他今天学习得非常好。",
+    spanish: "Él estudia muy bien hoy.",
+    wordChoices: [
+      { 
+        correctWord: "Él",
+        options: [
+          { text: "Él", isCorrect: true, correctTip: "“Él”表示“他”。", incorrectTip: "" }
+        ]
+      },
+      { 
+        correctWord: "estudia",
+        options: [
+          { text: "estudia", isCorrect: true, correctTip: "“estudia”是“estudiar”第三人称现在时", incorrectTip: "" },
+          { text: "estudio", isCorrect: false, correctTip: "", incorrectTip: "“estudio”是“我”的变位。" },
+          { text: "estudias", isCorrect: false, correctTip: "", incorrectTip: "“estudias”是“你”的变位。" }
+        ]
+      },
+      {
+        correctWord: "muy bien hoy",
+        options: [
+          { text: "muy bien hoy", isCorrect: true, correctTip: "今天，非常好。", incorrectTip: "" }
+        ]
+      }
+    ],
+    completed: false,
+  },
+  // Presente | Nosotros | Nosotros caminamos muy bien hoy.
+  {
+    id: 9,
+    chinese: "我们今天走路走得非常好。",
+    spanish: "Nosotros caminamos muy bien hoy.",
+    wordChoices: [
+      { 
+        correctWord: "Nosotros",
+        options: [
+          { text: "Nosotros", isCorrect: true, correctTip: "“Nosotros”表示“我们”。", incorrectTip: "" }
+        ]
+      },
+      { 
+        correctWord: "caminamos",
+        options: [
+          { text: "caminamos", isCorrect: true, correctTip: "“caminamos”是“caminar”的第一人称复数现在时变位。", incorrectTip: "" },
+          { text: "camina", isCorrect: false, correctTip: "", incorrectTip: "“camina”指第三人称单数，不是“我们”的用法。" },
+          { text: "camináis", isCorrect: false, correctTip: "", incorrectTip: "“camináis”是“你们”的用法。" }
+        ]
+      },
+      {
+        correctWord: "muy bien hoy",
+        options: [
+          { text: "muy bien hoy", isCorrect: true, correctTip: "今天，非常好。", incorrectTip: "" }
+        ]
+      }
+    ],
+    completed: false,
+  },
+  // Presente | Vosotros | Vosotros miráis muy bien hoy.
+  {
+    id: 10,
+    chinese: "你们今天看得非常好。",
+    spanish: "Vosotros miráis muy bien hoy.",
+    wordChoices: [
+      { 
+        correctWord: "Vosotros",
+        options: [
+          { text: "Vosotros", isCorrect: true, correctTip: "“Vosotros”代表“你们”。", incorrectTip: "" }
+        ]
+      },
+      { 
+        correctWord: "miráis",
+        options: [
+          { text: "miráis", isCorrect: true, correctTip: "“miráis”是“vosotros”现在时变位。", incorrectTip: "" },
+          { text: "miras", isCorrect: false, correctTip: "", incorrectTip: "“miras”是“你”的用法。" },
+          { text: "miramos", isCorrect: false, correctTip: "", incorrectTip: "“miramos”是“我们”的用法。" }
+        ]
+      },
+      {
+        correctWord: "muy bien hoy",
+        options: [
+          { text: "muy bien hoy", isCorrect: true, correctTip: "今天，非常好。", incorrectTip: "" }
+        ]
+      }
+    ],
+    completed: false,
+  },
+  // Presente | Ellos | Ellos escuchan muy bien hoy.
+  {
+    id: 11,
+    chinese: "他们今天听得非常好。",
+    spanish: "Ellos escuchan muy bien hoy.",
+    wordChoices: [
+      { 
+        correctWord: "Ellos",
+        options: [
+          { text: "Ellos", isCorrect: true, correctTip: "“Ellos”表示“他们”。", incorrectTip: "" }
+        ]
+      },
+      { 
+        correctWord: "escuchan",
+        options: [
+          { text: "escuchan", isCorrect: true, correctTip: "“escuchan”是“ellos”现在时。", incorrectTip: "" },
+          { text: "escucho", isCorrect: false, correctTip: "", incorrectTip: "“escucho”是“我”的过去时变位。" },
+          { text: "escucháis", isCorrect: false, correctTip: "", incorrectTip: "“escucháis”是“你们”的变位。" }
+        ]
+      },
+      {
+        correctWord: "muy bien hoy",
+        options: [
+          { text: "muy bien hoy", isCorrect: true, correctTip: "今天，非常好。", incorrectTip: "" }
+        ]
+      }
+    ],
+    completed: false,
+  },
+  // Pretérito | Yo | Yo compré muy bien ayer.
+  {
+    id: 12,
+    chinese: "我昨天买得非常好。",
+    spanish: "Yo compré muy bien ayer.",
+    wordChoices: [
+      { 
+        correctWord: "Yo",
+        options: [
+          { text: "Yo", isCorrect: true, correctTip: "“Yo”=“我”。", incorrectTip: "" }
+        ]
+      },
+      { 
+        correctWord: "compré",
+        options: [
+          { text: "compré", isCorrect: true, correctTip: "“compré”是“comprar”动词过去时“我”的变位。", incorrectTip: "" },
+          { text: "compró", isCorrect: false, correctTip: "", incorrectTip: "“compró”是“他/她”的过去时变位。" },
+          { text: "compraste", isCorrect: false, correctTip: "", incorrectTip: "“compraste”是“你”的过去时变位。" }
+        ]
+      },
+      {
+        correctWord: "muy bien ayer",
+        options: [
+          { text: "muy bien ayer", isCorrect: true, correctTip: "昨天，非常好。", incorrectTip: "" }
+        ]
+      }
+    ],
+    completed: false,
+  },
+  // Pretérito | Tú | Tú tomaste muy bien ayer.
+  {
+    id: 13,
+    chinese: "你昨天拿得非常好。",
+    spanish: "Tú tomaste muy bien ayer.",
+    wordChoices: [
+      { 
+        correctWord: "Tú",
+        options: [
+          { text: "Tú", isCorrect: true, correctTip: "“Tú”=“你”。", incorrectTip: "" }
+        ]
+      },
+      { 
+        correctWord: "tomaste",
+        options: [
+          { text: "tomaste", isCorrect: true, correctTip: "“tomaste”是“你”的过去时变位。", incorrectTip: "" },
+          { text: "tomé", isCorrect: false, correctTip: "", incorrectTip: "“tomé”是“我”的过去时变位。" },
+          { text: "toma", isCorrect: false, correctTip: "", incorrectTip: "“toma”为一般现在时第三人称。" }
+        ]
+      },
+      {
+        correctWord: "muy bien ayer",
+        options: [
+          { text: "muy bien ayer", isCorrect: true, correctTip: "昨天，非常好。", incorrectTip: "" }
+        ]
+      }
+    ],
+    completed: false,
+  },
+  // Pretérito | Él | Él llamó muy bien ayer.
+  {
+    id: 14,
+    chinese: "他昨天打电话打得非常好。",
+    spanish: "Él llamó muy bien ayer.",
+    wordChoices: [
+      { 
+        correctWord: "Él",
+        options: [
+          { text: "Él", isCorrect: true, correctTip: "“Él”=“他”。", incorrectTip: "" }
+        ]
+      },
+      { 
+        correctWord: "llamó",
+        options: [
+          { text: "llamó", isCorrect: true, correctTip: "“llamó”是“他”的过去时变位。", incorrectTip: "" },
+          { text: "llamé", isCorrect: false, correctTip: "", incorrectTip: "“llamé”是“我”的过去时变位。" },
+          { text: "llamaste", isCorrect: false, correctTip: "", incorrectTip: "“llamaste”是“你”的过去式。" }
+        ]
+      },
+      {
+        correctWord: "muy bien ayer",
+        options: [
+          { text: "muy bien ayer", isCorrect: true, correctTip: "昨天，非常好。", incorrectTip: "" }
+        ]
+      }
+    ],
+    completed: false,
+  },
+  // Pretérito | Nosotros | Nosotros usamos muy bien ayer.
+  {
+    id: 15,
+    chinese: "我们昨天用得非常好。",
+    spanish: "Nosotros usamos muy bien ayer.",
+    wordChoices: [
+      { 
+        correctWord: "Nosotros",
+        options: [
+          { text: "Nosotros", isCorrect: true, correctTip: "“Nosotros”=“我们”。", incorrectTip: "" }
+        ]
+      },
+      { 
+        correctWord: "usamos",
+        options: [
+          { text: "usamos", isCorrect: true, correctTip: "“usamos”是“我们”的一般过去时变位。", incorrectTip: "" },
+          { text: "usaste", isCorrect: false, correctTip: "", incorrectTip: "“usaste”是“你”的过去时变位。" },
+          { text: "usó", isCorrect: false, correctTip: "", incorrectTip: "“usó”是“他/她”的过去时变位。" }
+        ]
+      },
+      {
+        correctWord: "muy bien ayer",
+        options: [
+          { text: "muy bien ayer", isCorrect: true, correctTip: "昨天，非常好。", incorrectTip: "" }
+        ]
+      }
+    ],
+    completed: false,
+  },
+  // Pretérito | Vosotros | Vosotros viajasteis muy bien ayer.
+  {
+    id: 16,
+    chinese: "你们昨天旅行得非常好。",
+    spanish: "Vosotros viajasteis muy bien ayer.",
+    wordChoices: [
+      { 
+        correctWord: "Vosotros",
+        options: [
+          { text: "Vosotros", isCorrect: true, correctTip: "“Vosotros”=“你们”。", incorrectTip: "" }
+        ]
+      },
+      { 
+        correctWord: "viajasteis",
+        options: [
+          { text: "viajasteis", isCorrect: true, correctTip: "“viajasteis”是“你们”的过去时变位。", incorrectTip: "" },
+          { text: "viajamos", isCorrect: false, correctTip: "", incorrectTip: "“viajamos”是“我们”的过去时变位。" },
+          { text: "viajaron", isCorrect: false, correctTip: "", incorrectTip: "“viajaron”是“他们”的过去时变位。" }
+        ]
+      },
+      {
+        correctWord: "muy bien ayer",
+        options: [
+          { text: "muy bien ayer", isCorrect: true, correctTip: "昨天，非常好。", incorrectTip: "" }
+        ]
+      }
+    ],
+    completed: false,
+  },
+  // Pretérito | Ellos | Ellos ayudaron muy bien ayer.
+  {
+    id: 17,
+    chinese: "他们昨天帮助得非常好。",
+    spanish: "Ellos ayudaron muy bien ayer.",
+    wordChoices: [
+      { 
+        correctWord: "Ellos",
+        options: [
+          { text: "Ellos", isCorrect: true, correctTip: "“Ellos”=“他们”。", incorrectTip: "" }
+        ]
+      },
+      { 
+        correctWord: "ayudaron",
+        options: [
+          { text: "ayudaron", isCorrect: true, correctTip: "“ayudaron”是“他们”过去时变位。", incorrectTip: "" },
+          { text: "ayudé", isCorrect: false, correctTip: "", incorrectTip: "“ayudé”是“我”的过去时变位。" },
+          { text: "ayudaste", isCorrect: false, correctTip: "", incorrectTip: "“ayudaste”是“你”的过去时变位。" }
+        ]
+      },
+      {
+        correctWord: "muy bien ayer",
+        options: [
+          { text: "muy bien ayer", isCorrect: true, correctTip: "昨天，非常好。", incorrectTip: "" }
+        ]
+      }
+    ],
+    completed: false,
+  },
+  // Imperfecto | Yo | Yo cocinaba muy bien cuando era niño.
+  {
+    id: 18,
+    chinese: "我小时候做饭做得很好。",
+    spanish: "Yo cocinaba muy bien cuando era niño.",
+    wordChoices: [
+      { 
+        correctWord: "Yo",
+        options: [
+          { text: "Yo", isCorrect: true, correctTip: "“Yo”=“我”。", incorrectTip: "" }
+        ]
+      },
+      { 
+        correctWord: "cocinaba",
+        options: [
+          { text: "cocinaba", isCorrect: true, correctTip: "动词“cocinar”未完成过去时：我。", incorrectTip: "" },
+          { text: "cocinabas", isCorrect: false, correctTip: "", incorrectTip: "“cocinabas”是“你”未完成过去时。" },
+          { text: "cociné", isCorrect: false, correctTip: "", incorrectTip: "“cociné”是“我”简单过去时。" }
+        ]
+      },
+      {
+        correctWord: "muy bien cuando era niño",
+        options: [
+          { text: "muy bien cuando era niño", isCorrect: true, correctTip: "小时候，非常好。", incorrectTip: "" }
+        ]
+      }
+    ],
+    completed: false,
+  },
+  // Imperfecto | Tú | Tú bailabas muy bien cuando era niño.
+  {
+    id: 19,
+    chinese: "你小时候跳舞跳得很好。",
+    spanish: "Tú bailabas muy bien cuando era niño.",
+    wordChoices: [
+      { 
+        correctWord: "Tú",
+        options: [
+          { text: "Tú", isCorrect: true, correctTip: "“Tú”=“你”。", incorrectTip: "" }
+        ]
+      },
+      { 
+        correctWord: "bailabas",
+        options: [
+          { text: "bailabas", isCorrect: true, correctTip: "动词“bailar”未完成过去时：你。", incorrectTip: "" },
+          { text: "bailaba", isCorrect: false, correctTip: "", incorrectTip: "“bailaba”本身也对，但指“我/他/她”，题干主语为你。" },
+          { text: "bailaron", isCorrect: false, correctTip: "", incorrectTip: "“bailaron”是“他们”简单过去时。" }
+        ]
+      },
+      {
+        correctWord: "muy bien cuando era niño",
+        options: [
+          { text: "muy bien cuando era niño", isCorrect: true, correctTip: "小时候，非常好。", incorrectTip: "" }
+        ]
+      }
+    ],
+    completed: false,
+  },
+  // Imperfecto | Él | Él cantaba muy bien cuando era niño.
+  {
+    id: 20,
+    chinese: "他小时候唱歌唱得很好。",
+    spanish: "Él cantaba muy bien cuando era niño.",
+    wordChoices: [
+      { 
+        correctWord: "Él",
+        options: [
+          { text: "Él", isCorrect: true, correctTip: "“Él”=“他”。", incorrectTip: "" }
+        ]
+      },
+      { 
+        correctWord: "cantaba",
+        options: [
+          { text: "cantaba", isCorrect: true, correctTip: "“cantaba”动词未完成过去时：他。", incorrectTip: "" },
+          { text: "cantabas", isCorrect: false, correctTip: "", incorrectTip: "“cantabas”是“你”未完成过去时。" },
+          { text: "canto", isCorrect: false, correctTip: "", incorrectTip: "“canto”是现在时“我”变位。" }
+        ]
+      },
+      {
+        correctWord: "muy bien cuando era niño",
+        options: [
+          { text: "muy bien cuando era niño", isCorrect: true, correctTip: "小时候，非常好。", incorrectTip: "" }
+        ]
+      }
+    ],
+    completed: false,
+  },
+  // Imperfecto | Nosotros | Nosotros limpiábamos muy bien cuando era niño.
+  {
+    id: 21,
+    chinese: "我们小时候打扫打得很好。",
+    spanish: "Nosotros limpiábamos muy bien cuando era niño.",
+    wordChoices: [
+      { 
+        correctWord: "Nosotros",
+        options: [
+          { text: "Nosotros", isCorrect: true, correctTip: "“Nosotros”=“我们”。", incorrectTip: "" }
+        ]
+      },
+      { 
+        correctWord: "limpiábamos",
+        options: [
+          { text: "limpiábamos", isCorrect: true, correctTip: "动词“limpiar”未完成过去时：我们。", incorrectTip: "" },
+          { text: "limpiaban", isCorrect: false, correctTip: "", incorrectTip: "“limpiaban”是“他们”未完成过去时。" },
+          { text: "limpié", isCorrect: false, correctTip: "", incorrectTip: "“limpié”是“我”简单过去时。" }
+        ]
+      },
+      {
+        correctWord: "muy bien cuando era niño",
+        options: [
+          { text: "muy bien cuando era niño", isCorrect: true, correctTip: "小时候，非常好。", incorrectTip: "" }
+        ]
+      }
+    ],
+    completed: false,
+  },
+  // Imperfecto | Vosotros | Vosotros tirabais muy bien cuando era niño.
+  {
+    id: 22,
+    chinese: "你们小时候扔东西很厉害。",
+    spanish: "Vosotros tirabais muy bien cuando era niño.",
+    wordChoices: [
+      { 
+        correctWord: "Vosotros",
+        options: [
+          { text: "Vosotros", isCorrect: true, correctTip: "“Vosotros”=“你们”。", incorrectTip: "" }
+        ]
+      },
+      { 
+        correctWord: "tirabais",
+        options: [
+          { text: "tirabais", isCorrect: true, correctTip: "“tirabais”未完成过去时：你们。", incorrectTip: "" },
+          { text: "tirábamos", isCorrect: false, correctTip: "", incorrectTip: "“tirábamos”是“我们”未完成过去时。" },
+          { text: "tiraba", isCorrect: false, correctTip: "", incorrectTip: "“tiraba”是“我/他/她”未完成过去时。" }
+        ]
+      },
+      {
+        correctWord: "muy bien cuando era niño",
+        options: [
+          { text: "muy bien cuando era niño", isCorrect: true, correctTip: "小时候，非常好。", incorrectTip: "" }
+        ]
+      }
+    ],
+    completed: false,
+  },
+  // Imperfecto | Ellos | Ellos saltaban muy bien cuando era niño.
+  {
+    id: 23,
+    chinese: "他们小时候跳得很好。",
+    spanish: "Ellos saltaban muy bien cuando era niño.",
+    wordChoices: [
+      { 
+        correctWord: "Ellos",
+        options: [
+          { text: "Ellos", isCorrect: true, correctTip: "“Ellos”=“他们”。", incorrectTip: "" }
+        ]
+      },
+      { 
+        correctWord: "saltaban",
+        options: [
+          { text: "saltaban", isCorrect: true, correctTip: "“saltaban”未完成过去时：他们。", incorrectTip: "" },
+          { text: "saltaba", isCorrect: false, correctTip: "", incorrectTip: "“saltaba”是“我/他/她”未完成过去时。" },
+          { text: "saltábamos", isCorrect: false, correctTip: "", incorrectTip: "“saltábamos”是“我们”未完成过去时。" }
+        ]
+      },
+      {
+        correctWord: "muy bien cuando era niño",
+        options: [
+          { text: "muy bien cuando era niño", isCorrect: true, correctTip: "小时候，非常好。", incorrectTip: "" }
+        ]
+      }
+    ],
+    completed: false,
   }
-];
+]

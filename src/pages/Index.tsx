@@ -1,11 +1,8 @@
-
 import { useState } from "react";
 import { sentencesData } from "@/data/sentences";
 import { Sentence } from "@/types/game";
 import { SentenceBuilder } from "@/components/SentenceBuilder";
 import { SentenceList } from "@/components/SentenceList";
-import { GameCompletion } from "@/components/GameCompletion";
-import { GameHeader } from "@/components/GameHeader";
 
 const Index = () => {
   const [sentences, setSentences] = useState<Sentence[]>(sentencesData);
@@ -52,22 +49,12 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-amber-50 py-8 px-4">
       <div className="max-w-4xl mx-auto">
-        <GameHeader />
-        <GameCompletion 
-          completedCount={completedCount} 
-          totalCount={sentences.length}
-          onReset={handleResetGame}
-        />
-        
-        {/* 做题区域（SentenceBuilder）先展示 */}
         <SentenceBuilder 
           sentence={sentences[currentSentenceIndex]} 
           onComplete={handleSentenceComplete}
           onNextSentence={findNextIncompleteSentence}
           hasNextIncompleteSentence={hasNextIncompleteSentence}
         />
-
-        {/* 句子列表放在做题区下方 */}
         <div className="mt-8 max-h-96 overflow-y-auto">
           <SentenceList 
             sentences={sentences} 
@@ -75,7 +62,6 @@ const Index = () => {
             onSelectSentence={handleSelectSentence}
           />
         </div>
-        
         <footer className="mt-12 text-center text-gray-600 text-sm">
           <p>© 2025 西班牙语拼句子挑战 | 快乐学习西班牙语！</p>
         </footer>

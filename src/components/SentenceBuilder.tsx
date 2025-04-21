@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { WordChoice, Sentence } from "@/types/game";
 import { WordOption } from "./WordOption";
@@ -37,6 +36,7 @@ export const SentenceBuilder = ({
     ? constructed + spanishPunctuation
     : constructed;
 
+  // 修改：点击选项后不再让选项区域 disabled（showFeedback也可点）
   const handleOptionClick = async (
     isCorrect: boolean,
     optionText: string,
@@ -49,35 +49,40 @@ export const SentenceBuilder = ({
 
     if (isCorrect) {
       setTipText(correctTip);
-      
+
       // Play audio but don't wait - allow user to continue immediately
       speakAzure(optionText);
 
-      // Update state immediately, don't wait for audio to finish
+      // Update state immediately
       setSelectedWords([...selectedWords, optionText]);
       setSelectedOptions((prev) => {
         const next = [...prev];
         next[currentWordIndex] = true;
         return next;
       });
-      
+
       let isFinished = false;
       if (currentWordIndex < sentence.wordChoices.length - 1) {
-        setCurrentWordIndex(currentWordIndex + 1);
+        setTimeout(() => {
+          // 立即允许选择下一个单词（即 currentWordIndex 更新后，选项不 disabled）
+          setCurrentWordIndex((prev) => prev + 1);
+          setShowFeedback(false);
+          setIsLastCorrect(null);
+          setShowTip(false);
+          setTipText("");
+        }, 200); // 快速过渡
       } else {
         onComplete(sentence.id);
         isFinished = true;
+        setTimeout(() => {
+          setShowFeedback(false);
+          setIsLastCorrect(null);
+          setShowTip(false);
+          setTipText("");
+        }, 1200);
       }
 
-      // Only feedback needs a timeout
-      setTimeout(() => {
-        setShowFeedback(false);
-        setIsLastCorrect(null);
-        setShowTip(false);
-        setTipText("");
-      }, 1200);
-
-      // Speak the full sentence if finished, but don't block the UI
+      // Speak the full sentence if finished
       if (isFinished) {
         let finalSent = [...selectedWords, optionText].join(" ") + spanishPunctuation;
         speakAzure(finalSent);
@@ -114,7 +119,6 @@ export const SentenceBuilder = ({
           句子 {sentence.id}
         </h2>
         <p className="text-xl mb-4 font-medium">{sentence.chinese}</p>
-        
         <div className="mb-6 min-h-16 p-3 bg-gray-50 rounded-md border border-gray-200">
           <p className="text-lg break-words">
             {constructed}
@@ -130,7 +134,6 @@ export const SentenceBuilder = ({
           <h3 className="text-md font-medium mb-2 text-gray-700">
             请选择正确的单词:
           </h3>
-          {/* 固定高度和宽度的选项容器 */}
           <div className="flex justify-center mb-2" style={{ minHeight: "48px" }}>
             <div className="grid grid-cols-2 gap-4 w-full max-w-md">
               {currentWordChoice.options.map((option, index) => (
@@ -145,7 +148,8 @@ export const SentenceBuilder = ({
                       option.incorrectTip
                     )
                   }
-                  disabled={showFeedback}
+                  // 立即可点，不因 showFeedback 而 disabled
+                  disabled={false}
                   selected={
                     showFeedback &&
                     isLastCorrect !== null &&
@@ -170,10 +174,9 @@ export const SentenceBuilder = ({
               ))}
             </div>
           </div>
-          {/* 固定高度的答题结果提示区域【答对/答错】 */}
           <div
             className="mt-3 flex flex-col items-center justify-center"
-            style={{ height: "48px", minHeight: "48px" }} // 增加固定高度
+            style={{ height: "48px", minHeight: "48px" }}
           >
             {showTip && tipText && (
               <span className={isLastCorrect ? "text-correct" : "text-incorrect"} style={{ fontWeight: "500" }}>
@@ -199,8 +202,6 @@ export const SentenceBuilder = ({
           />
         ))}
       </div>
-      
-      {/* 添加句子完成状态和下一句按钮 */}
       <div className="mt-4 flex items-center justify-center">
         {sentence.completed && (
           <>
@@ -208,7 +209,6 @@ export const SentenceBuilder = ({
               <CheckCircle className="mr-1" />
               <span className="font-medium">已完成</span>
             </div>
-            
             {hasNextIncompleteSentence && (
               <button 
                 onClick={onNextSentence}

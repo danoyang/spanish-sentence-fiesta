@@ -38,6 +38,8 @@ export const SentenceBuilder = ({
   );
   // 新增: 跟踪单词掌握程度
   const [wordMasteryLevels, setWordMasteryLevels] = useState<number[]>([]);
+  // 新增: 用于保存随机排序后的选项
+  const [randomizedOptions, setRandomizedOptions] = useState<typeof sentence.wordChoices[0]['options']>([]);
 
   const currentWordChoice: WordChoice | undefined =
     sentence.wordChoices[currentWordIndex];
@@ -59,6 +61,15 @@ export const SentenceBuilder = ({
       setWordMasteryLevels(masteryLevels);
     }
   }, [sentence.id]);
+
+  // 新增: 当当前单词索引变化时，重新随机排序选项
+  useEffect(() => {
+    if (currentWordChoice) {
+      // 复制原始选项并随机排序
+      const shuffledOptions = [...currentWordChoice.options].sort(() => Math.random() - 0.5);
+      setRandomizedOptions(shuffledOptions);
+    }
+  }, [currentWordIndex, sentence.id]);
 
   // 修改：点击选项后不再让选项区域 disabled（showFeedback也可点）
   const handleOptionClick = async (
@@ -187,7 +198,7 @@ export const SentenceBuilder = ({
           </h3>
           <div className="flex justify-center mb-2" style={{ minHeight: "48px" }}>
             <div className="grid grid-cols-2 gap-4 w-full max-w-md">
-              {currentWordChoice.options.map((option, index) => (
+              {randomizedOptions.map((option, index) => (
                 <WordOption
                   key={index}
                   option={option}

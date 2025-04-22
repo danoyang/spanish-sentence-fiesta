@@ -1,4 +1,3 @@
-
 import { Sentence } from "@/types/game";
 import { basicSentences } from "./sentences/basicSentences";
 import { presenteTenseSentences } from "./sentences/presenteTenseSentences";
@@ -20,6 +19,10 @@ import { erVerbsPresentePerfectoSentences } from "./sentences/erVerbsPresentePer
 import { irVerbsPresentePerfectoSentences } from "./sentences/irVerbsPresentePerfectoSentences";
 import { erVerbsPluscuamperfectoSentences } from "./sentences/erVerbsPluscuamperfectoSentences";
 import { irVerbsPluscuamperfectoSentences } from "./sentences/irVerbsPluscuamperfectoSentences";
+import { erVerbsSubjuntivoPresenteSentences } from "./sentences/erVerbsSubjuntivoPresenteSentences";
+import { irVerbsSubjuntivoPresenteSentences } from "./sentences/irVerbsSubjuntivoPresenteSentences";
+import { erVerbsSubjuntivoPasadoSentences } from "./sentences/erVerbsSubjuntivoPasadoSentences";
+import { irVerbsSubjuntivoPasadoSentences } from "./sentences/irVerbsSubjuntivoPasadoSentences";
 
 // 将所有句子数据合并到一个数组中
 export const sentencesData: Sentence[] = [
@@ -42,5 +45,9 @@ export const sentencesData: Sentence[] = [
   ...erVerbsPresentePerfectoSentences,
   ...irVerbsPresentePerfectoSentences,
   ...erVerbsPluscuamperfectoSentences,
-  ...irVerbsPluscuamperfectoSentences
+  ...irVerbsPluscuamperfectoSentences,
+  ...erVerbsSubjuntivoPresenteSentences,
+  ...irVerbsSubjuntivoPresenteSentences,
+  ...erVerbsSubjuntivoPasadoSentences,
+  ...irVerbsSubjuntivoPasadoSentences
 ];

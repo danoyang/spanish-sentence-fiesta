@@ -8,7 +8,7 @@ export const futuroCondicionalSentences: Sentence[] = [
   // Futuro | Yo | Yo esperaré muy bien mañana.
   {
     id: 24,
-    chinese: "我明天会非常好地等待。",
+    chinese: "明日我将妥善守候。",
     spanish: "Yo esperaré muy bien mañana.",
     wordChoices: [
       {
@@ -57,7 +57,7 @@ export const futuroCondicionalSentences: Sentence[] = [
   // Futuro | Tú | Tú entrarás muy bien mañana.
   {
     id: 25,
-    chinese: "你明天会非常好地进入。",
+    chinese: "你明日将顺利入场。",
     spanish: "Tú entrarás muy bien mañana.",
     wordChoices: [
       {
@@ -106,7 +106,7 @@ export const futuroCondicionalSentences: Sentence[] = [
   // Futuro | Él | Él llegará muy bien mañana.
   {
     id: 26,
-    chinese: "他明天会非常好地到达。",
+    chinese: "他明日将准时抵达。",
     spanish: "Él llegará muy bien mañana.",
     wordChoices: [
       {
@@ -155,7 +155,7 @@ export const futuroCondicionalSentences: Sentence[] = [
   // Futuro | Nosotros | Nosotros necesitaremos muy bien mañana.
   {
     id: 27,
-    chinese: "我们明天会非常好地需要。",
+    chinese: "我们明日将妥善应对需求。",
     spanish: "Nosotros necesitaremos muy bien mañana.",
     wordChoices: [
       {
@@ -204,7 +204,7 @@ export const futuroCondicionalSentences: Sentence[] = [
   // Futuro | Vosotros | Vosotros pagaréis muy bien mañana.
   {
     id: 28,
-    chinese: "你们明天会非常好地付钱。",
+    chinese: "你们明日将妥善支付款项。",
     spanish: "Vosotros pagaréis muy bien mañana.",
     wordChoices: [
       {
@@ -253,7 +253,7 @@ export const futuroCondicionalSentences: Sentence[] = [
   // Futuro | Ellos | Ellos prepararán muy bien mañana.
   {
     id: 29,
-    chinese: "他们明天会非常好地准备。",
+    chinese: "他们明日将周密筹备。",
     spanish: "Ellos prepararán muy bien mañana.",
     wordChoices: [
       {
@@ -303,7 +303,7 @@ export const futuroCondicionalSentences: Sentence[] = [
   // Condicional | Yo | Yo tocaría muy bien si pudiera.
   {
     id: 30,
-    chinese: "如果可以的话，我会弹得非常好。",
+    chinese: "若有机会，我定将演奏到位。",
     spanish: "Yo tocaría muy bien si pudiera.",
     wordChoices: [
       {
@@ -352,7 +352,7 @@ export const futuroCondicionalSentences: Sentence[] = [
   // Condicional | Tú | Tú sacarías muy bien si pudiera.
   {
     id: 31,
-    chinese: "如果可以的话，你会拿得非常好。",
+    chinese: "倘有可能，你本可妥善处理。",
     spanish: "Tú sacarías muy bien si pudiera.",
     wordChoices: [
       {
@@ -401,7 +401,7 @@ export const futuroCondicionalSentences: Sentence[] = [
   // Condicional | Él | Él buscaría muy bien si pudiera.
   {
     id: 32,
-    chinese: "如果可以的话，他会找得非常好。",
+    chinese: "如有条件，他本会精准定位。",
     spanish: "Él buscaría muy bien si pudiera.",
     wordChoices: [
       {
@@ -450,7 +450,7 @@ export const futuroCondicionalSentences: Sentence[] = [
   // Condicional | Nosotros | Nosotros lavaríamos muy bien si pudiera.
   {
     id: 33,
-    chinese: "如果可以的话，我们会洗得非常好。",
+    chinese: "若得允许，我们必会彻底清洁。",
     spanish: "Nosotros lavaríamos muy bien si pudiera.",
     wordChoices: [
       {
@@ -499,7 +499,7 @@ export const futuroCondicionalSentences: Sentence[] = [
   // Condicional | Vosotros | Vosotros ganaríais muy bien si pudiera.
   {
     id: 34,
-    chinese: "如果可以的话，你们会赢得非常好。",
+    chinese: "倘能实现，你们理应稳操胜券。",
     spanish: "Vosotros ganaríais muy bien si pudiera.",
     wordChoices: [
       {
@@ -548,7 +548,7 @@ export const futuroCondicionalSentences: Sentence[] = [
   // Condicional | Ellos | Ellos terminarían muy bien si pudiera.
   {
     id: 35,
-    chinese: "如果可以的话，他们会非常好地完成。",
+    chinese: "如有可能，他们必将完美收官。",
     spanish: "Ellos terminarían muy bien si pudiera.",
     wordChoices: [
       {
@@ -594,4 +594,3 @@ export const futuroCondicionalSentences: Sentence[] = [
     completed: false
   }
 ];
-

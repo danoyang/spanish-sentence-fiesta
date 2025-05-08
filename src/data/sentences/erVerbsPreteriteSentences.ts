@@ -5,7 +5,7 @@ export const erVerbsPreteriteSentences: Sentence[] = [
   // Pretérito | Yo | Yo comprendí muy bien ayer.
   {
     id: 69,
-    chinese: "我昨天理解得非常好。",
+    chinese: "我昨天理解得非常正确。",
     spanish: "Yo comprendí muy bien ayer.",
     wordChoices: [
       { 
@@ -207,7 +207,7 @@ export const erVerbsPreteriteSentences: Sentence[] = [
   // Pretérito | Él | Él creyó muy bien ayer.
   {
     id: 71,
-    chinese: "他昨天相信得非常好。",
+    chinese: "昨日他的判断依据非常充分。",
     spanish: "Él creyó muy bien ayer.",
     wordChoices: [
       { 
@@ -308,7 +308,7 @@ export const erVerbsPreteriteSentences: Sentence[] = [
   // Pretérito | Nosotros | Nosotros debimos muy bien ayer.
   {
     id: 72,
-    chinese: "我们昨天应该做得非常好。",
+    chinese: "昨日我们的职责履行非常到位。",
     spanish: "Nosotros debimos muy bien ayer.",
     wordChoices: [
       { 
@@ -409,7 +409,7 @@ export const erVerbsPreteriteSentences: Sentence[] = [
   // Pretérito | Vosotros | Vosotros visteis muy bien ayer.
   {
     id: 73,
-    chinese: "你们昨天看得非常好。",
+    chinese: "昨日你们的观察记录非常详实。",
     spanish: "Vosotros visteis muy bien ayer.",
     wordChoices: [
       { 
@@ -510,7 +510,7 @@ export const erVerbsPreteriteSentences: Sentence[] = [
   // Pretérito | Ellos | Ellos rompieron muy bien ayer.
   {
     id: 74,
-    chinese: "他们昨天打破得非常好。",
+    chinese: "昨日他们的突破进展非常显著。",
     spanish: "Ellos rompieron muy bien ayer.",
     wordChoices: [
       { 

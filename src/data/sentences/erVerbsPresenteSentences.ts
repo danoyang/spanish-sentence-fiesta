@@ -207,7 +207,7 @@ export const erVerbsPresenteSentences: Sentence[] = [
   // Presente | Él | Él lee muy bien hoy.
   {
     id: 65,
-    chinese: "他今天读得非常好。",
+    chinese: "他今天读得内容非常好。",
     spanish: "Él lee muy bien hoy.",
     wordChoices: [
       { 

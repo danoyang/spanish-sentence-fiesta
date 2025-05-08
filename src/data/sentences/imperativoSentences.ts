@@ -5,7 +5,7 @@ export const imperativoSentences: Sentence[] = [
   // Imperativo | Yo | Yo mostre muy bien ahora.
   {
     id: 57,
-    chinese: "现在我展示得非常好。",
+    chinese: "我此刻必须完美演示！",
     spanish: "Yo mostre muy bien ahora.",
     wordChoices: [
       { 
@@ -106,7 +106,7 @@ export const imperativoSentences: Sentence[] = [
   // Imperativo | Tú | Tú nada muy bien ahora.
   {
     id: 58,
-    chinese: "现在你游泳得非常好。",
+    chinese: "现在你游得非常好。",
     spanish: "Tú nada muy bien ahora.",
     wordChoices: [
       { 
@@ -207,7 +207,7 @@ export const imperativoSentences: Sentence[] = [
   // Imperativo | Él | Él presente muy bien ahora.
   {
     id: 59,
-    chinese: "现在他展示得非常好。",
+    chinese: "他须即刻展示到位！",
     spanish: "Él presente muy bien ahora.",
     wordChoices: [
       { 
@@ -308,7 +308,7 @@ export const imperativoSentences: Sentence[] = [
   // Imperativo | Nosotros | Nosotros quedemos muy bien ahora.
   {
     id: 60,
-    chinese: "现在我们留在此处做得非常好。",
+    chinese: "我们全体立即妥善留守！",
     spanish: "Nosotros quedemos muy bien ahora.",
     wordChoices: [
       { 
@@ -409,7 +409,7 @@ export const imperativoSentences: Sentence[] = [
   // Imperativo | Vosotros | Vosotros recordad muy bien ahora.
   {
     id: 61,
-    chinese: "现在你们记得非常好。",
+    chinese: "你们此刻务必牢记要点！",
     spanish: "Vosotros recordad muy bien ahora.",
     wordChoices: [
       { 
@@ -510,7 +510,7 @@ export const imperativoSentences: Sentence[] = [
   // Imperativo | Ellos | Ellos tomen muy bien ahora.
   {
     id: 62,
-    chinese: "现在他们拿得非常好。",
+    chinese: "他们须立即规范提取！",
     spanish: "Ellos tomen muy bien ahora.",
     wordChoices: [
       { 

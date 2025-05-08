@@ -5,7 +5,7 @@ export const erVerbsSubjuntivoPresenteSentences: Sentence[] = [
   // Subjuntivo presente | Yo | Yo obedezca muy bien aunque sea necesario.
   {
     id: 123,
-    chinese: "虽然有必要，我也要服从得非常好。",
+    chinese: "即便需要服从，我也会全力配合。",
     spanish: "Yo obedezca muy bien aunque sea necesario.",
     wordChoices: [
       { 
@@ -106,7 +106,7 @@ export const erVerbsSubjuntivoPresenteSentences: Sentence[] = [
   // Subjuntivo presente | Tú | Tú emerjas muy bien aunque sea necesario.
   {
     id: 124,
-    chinese: "虽然有必要，你也要浮现得非常好。",
+    chinese: "就算必须现身，你也要处理得当。",
     spanish: "Tú emerjas muy bien aunque sea necesario.",
     wordChoices: [
       { 
@@ -207,7 +207,7 @@ export const erVerbsSubjuntivoPresenteSentences: Sentence[] = [
   // Subjuntivo presente | Él | Él erga muy bien aunque sea necesario.
   {
     id: 125,
-    chinese: "虽然有必要，他也要竖立得非常好。",
+    chinese: "纵需树立权威，他也得把握分寸。",
     spanish: "Él erga muy bien aunque sea necesario.",
     wordChoices: [
       { 
@@ -308,7 +308,7 @@ export const erVerbsSubjuntivoPresenteSentences: Sentence[] = [
   // Subjuntivo presente | Nosotros | Nosotros encojamos muy bien aunque sea necesario.
   {
     id: 126,
-    chinese: "虽然有必要，我们也要缩小得非常好。",
+    chinese: "虽需压缩规模，我们仍会周密部署。",
     spanish: "Nosotros encojamos muy bien aunque sea necesario.",
     wordChoices: [
       { 
@@ -409,7 +409,7 @@ export const erVerbsSubjuntivoPresenteSentences: Sentence[] = [
   // Subjuntivo presente | Vosotros | Vosotros detengáis muy bien aunque sea necesario.
   {
     id: 127,
-    chinese: "虽然有必要，你们也要阻止得非常好。",
+    chinese: "即便必须阻止，你们也要方法得当。",
     spanish: "Vosotros detengáis muy bien aunque sea necesario.",
     wordChoices: [
       { 
@@ -510,7 +510,7 @@ export const erVerbsSubjuntivoPresenteSentences: Sentence[] = [
   // Subjuntivo presente | Ellos | Ellos recojan muy bien aunque sea necesario.
   {
     id: 128,
-    chinese: "虽然有必要，他们也要收集得非常好。",
+    chinese: "纵使需要整合，他们也会系统推进。",
     spanish: "Ellos recojan muy bien aunque sea necesario.",
     wordChoices: [
       { 

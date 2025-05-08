@@ -5,7 +5,7 @@ export const irVerbsFuturoSentences: Sentence[] = [
   // Futuro | Yo | Yo uniré muy bien mañana.
   {
     id: 93,
-    chinese: "我明天将会联合得很好。",
+    chinese: "我明日将妥善整合资源。",
     spanish: "Yo uniré muy bien mañana.",
     wordChoices: [
       { 
@@ -106,7 +106,7 @@ export const irVerbsFuturoSentences: Sentence[] = [
   // Futuro | Tú | Tú admitirás muy bien mañana.
   {
     id: 94,
-    chinese: "你明天将会接受得很好。",
+    chinese: "你明日需恰当处理接纳事宜。",
     spanish: "Tú admitirás muy bien mañana.",
     wordChoices: [
       { 
@@ -207,7 +207,7 @@ export const irVerbsFuturoSentences: Sentence[] = [
   // Futuro | Él | Él añadirá muy bien mañana.
   {
     id: 95,
-    chinese: "他明天将会添加得很好。",
+    chinese: "他将于次日精准补充内容。",
     spanish: "Él añadirá muy bien mañana.",
     wordChoices: [
       { 
@@ -308,7 +308,7 @@ export const irVerbsFuturoSentences: Sentence[] = [
   // Futuro | Nosotros | Nosotros consumiremos muy bien mañana.
   {
     id: 96,
-    chinese: "我们明天将会消耗得很好。",
+    chinese: "我们明日将高效完成资源调配。",
     spanish: "Nosotros consumiremos muy bien mañana.",
     wordChoices: [
       { 
@@ -409,7 +409,7 @@ export const irVerbsFuturoSentences: Sentence[] = [
   // Futuro | Vosotros | Vosotros discutiréis muy bien mañana.
   {
     id: 97,
-    chinese: "你们明天将会讨论得很好。",
+    chinese: "你们需在明日深入探讨议题。",
     spanish: "Vosotros discutiréis muy bien mañana.",
     wordChoices: [
       { 
@@ -510,7 +510,7 @@ export const irVerbsFuturoSentences: Sentence[] = [
   // Futuro | Ellos | Ellos exigirán muy bien mañana.
   {
     id: 98,
-    chinese: "他们明天将会要求得很好。",
+    chinese: "他们将于明日明确提出诉求。",
     spanish: "Ellos exigirán muy bien mañana.",
     wordChoices: [
       { 

@@ -5,7 +5,7 @@ export const erVerbsPresentePerfectoSentences: Sentence[] = [
   // Presente perfecto | Yo | Yo he movido muy bien esta semana.
   {
     id: 99,
-    chinese: "我这周移动得非常好。",
+    chinese: "这周我的活动调度非常到位。",
     spanish: "Yo he movido muy bien esta semana.",
     wordChoices: [
       { 
@@ -54,7 +54,7 @@ export const erVerbsPresentePerfectoSentences: Sentence[] = [
   // Presente perfecto | Tú | Tú has vuelto muy bien esta semana.
   {
     id: 100,
-    chinese: "你这周回来得非常好。",
+    chinese: "这周你的返岗安排十分妥当。",
     spanish: "Tú has vuelto muy bien esta semana.",
     wordChoices: [
       { 
@@ -103,7 +103,7 @@ export const erVerbsPresentePerfectoSentences: Sentence[] = [
   // Presente perfecto | Él | Él ha corrido muy bien esta semana.
   {
     id: 101,
-    chinese: "他这周跑得非常好。",
+    chinese: "这周他的跑步训练成效显著。",
     spanish: "Él ha corrido muy bien esta semana.",
     wordChoices: [
       { 
@@ -152,7 +152,7 @@ export const erVerbsPresentePerfectoSentences: Sentence[] = [
   // Presente perfecto | Nosotros | Nosotros hemos mordido muy bien esta semana.
   {
     id: 102,
-    chinese: "我们这周咬得非常好。",
+    chinese: "这周我们的咬合测试非常精准。",
     spanish: "Nosotros hemos mordido muy bien esta semana.",
     wordChoices: [
       { 
@@ -201,7 +201,7 @@ export const erVerbsPresentePerfectoSentences: Sentence[] = [
   // Presente perfecto | Vosotros | Vosotros habéis extendido muy bien esta semana.
   {
     id: 103,
-    chinese: "你们这周延伸得非常好。",
+    chinese: "这周你们的方案延展相当顺利。",
     spanish: "Vosotros habéis extendido muy bien esta semana.",
     wordChoices: [
       { 
@@ -250,7 +250,7 @@ export const erVerbsPresentePerfectoSentences: Sentence[] = [
   // Presente perfecto | Ellos | Ellos han crecido muy bien esta semana.
   {
     id: 104,
-    chinese: "他们这周成长得非常好。",
+    chinese: "这周他们的业务增长非常理想。",
     spanish: "Ellos han crecido muy bien esta semana.",
     wordChoices: [
       { 

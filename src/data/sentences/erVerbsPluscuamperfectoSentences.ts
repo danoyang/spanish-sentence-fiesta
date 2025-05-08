@@ -5,7 +5,7 @@ export const erVerbsPluscuamperfectoSentences: Sentence[] = [
   // Pluscuamperfecto | Yo | Yo había tejido muy bien antes.
   {
     id: 111,
-    chinese: "我以前织得非常好。",
+    chinese: "在那之前，我曾编织得非常好。",
     spanish: "Yo había tejido muy bien antes.",
     wordChoices: [
       { 
@@ -54,7 +54,7 @@ export const erVerbsPluscuamperfectoSentences: Sentence[] = [
   // Pluscuamperfecto | Tú | Tú habías escogido muy bien antes.
   {
     id: 112,
-    chinese: "你以前选择得非常好。",
+    chinese: "在那之前，你曾做出过非常明智的选择。",
     spanish: "Tú habías escogido muy bien antes.",
     wordChoices: [
       { 
@@ -103,7 +103,7 @@ export const erVerbsPluscuamperfectoSentences: Sentence[] = [
   // Pluscuamperfecto | Él | Él había mecido muy bien antes.
   {
     id: 113,
-    chinese: "他以前摇晃得非常好。",
+    chinese: "在那之前，他摇动摇篮的动作曾非常娴熟。",
     spanish: "Él había mecido muy bien antes.",
     wordChoices: [
       { 
@@ -152,7 +152,7 @@ export const erVerbsPluscuamperfectoSentences: Sentence[] = [
   // Pluscuamperfecto | Nosotros | Nosotros habíamos sucedido muy bien antes.
   {
     id: 114,
-    chinese: "我们以前发生得非常好。",
+    chinese: "在那之前，我们处理事务的方式曾非常得当。",
     spanish: "Nosotros habíamos sucedido muy bien antes.",
     wordChoices: [
       { 
@@ -201,7 +201,7 @@ export const erVerbsPluscuamperfectoSentences: Sentence[] = [
   // Pluscuamperfecto | Vosotros | Vosotros habíais cedido muy bien antes.
   {
     id: 115,
-    chinese: "你们以前让步得非常好。",
+    chinese: "在那之前，你们协调问题时曾表现得非常配合。",
     spanish: "Vosotros habíais cedido muy bien antes.",
     wordChoices: [
       { 
@@ -250,7 +250,7 @@ export const erVerbsPluscuamperfectoSentences: Sentence[] = [
   // Pluscuamperfecto | Ellos | Ellos habían aparecido muy bien antes.
   {
     id: 116,
-    chinese: "他们以前出现得非常好。",
+    chinese: "在那之前，他们的登场方式曾安排得非常妥当。",
     spanish: "Ellos habían aparecido muy bien antes.",
     wordChoices: [
       { 

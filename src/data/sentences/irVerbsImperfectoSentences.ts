@@ -5,7 +5,7 @@ export const irVerbsImperfectoSentences: Sentence[] = [
   // Imperfecto | Yo | Yo existía muy bien cuando era niño.
   {
     id: 87,
-    chinese: "我小时候存在得很好。",
+    chinese: "我儿时生活得非常充实。",
     spanish: "Yo existía muy bien cuando era niño.",
     wordChoices: [
       { 
@@ -106,7 +106,7 @@ export const irVerbsImperfectoSentences: Sentence[] = [
   // Imperfecto | Tú | Tú insistías muy bien cuando era niño.
   {
     id: 88,
-    chinese: "你小时候坚持得很好。",
+    chinese: "你童年时总能恰当坚持立场。",
     spanish: "Tú insistías muy bien cuando era niño.",
     wordChoices: [
       { 
@@ -207,7 +207,7 @@ export const irVerbsImperfectoSentences: Sentence[] = [
   // Imperfecto | Él | Él ocurría muy bien cuando era niño.
   {
     id: 89,
-    chinese: "他小时候发生得很好。",
+    chinese: "他年少时的经历总是积极向上。",
     spanish: "Él ocurría muy bien cuando era niño.",
     wordChoices: [
       { 
@@ -308,7 +308,7 @@ export const irVerbsImperfectoSentences: Sentence[] = [
   // Imperfecto | Nosotros | Nosotros partíamos muy bien cuando era niño.
   {
     id: 90,
-    chinese: "我们小时候分开得很好。",
+    chinese: "我们儿时总能和谐共处。",
     spanish: "Nosotros partíamos muy bien cuando era niño.",
     wordChoices: [
       { 
@@ -409,7 +409,7 @@ export const irVerbsImperfectoSentences: Sentence[] = [
   // Imperfecto | Vosotros | Vosotros permitíais muy bien cuando era niño.
   {
     id: 91,
-    chinese: "你们小时候允许得很好。",
+    chinese: "你们幼年时总能妥善处理授权事宜。",
     spanish: "Vosotros permitíais muy bien cuando era niño.",
     wordChoices: [
       { 
@@ -510,7 +510,7 @@ export const irVerbsImperfectoSentences: Sentence[] = [
   // Imperfecto | Ellos | Ellos prohibían muy bien cuando era niño.
   {
     id: 92,
-    chinese: "他们小时候禁止得很好。",
+    chinese: "他们童年时期总能恰当约束行为。",
     spanish: "Ellos prohibían muy bien cuando era niño.",
     wordChoices: [
       { 

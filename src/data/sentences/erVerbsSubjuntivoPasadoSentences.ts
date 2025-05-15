@@ -308,103 +308,43 @@ export const erVerbsSubjuntivoPasadoSentences: Sentence[] = [
   // Subjuntivo pasado | Nosotros | Nosotros advirtiéramos sobre el peligro si lo supiéramos.
   {
     id: 132,
-    chinese: "如果我们知道，我们会警告有关危险。",
-    spanish: "Nosotros advirtiéramos sobre el peligro si lo supiéramos.",
+    chinese: "如果我们知道，我们会保护大家免受危险。",
+    spanish: "Nosotros protegiéramos a la gente del peligro si lo supiéramos.",
     wordChoices: [
-      { 
+      {
         correctWord: "Nosotros",
         options: [
-          { 
-            text: "Nosotros", 
-            isCorrect: true, 
-            correctTip: "\"Nosotros\"表示\"我们\"，此句主语。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "Yo", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Yo\"表示\"我\"，不是此句的主语。" 
-          },
-          { 
-            text: "Ellos", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Ellos\"表示\"他们\"，不是此句的主语。" 
-          }
-        ]
-      },
-      { 
-        correctWord: "advirtiéramos",
-        options: [
-          { 
-            text: "advirtiéramos", 
-            isCorrect: true, 
-            correctTip: "\"advirtiéramos\"是动词\"advertir\"（警告）在第一人称复数过去虚拟式的正确变位。注意e变为ie的拼写变化。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "advertíamos", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"advertíamos\"是过去未完成时形式，不是过去虚拟式。" 
-          },
-          { 
-            text: "advertiríamos", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"advertiríamos\"是条件式，不是过去虚拟式。" 
-          }
+          { text: "Nosotros", isCorrect: true, correctTip: "\"Nosotros\"表示\"我们\"，此句主语。", incorrectTip: "" },
+          { text: "Yo", isCorrect: false, correctTip: "", incorrectTip: "\"Yo\"表示\"我\"，不是此句的主语。" },
+          { text: "Ellos", isCorrect: false, correctTip: "", incorrectTip: "\"Ellos\"表示\"他们\"，不是此句的主语。" }
         ]
       },
       {
-        correctWord: "sobre el peligro",
+        correctWord: "protegiéramos",
         options: [
-          { 
-            text: "sobre el peligro", 
-            isCorrect: true, 
-            correctTip: "\"sobre el peligro\"表示\"关于危险\"，是advertir（警告）的合适内容。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "muy bien", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"muy bien\"表示\"非常好\"，不能作为advertir的警告内容，不符合语境。" 
-          },
-          { 
-            text: "a las personas", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"a las personas\"表示\"人们\"，虽然可以作为advertir的间接宾语，但在这个上下文中，警告的内容(sobre el peligro)更重要。" 
-          }
+          { text: "protegiéramos", isCorrect: true, correctTip: "\"protegiéramos\"是动词\"proteger\"（保护）在第一人称复数过去虚拟式的正确变位，注意 g ➔ j 的拼写变化。", incorrectTip: "" },
+          { text: "protegíamos", isCorrect: false, correctTip: "", incorrectTip: "\"protegíamos\"是未完成过去时形式，不是过去虚拟式。" },
+          { text: "protegeríamos", isCorrect: false, correctTip: "", incorrectTip: "\"protegeríamos\"是条件式，不是过去虚拟式。" }
+        ]
+      },
+      {
+        correctWord: "a la gente del peligro",
+        options: [
+          { text: "a la gente del peligro", isCorrect: true, correctTip: "表示\"保护人们免受危险\"，是\"proteger\"常见用法。", incorrectTip: "" },
+          { text: "sobre el peligro", isCorrect: false, correctTip: "", incorrectTip: "短语搭配不当，\"proteger sobre\"不自然。" },
+          { text: "muy bien", isCorrect: false, correctTip: "", incorrectTip: "缺少宾语，语义不完整。" }
         ]
       },
       {
         correctWord: "si lo supiéramos",
         options: [
-          { 
-            text: "si lo supiéramos", 
-            isCorrect: true, 
-            correctTip: "\"si lo supiéramos\"表示\"如果我们知道它\"，是一个合适的条件从句。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "si habríamos sabido", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "在这种虚拟条件句中，条件从句应使用过去虚拟式(supiéramos)而不是条件式(habríamos sabido)。" 
-          },
-          { 
-            text: "cuando lo veamos", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"cuando lo veamos\"表示\"当我们看到它的时候\"，使用的是虚拟式现在时而不是过去虚拟式。" 
-          }
+          { text: "si lo supiéramos", isCorrect: true, correctTip: "条件从句使用过去虚拟式(supiéramos)。", incorrectTip: "" },
+          { text: "si habríamos sabido", isCorrect: false, correctTip: "", incorrectTip: "条件从句不应使用条件式。"},
+          { text: "cuando lo veamos", isCorrect: false, correctTip: "", incorrectTip: "\"cuando lo veamos\"使用现在虚拟式，时间关系不同。" }
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
   // Subjuntivo pasado | Vosotros | Vosotros descendierais de la montaña si hiciera mal tiempo.
   {

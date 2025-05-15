@@ -3,242 +3,207 @@ import { Sentence } from "@/types/game";
 
 // 一般现在时动词变位句子 (6-11)
 export const presenteTenseSentences: Sentence[] = [
-  // Presente | Yo | Yo hablo español todos los días.
-  {
-    id: 6,
-    chinese: "我每天都说西班牙语。",
-    spanish: "Yo hablo español todos los días.",
-    wordChoices: [
-      { 
-        correctWord: "Yo",
-        options: [
-          { 
-            text: "Yo", 
-            isCorrect: true, 
-            correctTip: "\"Yo\"表示\"我\"，此句主语。", 
-            incorrectTip: "" 
-          }
-        ]
-      },
-      { 
-        correctWord: "hablo",
-        options: [
-          { 
-            text: "hablo", 
-            isCorrect: true, 
-            correctTip: "\"hablo\"是动词\"hablar\"（说）的第一人称现在时变位。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "habla", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"habla\"是第三人称或您式，不是\"我\"对应变位。" 
-          },
-          { 
-            text: "hablas", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"hablas\"是\"你\"的变位，不是\"我\"用法。" 
-          }
-        ]
-      },
-      {
-        correctWord: "español todos los días",
-        options: [
-          { 
-            text: "español todos los días", 
-            isCorrect: true, 
-            correctTip: "西班牙语，每天。", 
-            incorrectTip: "" 
-          }
-        ]
-      }
-    ],
-    completed: false,
-  },
-  // Presente | Tú | Tú siempre llegas tarde a clase.
-  {
-    id: 7,
-    chinese: "你总是迟到上课。",
-    spanish: "Tú siempre llegas tarde a clase.",
-    wordChoices: [
-      { 
-        correctWord: "Tú",
-        options: [
-          { text: "Tú", isCorrect: true, correctTip: "\"Tú\"表示\"你\"。", incorrectTip: "" }
-        ]
-      },
-      { 
-        correctWord: "siempre llegas",
-        options: [
-          { text: "siempre llegas", isCorrect: true, correctTip: "\"siempre llegas\"表示\"总是到达\"。", incorrectTip: "" },
-          { text: "nunca llegas", isCorrect: false, correctTip: "", incorrectTip: "\"nunca llegas\"表示\"从不到达\"，与句意不符。" }
-        ]
-      },
-      {
-        correctWord: "tarde a clase",
-        options: [
-          { text: "tarde a clase", isCorrect: true, correctTip: "\"tarde a clase\"表示\"迟到上课\"。", incorrectTip: "" },
-          { text: "temprano a casa", isCorrect: false, correctTip: "", incorrectTip: "\"temprano a casa\"表示\"早到家\"，与句意不符。" }
-        ]
-      }
-    ],
-    completed: false,
-  },
-  // Presente | Él | Él vive en una casa pequeña cerca del parque.
-  {
-    id: 8,
-    chinese: "他住在公园附近的一所小房子里。",
-    spanish: "Él vive en una casa pequeña cerca del parque.",
-    wordChoices: [
-      { 
-        correctWord: "Él",
-        options: [
-          { text: "Él", isCorrect: true, correctTip: "\"Él\"表示\"他\"。", incorrectTip: "" }
-        ]
-      },
-      { 
-        correctWord: "vive",
-        options: [
-          { text: "vive", isCorrect: true, correctTip: "\"vive\"是\"vivir\"(生活，居住)的第三人称现在时", incorrectTip: "" },
-          { text: "vivo", isCorrect: false, correctTip: "", incorrectTip: "\"vivo\"是\"我\"的变位。" },
-          { text: "vives", isCorrect: false, correctTip: "", incorrectTip: "\"vives\"是\"你\"的变位。" }
-        ]
-      },
-      {
-        correctWord: "en una casa pequeña",
-        options: [
-          { text: "en una casa pequeña", isCorrect: true, correctTip: "\"在一所小房子里\"。", incorrectTip: "" },
-          { text: "en un apartamento grande", isCorrect: false, correctTip: "", incorrectTip: "\"在一个大公寓里\"，与句意不符。" }
-        ]
-      },
-      {
-        correctWord: "cerca del parque",
-        options: [
-          { text: "cerca del parque", isCorrect: true, correctTip: "\"靠近公园\"。", incorrectTip: "" },
-          { text: "lejos de la ciudad", isCorrect: false, correctTip: "", incorrectTip: "\"远离城市\"，与句意不符。" }
-        ]
-      }
-    ],
-    completed: false,
-  },
-  // Presente | Nosotros | Nosotros comemos en este restaurante todos los domingos.
-  {
-    id: 9,
-    chinese: "我们每个星期天都在这家餐厅吃饭。",
-    spanish: "Nosotros comemos en este restaurante todos los domingos.",
-    wordChoices: [
-      { 
-        correctWord: "Nosotros",
-        options: [
-          { text: "Nosotros", isCorrect: true, correctTip: "\"Nosotros\"表示\"我们\"。", incorrectTip: "" }
-        ]
-      },
-      { 
-        correctWord: "comemos",
-        options: [
-          { text: "comemos", isCorrect: true, correctTip: "\"comemos\"是\"comer\"(吃)的第一人称复数现在时变位。", incorrectTip: "" },
-          { text: "come", isCorrect: false, correctTip: "", incorrectTip: "\"come\"指第三人称单数，不是\"我们\"的用法。" },
-          { text: "coméis", isCorrect: false, correctTip: "", incorrectTip: "\"coméis\"是\"你们\"的用法。" }
-        ]
-      },
-      {
-        correctWord: "en este restaurante",
-        options: [
-          { text: "en este restaurante", isCorrect: true, correctTip: "\"在这家餐厅\"。", incorrectTip: "" },
-          { text: "en esa cafetería", isCorrect: false, correctTip: "", incorrectTip: "\"在那家咖啡馆\"，与句意不符。" }
-        ]
-      },
-      {
-        correctWord: "todos los domingos",
-        options: [
-          { text: "todos los domingos", isCorrect: true, correctTip: "\"每个星期天\"。", incorrectTip: "" },
-          { text: "una vez al mes", isCorrect: false, correctTip: "", incorrectTip: "\"每月一次\"，与句意不符。" }
-        ]
-      }
-    ],
-    completed: false,
-  },
-  // Presente | Vosotros | Vosotros cantáis muy bien en el coro de la escuela.
-  {
-    id: 10,
-    chinese: "你们在学校合唱团唱得很好。",
-    spanish: "Vosotros cantáis muy bien en el coro de la escuela.",
-    wordChoices: [
-      { 
-        correctWord: "Vosotros",
-        options: [
-          { text: "Vosotros", isCorrect: true, correctTip: "\"Vosotros\"代表\"你们\"。", incorrectTip: "" }
-        ]
-      },
-      { 
-        correctWord: "cantáis",
-        options: [
-          { text: "cantáis", isCorrect: true, correctTip: "\"cantáis\"是\"cantar\"(唱歌)的vosotros现在时变位。", incorrectTip: "" },
-          { text: "cantas", isCorrect: false, correctTip: "", incorrectTip: "\"cantas\"是\"你\"的用法。" },
-          { text: "cantamos", isCorrect: false, correctTip: "", incorrectTip: "\"cantamos\"是\"我们\"的用法。" }
-        ]
-      },
-      {
-        correctWord: "muy bien",
-        options: [
-          { text: "muy bien", isCorrect: true, correctTip: "\"很好\"。", incorrectTip: "" },
-          { text: "bastante mal", isCorrect: false, correctTip: "", incorrectTip: "\"相当糟糕\"，与句意不符。" }
-        ]
-      },
-      {
-        correctWord: "en el coro de la escuela",
-        options: [
-          { text: "en el coro de la escuela", isCorrect: true, correctTip: "\"在学校合唱团\"。", incorrectTip: "" },
-          { text: "en la fiesta de cumpleaños", isCorrect: false, correctTip: "", incorrectTip: "\"在生日派对上\"，与句意不符。" }
-        ]
-      }
-    ],
-    completed: false,
-  },
-  // Presente | Ellos | Ellos juegan al fútbol todos los sábados en el parque.
-  {
-    id: 11,
-    chinese: "他们每个星期六都在公园踢足球。",
-    spanish: "Ellos juegan al fútbol todos los sábados en el parque.",
-    wordChoices: [
-      { 
-        correctWord: "Ellos",
-        options: [
-          { text: "Ellos", isCorrect: true, correctTip: "\"Ellos\"表示\"他们\"。", incorrectTip: "" }
-        ]
-      },
-      { 
-        correctWord: "juegan",
-        options: [
-          { text: "juegan", isCorrect: true, correctTip: "\"juegan\"是\"jugar\"(玩，踢)的第三人称复数现在时变位。", incorrectTip: "" },
-          { text: "juego", isCorrect: false, correctTip: "", incorrectTip: "\"juego\"是\"我\"的现在时变位。" },
-          { text: "juega", isCorrect: false, correctTip: "", incorrectTip: "\"juega\"是\"他/她\"的变位，不是复数形式。" }
-        ]
-      },
-      {
-        correctWord: "al fútbol",
-        options: [
-          { text: "al fútbol", isCorrect: true, correctTip: "\"al fútbol\"表示\"踢足球\"，是\"a + el fútbol\"的缩写。", incorrectTip: "" },
-          { text: "el baloncesto", isCorrect: false, correctTip: "", incorrectTip: "\"el baloncesto\"是\"篮球\"，不是\"足球\"。" }
-        ]
-      },
-      {
-        correctWord: "todos los sábados",
-        options: [
-          { text: "todos los sábados", isCorrect: true, correctTip: "\"todos los sábados\"表示\"每个星期六\"。", incorrectTip: "" },
-          { text: "cada domingo", isCorrect: false, correctTip: "", incorrectTip: "\"cada domingo\"表示\"每个星期天\"，与句意不符。" }
-        ]
-      },
-      {
-        correctWord: "en el parque",
-        options: [
-          { text: "en el parque", isCorrect: true, correctTip: "\"en el parque\"表示\"在公园里\"。", incorrectTip: "" },
-          { text: "en la playa", isCorrect: false, correctTip: "", incorrectTip: "\"en la playa\"表示\"在海滩上\"，与句意不符。" }
-        ]
-      }
-    ],
-    completed: false,
-  }
+  // Yo — hablar
+{
+  id: 6,
+  chinese: "我今天说话很有自信。",
+  spanish: "Yo hablo con confianza hoy.",
+  wordChoices: [
+    {
+      correctWord: "Yo",
+      options: [
+        { text: "Yo",  isCorrect: true,  correctTip: "\"Yo\"表示\"我\"，此句主语。", incorrectTip: "" },
+        { text: "Tú",  isCorrect: false, correctTip: "", incorrectTip: "主语应为第一人称 \"Yo\"，不是第二人称。"},
+        { text: "Él",  isCorrect: false, correctTip: "", incorrectTip: "主语应为第一人称 \"Yo\"，不是第三人称。"}
+      ]
+    },
+    {
+      correctWord: "hablo",
+      options: [
+        { text: "hablo",  isCorrect: true,  correctTip: "\"hablar\" 第一人称现在时变位。", incorrectTip: "" },
+        { text: "habla",  isCorrect: false, correctTip: "", incorrectTip: "第三人称或 Usted 形式，与主语不符。" },
+        { text: "hablas", isCorrect: false, correctTip: "", incorrectTip: "第二人称形式，与主语不符。" }
+      ]
+    },
+    {
+      correctWord: "con confianza hoy",
+      options: [
+        { text: "con confianza hoy",  isCorrect: true,  correctTip: "自然表达：今天说话很有自信。", incorrectTip: "" },
+        { text: "hoy con confianza",  isCorrect: false, correctTip: "", incorrectTip: "时间状语放在末尾更自然，原顺序不常用。" },
+        { text: "con confianza mañana",isCorrect: false, correctTip: "", incorrectTip: "时间状语应为 \"hoy\"（今天），不是 \"mañana\"（明天）。"}
+      ]
+    }
+  ],
+  completed: false
+},
+
+// Tú — trabajar
+{
+  id: 7,
+  chinese: "你今天在家办公。",
+  spanish: "Tú trabajas desde casa hoy.",
+  wordChoices: [
+    {
+      correctWord: "Tú",
+      options: [
+        { text: "Tú",  isCorrect: true,  correctTip: "\"Tú\"表示\"你\"。", incorrectTip: "" },
+        { text: "Yo",  isCorrect: false, correctTip: "", incorrectTip: "主语应为第二人称 \"Tú\"，不是第一人称。"},
+        { text: "Él",  isCorrect: false, correctTip: "", incorrectTip: "主语应为第二人称 \"Tú\"，不是第三人称。"}
+      ]
+    },
+    {
+      correctWord: "trabajas",
+      options: [
+        { text: "trabajas",   isCorrect: true,  correctTip: "\"trabajar\" 第二人称现在时。", incorrectTip: "" },
+        { text: "trabajamos", isCorrect: false, correctTip: "", incorrectTip: "第一人称复数，与主语不符。" },
+        { text: "trabaja",    isCorrect: false, correctTip: "", incorrectTip: "第三人称形式，与主语不符。" }
+      ]
+    },
+    {
+      correctWord: "desde casa hoy",
+      options: [
+        { text: "desde casa hoy", isCorrect: true,  correctTip: "常见表达：在家工作。", incorrectTip: "" },
+        { text: "en la casa hoy", isCorrect: false, correctTip: "", incorrectTip: "应使用介词 \"desde\" 表示从家里工作，而非 \"en\"。"},
+        { text: "desde casa ayer",isCorrect: false, correctTip: "", incorrectTip: "时间状语应为 \"hoy\"（今天），不是 \"ayer\"（昨天）。"}
+      ]
+    }
+  ],
+  completed: false
+},
+
+// Él — estudiar
+{
+  id: 8,
+  chinese: "他今天在备考。",
+  spanish: "Él estudia para el examen hoy.",
+  wordChoices: [
+    {
+      correctWord: "Él",
+      options: [
+        { text: "Él",  isCorrect: true,  correctTip: "\"Él\"表示\"他\"。", incorrectTip: "" },
+        { text: "Ella",isCorrect: false, correctTip: "", incorrectTip: "句子主语为男性 \"Él\"，不是 \"Ella\"。" },
+        { text: "Yo",  isCorrect: false, correctTip: "", incorrectTip: "主语应为第三人称 \"Él\"，不是第一人称。"}
+      ]
+    },
+    {
+      correctWord: "estudia",
+      options: [
+        { text: "estudia",  isCorrect: true,  correctTip: "\"estudiar\" 第三人称现在时。", incorrectTip: "" },
+        { text: "estudio",  isCorrect: false, correctTip: "", incorrectTip: "第一人称形式，与主语不符。" },
+        { text: "estudias", isCorrect: false, correctTip: "", incorrectTip: "第二人称形式，与主语不符。" }
+      ]
+    },
+    {
+      correctWord: "para el examen hoy",
+      options: [
+        { text: "para el examen hoy",  isCorrect: true,  correctTip: "说明学习目的：备考。", incorrectTip: "" },
+        { text: "hoy para el examen",  isCorrect: false, correctTip: "", incorrectTip: "语序不自然，时间状语通常放句末。" },
+        { text: "para un examen mañana",isCorrect: false, correctTip: "", incorrectTip: "时间与原句 \"hoy\" 不符；且不定冠词改变了含义。"}
+      ]
+    }
+  ],
+  completed: false
+},
+
+// Nosotros — caminar
+{
+  id: 9,
+  chinese: "我们今天在公园散步。",
+  spanish: "Nosotros caminamos por el parque hoy.",
+  wordChoices: [
+    {
+      correctWord: "Nosotros",
+      options: [
+        { text: "Nosotros", isCorrect: true,  correctTip: "\"Nosotros\"表示\"我们\"。", incorrectTip: "" },
+        { text: "Vosotros", isCorrect: false, correctTip: "", incorrectTip: "主语应为第一人称复数 \"Nosotros\"，不是 \"Vosotros\"。" },
+        { text: "Ellos",    isCorrect: false, correctTip: "", incorrectTip: "主语应为第一人称复数 \"Nosotros\"，不是第三人称复数。"}
+      ]
+    },
+    {
+      correctWord: "caminamos",
+      options: [
+        { text: "caminamos", isCorrect: true,  correctTip: "\"caminar\" 第一人称复数现在时。", incorrectTip: "" },
+        { text: "camina",    isCorrect: false, correctTip: "", incorrectTip: "第三人称单数，与主语不符。" },
+        { text: "camináis",  isCorrect: false, correctTip: "", incorrectTip: "第二人称复数，与主语不符。" }
+      ]
+    },
+    {
+      correctWord: "por el parque hoy",
+      options: [
+        { text: "por el parque hoy", isCorrect: true,  correctTip: "自然表达：在公园散步。", incorrectTip: "" },
+        { text: "en el parque hoy",  isCorrect: false, correctTip: "", incorrectTip: "介词应为 \"por\"（穿行范围），而不是 \"en\"。"},
+        { text: "por el parque ayer",isCorrect: false, correctTip: "", incorrectTip: "时间状语应为 \"hoy\"，不是 \"ayer\"。"}
+      ]
+    }
+  ],
+  completed: false
+},
+
+// Vosotros — mirar
+{
+  id: 10,
+  chinese: "你们今天在看日落。",
+  spanish: "Vosotros miráis la puesta de sol hoy.",
+  wordChoices: [
+    {
+      correctWord: "Vosotros",
+      options: [
+        { text: "Vosotros", isCorrect: true,  correctTip: "\"Vosotros\"＝你们。", incorrectTip: "" },
+        { text: "Nosotros", isCorrect: false, correctTip: "", incorrectTip: "主语应为第二人称复数 \"Vosotros\"，不是 \"Nosotros\"。" },
+        { text: "Ellos",    isCorrect: false, correctTip: "", incorrectTip: "主语应为第二人称复数 \"Vosotros\"，不是第三人称复数。"}
+      ]
+    },
+    {
+      correctWord: "miráis",
+      options: [
+        { text: "miráis",  isCorrect: true,  correctTip: "\"mirar\" 第二人称复数现在时。", incorrectTip: "" },
+        { text: "miras",   isCorrect: false, correctTip: "", incorrectTip: "第二人称单数，与主语不符。" },
+        { text: "miramos", isCorrect: false, correctTip: "", incorrectTip: "第一人称复数，与主语不符。" }
+      ]
+    },
+    {
+      correctWord: "la puesta de sol hoy",
+      options: [
+        { text: "la puesta de sol hoy", isCorrect: true,  correctTip: "正在观赏日落。", incorrectTip: "" },
+        { text: "el puesta de sol hoy", isCorrect: false, correctTip: "", incorrectTip: "冠词性别应为阴性 \"la\"，不是阳性 \"el\"。" },
+        { text: "la puesta de sol mañana", isCorrect: false, correctTip: "", incorrectTip: "时间状语应为 \"hoy\"（今天），不是 \"mañana\"。"}
+      ]
+    }
+  ],
+  completed: false
+},
+
+// Ellos — escuchar
+{
+  id: 11,
+  chinese: "他们今天在课堂上听音乐。",
+  spanish: "Ellos escuchan música en clase hoy.",
+  wordChoices: [
+    {
+      correctWord: "Ellos",
+      options: [
+        { text: "Ellos",   isCorrect: true,  correctTip: "\"Ellos\"＝他们。", incorrectTip: "" },
+        { text: "Ellas",   isCorrect: false, correctTip: "", incorrectTip: "原句主语包含男性，应使用 \"Ellos\" 而非 \"Ellas\"。"},
+        { text: "Nosotros",isCorrect: false, correctTip: "", incorrectTip: "主语应为第三人称复数 \"Ellos\"，不是第一人称复数。"}
+      ]
+    },
+    {
+      correctWord: "escuchan",
+      options: [
+        { text: "escuchan",  isCorrect: true,  correctTip: "\"escuchar\" 第三人称复数现在时。", incorrectTip: "" },
+        { text: "escucho",   isCorrect: false, correctTip: "", incorrectTip: "第一人称形式，与主语不符。" },
+        { text: "escucháis", isCorrect: false, correctTip: "", incorrectTip: "第二人称复数形式，与主语不符。" }
+      ]
+    },
+    {
+      correctWord: "música en clase hoy",
+      options: [
+        { text: "música en clase hoy",     isCorrect: true,  correctTip: "更贴近生活：课堂上听音乐。", incorrectTip: "" },
+        { text: "música en la clase hoy",  isCorrect: false, correctTip: "", incorrectTip: "西班牙语口语通常省略 \"la\"，加定冠词显得累赘。" },
+        { text: "música en clase ayer",    isCorrect: false, correctTip: "", incorrectTip: "时间状语应为 \"hoy\"，不是 \"ayer\"。"}
+      ]
+    }
+  ],
+  completed: false
+}
 ];

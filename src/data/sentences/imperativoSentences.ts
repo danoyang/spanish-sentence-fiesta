@@ -5,607 +5,230 @@ export const imperativoSentences: Sentence[] = [
   // Imperativo | Yo | Yo mostre muy bien ahora.
   {
     id: 57,
-    chinese: "现在我展示得非常好。",
-    spanish: "Yo mostre muy bien ahora.",
+    chinese: "现在把设计展示出来。",
+    spanish: "Tú muestra el diseño ahora mismo.",
     wordChoices: [
-      { 
-        correctWord: "Yo",
-        options: [
-          { 
-            text: "Yo", 
-            isCorrect: true, 
-            correctTip: "\"Yo\"表示\"我\"，此句主语。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "Me", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Me\"是代词\"我\"的宾格形式，不是主语。" 
-          },
-          { 
-            text: "Tu", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Tu\"是所有格\"你的\"，不是主语\"我\"。" 
-          }
-        ]
-      },
-      { 
-        correctWord: "mostre",
-        options: [
-          { 
-            text: "mostre", 
-            isCorrect: true, 
-            correctTip: "\"mostre\"是动词\"mostrar\"（展示）的第一人称命令式形式。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "muestro", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"muestro\"是现在时形式，不是命令式。" 
-          },
-          { 
-            text: "mostraré", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"mostraré\"是将来时形式，不是命令式。" 
-          }
-        ]
-      },
       {
-        correctWord: "muy bien",
-        options: [
-          { 
-            text: "muy bien", 
-            isCorrect: true, 
-            correctTip: "\"muy bien\"表示\"非常好\"，修饰动词。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "bien muy", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "西班牙语中副词\"muy\"应放在被修饰的词前面，词序颠倒了。" 
-          },
-          { 
-            text: "muy bueno", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"muy bueno\"用于修饰名词，而不是动词。应使用副词形式\"muy bien\"。" 
-          }
-        ]
-      },
-      {
-        correctWord: "ahora",
-        options: [
-          { 
-            text: "ahora", 
-            isCorrect: true, 
-            correctTip: "\"ahora\"表示\"现在\"，指示动作发生的时间。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "hora", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"hora\"表示\"小时\"，不是\"现在\"的意思。" 
-          },
-          { 
-            text: "hoy", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"hoy\"表示\"今天\"，不是\"现在\"。" 
-          }
-        ]
-      }
-    ],
-    completed: false,
-  },
-  // Imperativo | Tú | Tú nada muy bien ahora.
-  {
-    id: 58,
-    chinese: "现在你游泳得非常好。",
-    spanish: "Tú nada muy bien ahora.",
-    wordChoices: [
-      { 
         correctWord: "Tú",
         options: [
-          { 
-            text: "Tú", 
-            isCorrect: true, 
-            correctTip: "\"Tú\"表示\"你\"，此句主语。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "Te", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Te\"是代词\"你\"的宾格形式，不是主语。" 
-          },
-          { 
-            text: "Su", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Su\"是所有格\"他/她/您的\"，不是主语\"你\"。" 
-          }
+          { text: "Tú", isCorrect: true, correctTip: "\"Tú\"＝你。", incorrectTip: "" },
+          { text: "Yo", isCorrect: false, correctTip: "", incorrectTip: "命令针对第二人称单数。" }
         ]
       },
-      { 
+      {
+        correctWord: "muestra",
+        options: [
+          { text: "muestra", isCorrect: true, correctTip: "肯定命令式：mostrar → muestra。", incorrectTip: "" },
+          { text: "mostra", isCorrect: false, correctTip: "", incorrectTip: "拼写错误。"},
+          { text: "muestro", isCorrect: false, correctTip: "", incorrectTip: "现在时，不是命令式。" }
+        ]
+      },
+      {
+        correctWord: "el diseño",
+        options: [
+          { text: "el diseño", isCorrect: true, correctTip: "展示对象。", incorrectTip: "" },
+          { text: "la ventana", isCorrect: false, correctTip: "", incorrectTip: "对象不同。" }
+        ]
+      },
+      {
+        correctWord: "ahora mismo",
+        options: [
+          { text: "ahora mismo", isCorrect: true, correctTip: "“立刻、马上”。", incorrectTip: "" },
+          { text: "mañana", isCorrect: false, correctTip: "", incorrectTip: "表示明天。" }
+        ]
+      }
+    ],
+    completed: false
+  },
+
+  // Imperativo | Tú — nadar
+  {
+    id: 58,
+    chinese: "现在游二十米。",
+    spanish: "Tú nada veinte metros ahora.",
+    wordChoices: [
+      {
+        correctWord: "Tú",
+        options: [
+          { text: "Tú", isCorrect: true, correctTip: "", incorrectTip: "" },
+          { text: "Usted", isCorrect: false, correctTip: "", incorrectTip: "主语不符。" }
+        ]
+      },
+      {
         correctWord: "nada",
         options: [
-          { 
-            text: "nada", 
-            isCorrect: true, 
-            correctTip: "\"nada\"是动词\"nadar\"（游泳）的第二人称命令式形式。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "nadas", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"nadas\"是现在时形式，不是命令式。" 
-          },
-          { 
-            text: "nadarás", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"nadarás\"是将来时形式，不是命令式。" 
-          }
+          { text: "nada", isCorrect: true, correctTip: "命令式：nadar → nada。", incorrectTip: "" },
+          { text: "nades", isCorrect: false, correctTip: "", incorrectTip: "否定命令或虚拟式，不符肯定命令。"}
         ]
       },
       {
-        correctWord: "muy bien",
+        correctWord: "veinte metros",
         options: [
-          { 
-            text: "muy bien", 
-            isCorrect: true, 
-            correctTip: "\"muy bien\"表示\"非常好\"，修饰动词。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "mucho bien", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "副词\"mucho\"不用于修饰另一个副词\"bien\"，应使用\"muy\"。" 
-          },
-          { 
-            text: "bien muy", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "西班牙语中副词\"muy\"应放在被修饰的词前面，词序颠倒了。" 
-          }
+          { text: "veinte metros", isCorrect: true, correctTip: "距离补语。", incorrectTip: "" },
+          { text: "cincuenta metros", isCorrect: false, correctTip: "", incorrectTip: "距离不同。" }
         ]
       },
       {
         correctWord: "ahora",
         options: [
-          { 
-            text: "ahora", 
-            isCorrect: true, 
-            correctTip: "\"ahora\"表示\"现在\"，指示动作发生的时间。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "ya", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"ya\"表示\"已经\"，不是\"现在\"的意思。" 
-          },
-          { 
-            text: "entonces", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"entonces\"表示\"那时，然后\"，不是\"现在\"。" 
-          }
+          { text: "ahora", isCorrect: true, correctTip: "", incorrectTip: "" },
+          { text: "luego", isCorrect: false, correctTip: "", incorrectTip: "表示随后。" }
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Imperativo | Él | Él presente muy bien ahora.
+
+  // Imperativo | Usted — presentar
   {
     id: 59,
-    chinese: "现在他展示得非常好。",
-    spanish: "Él presente muy bien ahora.",
+    chinese: "现在请您提交报告。",
+    spanish: "Usted presente el informe ahora.",
     wordChoices: [
-      { 
-        correctWord: "Él",
+      {
+        correctWord: "Usted",
         options: [
-          { 
-            text: "Él", 
-            isCorrect: true, 
-            correctTip: "\"Él\"表示\"他\"，此句主语。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "Le", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Le\"是代词\"他\"的间接宾格形式，不是主语。" 
-          },
-          { 
-            text: "Lo", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Lo\"是代词\"他\"的直接宾格形式，不是主语。" 
-          }
+          { text: "Usted", isCorrect: true, correctTip: "\"Usted\"＝您。", incorrectTip: "" },
+          { text: "Él", isCorrect: false, correctTip: "", incorrectTip: "命令应对您(usted)。" }
         ]
       },
-      { 
+      {
         correctWord: "presente",
         options: [
-          { 
-            text: "presente", 
-            isCorrect: true, 
-            correctTip: "\"presente\"是动词\"presentar\"（展示）的第三人称命令式形式。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "presenta", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"presenta\"是现在时形式，不是命令式。" 
-          },
-          { 
-            text: "presentará", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"presentará\"是将来时形式，不是命令式。" 
-          }
+          { text: "presente", isCorrect: true, correctTip: "命令式：presentar → presente (usted)。", incorrectTip: "" },
+          { text: "presenta", isCorrect: false, correctTip: "", incorrectTip: "这是tú命令或 él 现在时。" }
         ]
       },
       {
-        correctWord: "muy bien",
+        correctWord: "el informe",
         options: [
-          { 
-            text: "muy bien", 
-            isCorrect: true, 
-            correctTip: "\"muy bien\"表示\"非常好\"，修饰动词。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "muy bueno", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"muy bueno\"用于修饰名词，而不是动词。应使用副词形式\"muy bien\"。" 
-          },
-          { 
-            text: "bastante bien", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"bastante bien\"表示\"相当好\"，程度不如\"muy bien\"（非常好）。" 
-          }
+          { text: "el informe", isCorrect: true, correctTip: "对象：报告。", incorrectTip: "" },
+          { text: "la factura", isCorrect: false, correctTip: "", incorrectTip: "对象不同。" }
         ]
       },
       {
         correctWord: "ahora",
         options: [
-          { 
-            text: "ahora", 
-            isCorrect: true, 
-            correctTip: "\"ahora\"表示\"现在\"，指示动作发生的时间。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "luego", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"luego\"表示\"稍后，然后\"，不是\"现在\"的意思。" 
-          },
-          { 
-            text: "antes", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"antes\"表示\"以前\"，与\"现在\"相反。" 
-          }
+          { text: "ahora", isCorrect: true, correctTip: "", incorrectTip: "" },
+          { text: "mañana", isCorrect: false, correctTip: "", incorrectTip: "时间不同。" }
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Imperativo | Nosotros | Nosotros quedemos muy bien ahora.
+
+  // Imperativo | Nosotros — quedar(se)
   {
     id: 60,
-    chinese: "现在我们留在此处做得非常好。",
-    spanish: "Nosotros quedemos muy bien ahora.",
+    chinese: "现在我们先待在这里。",
+    spanish: "Quedémonos aquí un momento ahora.",
     wordChoices: [
-      { 
-        correctWord: "Nosotros",
+      {
+        correctWord: "quedémonos",
         options: [
-          { 
-            text: "Nosotros", 
-            isCorrect: true, 
-            correctTip: "\"Nosotros\"表示\"我们\"，此句主语。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "Nos", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Nos\"是代词\"我们\"的宾格形式，不是主语。" 
-          },
-          { 
-            text: "Nuestros", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Nuestros\"是所有格形容词\"我们的\"，不是主语。" 
-          }
-        ]
-      },
-      { 
-        correctWord: "quedemos",
-        options: [
-          { 
-            text: "quedemos", 
-            isCorrect: true, 
-            correctTip: "\"quedemos\"是动词\"quedar\"（留下）的第一人称复数命令式形式。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "quedamos", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"quedamos\"是现在时形式，不是命令式。" 
-          },
-          { 
-            text: "quedaremos", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"quedaremos\"是将来时形式，不是命令式。" 
-          }
+          { text: "quedémonos", isCorrect: true, correctTip: "命令式第一人称复数：quedarse → quedémonos。", incorrectTip: "" },
+          { text: "quedamos", isCorrect: false, correctTip: "", incorrectTip: "现在时，不是命令式。" },
+          { text: "quedémonosnos", isCorrect: false, correctTip: "", incorrectTip: "拼写错误。"}
         ]
       },
       {
-        correctWord: "muy bien",
+        correctWord: "aquí",
         options: [
-          { 
-            text: "muy bien", 
-            isCorrect: true, 
-            correctTip: "\"muy bien\"表示\"非常好\"，修饰动词。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "muy buenos", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"muy buenos\"用于修饰复数名词，而不是动词。应使用副词形式\"muy bien\"。" 
-          },
-          { 
-            text: "poco bien", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"poco bien\"表示\"不太好\"，与原句的\"非常好\"意思相反。" 
-          }
+          { text: "aquí", isCorrect: true, correctTip: "地点副词：这里。", incorrectTip: "" },
+          { text: "allí", isCorrect: false, correctTip: "", incorrectTip: "那里，地点不同。" }
+        ]
+      },
+      {
+        correctWord: "un momento",
+        options: [
+          { text: "un momento", isCorrect: true, correctTip: "“一会儿”。", incorrectTip: "" },
+          { text: "toda la noche", isCorrect: false, correctTip: "", incorrectTip: "时间长度不同。" }
         ]
       },
       {
         correctWord: "ahora",
         options: [
-          { 
-            text: "ahora", 
-            isCorrect: true, 
-            correctTip: "\"ahora\"表示\"现在\"，指示动作发生的时间。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "hoy día", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"hoy día\"表示\"如今，现今\"，指较长时期，而不是具体的\"现在\"时刻。" 
-          },
-          { 
-            text: "mañana", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"mañana\"表示\"明天\"，不是\"现在\"。" 
-          }
+          { text: "ahora", isCorrect: true, correctTip: "", incorrectTip: "" },
+          { text: "luego", isCorrect: false, correctTip: "", incorrectTip: "随后。" }
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Imperativo | Vosotros | Vosotros recordad muy bien ahora.
+
+  // Imperativo | Vosotros — recordar
   {
     id: 61,
-    chinese: "现在你们记得非常好。",
-    spanish: "Vosotros recordad muy bien ahora.",
+    chinese: "现在你们记住密码。",
+    spanish: "Vosotros recordad la contraseña ahora.",
     wordChoices: [
-      { 
+      {
         correctWord: "Vosotros",
         options: [
-          { 
-            text: "Vosotros", 
-            isCorrect: true, 
-            correctTip: "\"Vosotros\"表示\"你们\"，此句主语。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "Os", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Os\"是代词\"你们\"的宾格形式，不是主语。" 
-          },
-          { 
-            text: "Vuestros", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Vuestros\"是所有格形容词\"你们的\"，不是主语。" 
-          }
+          { text: "Vosotros", isCorrect: true, correctTip: "\"Vosotros\"＝你们。", incorrectTip: "" },
+          { text: "Ellos", isCorrect: false, correctTip: "", incorrectTip: "主语不符。" }
         ]
       },
-      { 
+      {
         correctWord: "recordad",
         options: [
-          { 
-            text: "recordad", 
-            isCorrect: true, 
-            correctTip: "\"recordad\"是动词\"recordar\"（记得）的第二人称复数命令式形式。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "recordáis", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"recordáis\"是现在时形式，不是命令式。" 
-          },
-          { 
-            text: "recordaréis", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"recordaréis\"是将来时形式，不是命令式。" 
-          }
+          { text: "recordad", isCorrect: true, correctTip: "命令式二复：recordad。", incorrectTip: "" },
+          { text: "recordáis", isCorrect: false, correctTip: "", incorrectTip: "现在时。" }
         ]
       },
       {
-        correctWord: "muy bien",
+        correctWord: "la contraseña",
         options: [
-          { 
-            text: "muy bien", 
-            isCorrect: true, 
-            correctTip: "\"muy bien\"表示\"非常好\"，修饰动词。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "bien muy", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "西班牙语中副词\"muy\"应放在被修饰的词前面，词序颠倒了。" 
-          },
-          { 
-            text: "muy buenos", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"muy buenos\"用于修饰复数名词，而不是动词。应使用副词形式\"muy bien\"。" 
-          }
+          { text: "la contraseña", isCorrect: true, correctTip: "“密码”。", incorrectTip: "" },
+          { text: "el horario", isCorrect: false, correctTip: "", incorrectTip: "记忆对象不同。" }
         ]
       },
       {
-        correctWord: "ahora",
+        correctWord: "现在",
         options: [
-          { 
-            text: "ahora", 
-            isCorrect: true, 
-            correctTip: "\"ahora\"表示\"现在\"，指示动作发生的时间。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "ya", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"ya\"表示\"已经\"，不是\"现在\"的意思。" 
-          },
-          { 
-            text: "después", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"después\"表示\"之后\"，不是\"现在\"。" 
-          }
+          { text: "ahora", isCorrect: true, correctTip: "", incorrectTip: "" },
+          { text: "después", isCorrect: false, correctTip: "", incorrectTip: "之后。" }
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Imperativo | Ellos | Ellos tomen muy bien ahora.
+
+  // Imperativo | Ustedes — tomar
   {
     id: 62,
-    chinese: "现在他们拿得非常好。",
-    spanish: "Ellos tomen muy bien ahora.",
+    chinese: "现在请各位拿好文件。",
+    spanish: "Ustedes tomen los documentos ahora.",
     wordChoices: [
-      { 
-        correctWord: "Ellos",
+      {
+        correctWord: "Ustedes",
         options: [
-          { 
-            text: "Ellos", 
-            isCorrect: true, 
-            correctTip: "\"Ellos\"表示\"他们\"，此句主语。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "Les", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Les\"是代词\"他们\"的间接宾格形式，不是主语。" 
-          },
-          { 
-            text: "Los", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Los\"是代词\"他们\"的直接宾格形式，不是主语。" 
-          }
-        ]
-      },
-      { 
-        correctWord: "tomen",
-        options: [
-          { 
-            text: "tomen", 
-            isCorrect: true, 
-            correctTip: "\"tomen\"是动词\"tomar\"（拿）的第三人称复数命令式形式。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "toman", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"toman\"是现在时形式，不是命令式。" 
-          },
-          { 
-            text: "tomarán", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"tomarán\"是将来时形式，不是命令式。" 
-          }
+          { text: "Ustedes", isCorrect: true, correctTip: "\"Ustedes\"＝各位/你们(拉美)。", incorrectTip: "" },
+          { text: "Ellos", isCorrect: false, correctTip: "", incorrectTip: "命令对象应为Ustedes。" }
         ]
       },
       {
-        correctWord: "muy bien",
+        correctWord: "tomen",
         options: [
-          { 
-            text: "muy bien", 
-            isCorrect: true, 
-            correctTip: "\"muy bien\"表示\"非常好\"，修饰动词。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "mucho bien", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "副词\"mucho\"不用于修饰另一个副词\"bien\"，应使用\"muy\"。" 
-          },
-          { 
-            text: "muy bueno", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"muy bueno\"用于修饰名词，而不是动词。应使用副词形式\"muy bien\"。" 
-          }
+          { text: "tomen", isCorrect: true, correctTip: "命令式三复：tomar → tomen。", incorrectTip: "" },
+          { text: "toman", isCorrect: false, correctTip: "", incorrectTip: "现在时。" }
+        ]
+      },
+      {
+        correctWord: "los documentos",
+        options: [
+          { text: "los documentos", isCorrect: true, correctTip: "“文件”。", incorrectTip: "" },
+          { text: "las llaves", isCorrect: false, correctTip: "", incorrectTip: "对象不同。" }
         ]
       },
       {
         correctWord: "ahora",
         options: [
-          { 
-            text: "ahora", 
-            isCorrect: true, 
-            correctTip: "\"ahora\"表示\"现在\"，指示动作发生的时间。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "entonces", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"entonces\"表示\"那时，然后\"，不是\"现在\"。" 
-          },
-          { 
-            text: "siempre", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"siempre\"表示\"总是\"，不是\"现在\"的意思。" 
-          }
+          { text: "ahora", isCorrect: true, correctTip: "", incorrectTip: "" },
+          { text: "mañana", isCorrect: false, correctTip: "", incorrectTip: "时间不同。" }
         ]
       }
     ],
-    completed: false,
+    completed: false
   }
 ];

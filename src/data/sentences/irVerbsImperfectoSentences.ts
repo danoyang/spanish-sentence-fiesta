@@ -2,610 +2,235 @@ import { Sentence } from "@/types/game";
 
 // -IR动词 不完成过去时句子
 export const irVerbsImperfectoSentences: Sentence[] = [
-  // Imperfecto | Yo | Yo existía muy bien cuando era niño.
+  // Yo — vivir
   {
     id: 87,
-    chinese: "我小时候存在得很好。",
-    spanish: "Yo existía muy bien cuando era niño.",
+    chinese: "我小时候无忧无虑地生活。",
+    spanish: "Yo vivía sin preocupaciones cuando era niño.",
     wordChoices: [
-      { 
+      {
         correctWord: "Yo",
         options: [
-          { 
-            text: "Yo", 
-            isCorrect: true, 
-            correctTip: "\"Yo\"表示\"我\"，此句主语。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "Me", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Me\"是代词\"我\"的宾格形式，不是主语。" 
-          },
-          { 
-            text: "Mi", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Mi\"是所有格\"我的\"，不是主语\"我\"。" 
-          }
-        ]
-      },
-      { 
-        correctWord: "existía",
-        options: [
-          { 
-            text: "existía", 
-            isCorrect: true, 
-            correctTip: "\"existía\"是动词\"existir\"（存在）在第一人称单数不完成过去时的正确变位。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "existo", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"existo\"是现在时形式，不是不完成过去时。" 
-          },
-          { 
-            text: "existí", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"existí\"是简单过去时形式，不是不完成过去时。" 
-          }
+          { text: "Yo", isCorrect: true, correctTip: "\"Yo\"＝我。", incorrectTip: "" },
+          { text: "Me", isCorrect: false, correctTip: "", incorrectTip: "宾格代词，不能作主语。" }
         ]
       },
       {
-        correctWord: "muy bien",
+        correctWord: "vivía",
         options: [
-          { 
-            text: "muy bien", 
-            isCorrect: true, 
-            correctTip: "\"muy bien\"表示\"非常好\"，修饰动词。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "bien muy", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "西班牙语中副词\"muy\"应放在被修饰的词前面，词序颠倒了。" 
-          },
-          { 
-            text: "muy bueno", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"muy bueno\"用于修饰名词，而不是动词。应使用副词形式\"muy bien\"。" 
-          }
+          { text: "vivía", isCorrect: true, correctTip: "动词\"vivir\"未完成过去时第一人称：vivía。", incorrectTip: "" },
+          { text: "vivo", isCorrect: false, correctTip: "", incorrectTip: "现在时。"},
+          { text: "viví", isCorrect: false, correctTip: "", incorrectTip: "简单过去时。"}
+        ]
+      },
+      {
+        correctWord: "sin preocupaciones",
+        options: [
+          { text: "sin preocupaciones", isCorrect: true, correctTip: "“无忧无虑”。", incorrectTip: "" },
+          { text: "con estrés", isCorrect: false, correctTip: "", incorrectTip: "含义相反。"},
+          { text: "bajo presión", isCorrect: false, correctTip: "", incorrectTip: "含义相反。"}
         ]
       },
       {
         correctWord: "cuando era niño",
         options: [
-          { 
-            text: "cuando era niño", 
-            isCorrect: true, 
-            correctTip: "\"cuando era niño\"表示\"当我小时候\"，是时间状语从句，与不完成过去时态相符。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "ayer", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"ayer\"表示\"昨天\"，不适合形容童年或长期的过去状态。" 
-          },
-          { 
-            text: "ahora", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"ahora\"表示\"现在\"，不符合过去时语境。" 
-          }
+          { text: "cuando era niño", isCorrect: true, correctTip: "时间状语：小时候。", incorrectTip: "" },
+          { text: "ayer", isCorrect: false, correctTip: "", incorrectTip: "指昨日，不符长期过去。"}
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Imperfecto | Tú | Tú insistías muy bien cuando era niño.
+
+  // Tú — insistir
   {
     id: 88,
-    chinese: "你小时候坚持得很好。",
-    spanish: "Tú insistías muy bien cuando era niño.",
+    chinese: "你小时候总是很坚持自己的想法。",
+    spanish: "Tú insistías en tus ideas con mucha energía cuando eras niño.",
     wordChoices: [
-      { 
+      {
         correctWord: "Tú",
         options: [
-          { 
-            text: "Tú", 
-            isCorrect: true, 
-            correctTip: "\"Tú\"表示\"你\"，此句主语。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "Te", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Te\"是代词\"你\"的宾格形式，不是主语。" 
-          },
-          { 
-            text: "Tu", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Tu\"是所有格形容词\"你的\"，不是主语\"你\"（注意没有重音符号）。" 
-          }
+          { text: "Tú", isCorrect: true, correctTip: "\"Tú\"＝你。", incorrectTip: "" },
+          { text: "Usted", isCorrect: false, correctTip: "", incorrectTip: "人称不符。" }
         ]
       },
-      { 
+      {
         correctWord: "insistías",
         options: [
-          { 
-            text: "insistías", 
-            isCorrect: true, 
-            correctTip: "\"insistías\"是动词\"insistir\"（坚持）在第二人称单数不完成过去时的正确变位。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "insistía", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"insistía\"是第一和第三人称单数变位，不匹配主语\"Tú\"。" 
-          },
-          { 
-            text: "insististe", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"insististe\"是简单过去时形式，不是不完成过去时。" 
-          }
+          { text: "insistías", isCorrect: true, correctTip: "动词\"insistir\"未完成过去时第二人称：insistías。", incorrectTip: "" },
+          { text: "insististe", isCorrect: false, correctTip: "", incorrectTip: "简单过去时。" },
+          { text: "insistes", isCorrect: false, correctTip: "", incorrectTip: "现在时。" }
         ]
       },
       {
-        correctWord: "muy bien",
+        correctWord: "en tus ideas",
         options: [
-          { 
-            text: "muy bien", 
-            isCorrect: true, 
-            correctTip: "\"muy bien\"表示\"非常好\"，修饰动词。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "mucho bien", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "副词\"mucho\"不用于修饰另一个副词\"bien\"，应使用\"muy\"。" 
-          },
-          { 
-            text: "poco bien", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"poco bien\"表示\"不太好\"，与原句的\"非常好\"意思相反。" 
-          }
+          { text: "en tus ideas", isCorrect: true, correctTip: "“坚持自己的想法”。", incorrectTip: "" },
+          { text: "en mis ideas", isCorrect: false, correctTip: "", incorrectTip: "人称不匹配。" }
         ]
       },
       {
-        correctWord: "cuando era niño",
+        correctWord: "con mucha energía",
         options: [
-          { 
-            text: "cuando era niño", 
-            isCorrect: true, 
-            correctTip: "\"cuando era niño\"表示\"当你小时候\"，是时间状语从句，与不完成过去时态相符。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "antes", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"antes\"表示\"以前\"，不如\"cuando era niño\"(当小时候)具体。" 
-          },
-          { 
-            text: "hace mucho tiempo", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"hace mucho tiempo\"表示\"很久以前\"，不如\"cuando era niño\"(当小时候)具体。" 
-          }
+          { text: "con mucha energía", isCorrect: true, correctTip: "方式状语：充满活力。", incorrectTip: "" },
+          { text: "sin ganas", isCorrect: false, correctTip: "", incorrectTip: "含义相反。"}
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Imperfecto | Él | Él ocurría muy bien cuando era niño.
+
+  // Él — dormir
   {
     id: 89,
-    chinese: "他小时候发生得很好。",
-    spanish: "Él ocurría muy bien cuando era niño.",
+    chinese: "他小时候每晚都睡得很沉。",
+    spanish: "Él dormía profundamente cada noche cuando era niño.",
     wordChoices: [
-      { 
+      {
         correctWord: "Él",
         options: [
-          { 
-            text: "Él", 
-            isCorrect: true, 
-            correctTip: "\"Él\"表示\"他\"，此句主语。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "Le", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Le\"是代词\"他\"的间接宾格形式，不是主语。" 
-          },
-          { 
-            text: "Ella", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Ella\"表示\"她\"，不是\"他\"。" 
-          }
-        ]
-      },
-      { 
-        correctWord: "ocurría",
-        options: [
-          { 
-            text: "ocurría", 
-            isCorrect: true, 
-            correctTip: "\"ocurría\"是动词\"ocurrir\"（发生）在第三人称单数不完成过去时的正确变位。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "ocurre", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"ocurre\"是现在时形式，不是不完成过去时。" 
-          },
-          { 
-            text: "ocurrió", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"ocurrió\"是简单过去时形式，不是不完成过去时。" 
-          }
+          { text: "Él", isCorrect: true, correctTip: "", incorrectTip: "" },
+          { text: "Ella", isCorrect: false, correctTip: "", incorrectTip: "性别不符。" }
         ]
       },
       {
-        correctWord: "muy bien",
+        correctWord: "dormía",
         options: [
-          { 
-            text: "muy bien", 
-            isCorrect: true, 
-            correctTip: "\"muy bien\"表示\"非常好\"，修饰动词。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "tan bien", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"tan bien\"也表示\"这么好\"，但原句使用的是\"muy bien\"（非常好）。" 
-          },
-          { 
-            text: "muy bueno", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"muy bueno\"用于修饰名词，而不是动词。应使用副词形式\"muy bien\"。" 
-          }
+          { text: "dormía", isCorrect: true, correctTip: "\"dormir\"未完成过去时第三人称：dormía。", incorrectTip: "" },
+          { text: "durmió", isCorrect: false, correctTip: "", incorrectTip: "简单过去时。" },
+          { text: "duerme", isCorrect: false, correctTip: "", incorrectTip: "现在时。" }
         ]
       },
       {
-        correctWord: "cuando era niño",
+        correctWord: "profundamente",
         options: [
-          { 
-            text: "cuando era niño", 
-            isCorrect: true, 
-            correctTip: "\"cuando era niño\"表示\"当他小时候\"，是时间状语从句，与不完成过去时态相符。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "siempre", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"siempre\"表示\"总是\"，不如\"cuando era niño\"(当小时候)具体。" 
-          },
-          { 
-            text: "ayer", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"ayer\"表示\"昨天\"，不适合形容童年或长期的过去状态。" 
-          }
+          { text: "profundamente", isCorrect: true, correctTip: "副词：深沉地。", incorrectTip: "" },
+          { text: "ligeramente", isCorrect: false, correctTip: "", incorrectTip: "表示浅睡，含义相反。" }
+        ]
+      },
+      {
+        correctWord: "cada noche",
+        options: [
+          { text: "cada noche", isCorrect: true, correctTip: "频率状语：每晚。", incorrectTip: "" },
+          { text: "una vez", isCorrect: false, correctTip: "", incorrectTip: "次数不同。" }
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Imperfecto | Nosotros | Nosotros partíamos muy bien cuando era niño.
+
+  // Nosotros — partir
   {
     id: 90,
-    chinese: "我们小时候分开得很好。",
-    spanish: "Nosotros partíamos muy bien cuando era niño.",
+    chinese: "我们小时候总是很早动身去上学。",
+    spanish: "Nosotros partíamos temprano hacia la escuela cuando éramos niños.",
     wordChoices: [
-      { 
+      {
         correctWord: "Nosotros",
         options: [
-          { 
-            text: "Nosotros", 
-            isCorrect: true, 
-            correctTip: "\"Nosotros\"表示\"我们\"，此句主语。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "Nos", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Nos\"是代词\"我们\"的宾格形式，不是主语。" 
-          },
-          { 
-            text: "Nuestros", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Nuestros\"是所有格形容词\"我们的\"，不是主语。" 
-          }
+          { text: "Nosotros", isCorrect: true, correctTip: "", incorrectTip: "" },
+          { text: "Vosotros", isCorrect: false, correctTip: "", incorrectTip: "人称不符。" }
         ]
       },
-      { 
+      {
         correctWord: "partíamos",
         options: [
-          { 
-            text: "partíamos", 
-            isCorrect: true, 
-            correctTip: "\"partíamos\"是动词\"partir\"（分开）在第一人称复数不完成过去时的正确变位。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "partimos", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"partimos\"可以是现在时或简单过去时形式，不是不完成过去时。" 
-          },
-          { 
-            text: "partiremos", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"partiremos\"是将来时形式，不是不完成过去时。" 
-          }
+          { text: "partíamos", isCorrect: true, correctTip: "\"partir\"未完成过去时第一人称复数：partíamos。", incorrectTip: "" },
+          { text: "partimos", isCorrect: false, correctTip: "", incorrectTip: "现在/简单过去时。" }
         ]
       },
       {
-        correctWord: "muy bien",
+        correctWord: "temprano",
         options: [
-          { 
-            text: "muy bien", 
-            isCorrect: true, 
-            correctTip: "\"muy bien\"表示\"非常好\"，修饰动词。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "muy buenos", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"muy buenos\"用于修饰复数名词，而不是动词。应使用副词形式\"muy bien\"。" 
-          },
-          { 
-            text: "bastante bien", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"bastante bien\"表示\"相当好\"，程度不如\"muy bien\"（非常好）。" 
-          }
+          { text: "temprano", isCorrect: true, correctTip: "时间副词：很早。", incorrectTip: "" },
+          { text: "tarde", isCorrect: false, correctTip: "", incorrectTip: "含义相反：迟。"}
         ]
       },
       {
-        correctWord: "cuando era niño",
+        correctWord: "hacia la escuela",
         options: [
-          { 
-            text: "cuando era niño", 
-            isCorrect: true, 
-            correctTip: "\"cuando era niño\"表示\"当我们小时候\"，是时间状语从句，与不完成过去时态相符。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "hace tiempo", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"hace tiempo\"表示\"很久以前\"，不如\"cuando era niño\"(当小时候)具体。" 
-          },
-          { 
-            text: "ahora", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"ahora\"表示\"现在\"，不符合过去时语境。" 
-          }
+          { text: "hacia la escuela", isCorrect: true, correctTip: "方向补语：去学校。", incorrectTip: "" },
+          { text: "al cine", isCorrect: false, correctTip: "", incorrectTip: "地点不符。" }
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Imperfecto | Vosotros | Vosotros permitíais muy bien cuando era niño.
+
+  // Vosotros — compartir
   {
     id: 91,
-    chinese: "你们小时候允许得很好。",
-    spanish: "Vosotros permitíais muy bien cuando era niño.",
+    chinese: "你们小时候总是乐于分享玩具。",
+    spanish: "Vosotros compartíais vuestros juguetes con gusto cuando erais niños.",
     wordChoices: [
-      { 
+      {
         correctWord: "Vosotros",
         options: [
-          { 
-            text: "Vosotros", 
-            isCorrect: true, 
-            correctTip: "\"Vosotros\"表示\"你们\"，此句主语。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "Os", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Os\"是代词\"你们\"的宾格形式，不是主语。" 
-          },
-          { 
-            text: "Ustedes", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Ustedes\"也表示\"你们\"，但在西班牙语中更正式，且动词变位不同。" 
-          }
-        ]
-      },
-      { 
-        correctWord: "permitíais",
-        options: [
-          { 
-            text: "permitíais", 
-            isCorrect: true, 
-            correctTip: "\"permitíais\"是动词\"permitir\"（允许）在第二人称复数不完成过去时的正确变位。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "permitís", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"permitís\"是现在时形式，不是不完成过去时。" 
-          },
-          { 
-            text: "permitisteis", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"permitisteis\"是简单过去时形式，不是不完成过去时。" 
-          }
+          { text: "Vosotros", isCorrect: true, correctTip: "", incorrectTip: "" },
+          { text: "Ustedes", isCorrect: false, correctTip: "", incorrectTip: "动词变位不符。" }
         ]
       },
       {
-        correctWord: "muy bien",
+        correctWord: "compartíais",
         options: [
-          { 
-            text: "muy bien", 
-            isCorrect: true, 
-            correctTip: "\"muy bien\"表示\"非常好\"，修饰动词。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "bien muy", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "西班牙语中副词\"muy\"应放在被修饰的词前面，词序颠倒了。" 
-          },
-          { 
-            text: "demasiado bien", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"demasiado bien\"表示\"太好了\"，程度过了，不同于\"muy bien\"（非常好）。" 
-          }
+          { text: "compartíais", isCorrect: true, correctTip: "\"compartir\"未完成过去时第二人称复数：compartíais。", incorrectTip: "" },
+          { text: "compartisteis", isCorrect: false, correctTip: "", incorrectTip: "简单过去时。" }
         ]
       },
       {
-        correctWord: "cuando era niño",
+        correctWord: "vuestros juguetes",
         options: [
-          { 
-            text: "cuando era niño", 
-            isCorrect: true, 
-            correctTip: "\"cuando era niño\"表示\"当你们小时候\"，是时间状语从句，与不完成过去时态相符。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "de niños", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"de niños\"也表示\"小时候\"，但不是句子中使用的表达方式。" 
-          },
-          { 
-            text: "en el pasado", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"en el pasado\"表示\"在过去\"，不如\"cuando era niño\"(当小时候)具体。" 
-          }
+          { text: "vuestros juguetes", isCorrect: true, correctTip: "“你们的玩具”。", incorrectTip: "" },
+          { text: "mis juguetes", isCorrect: false, correctTip: "", incorrectTip: "所有格不匹配。" }
+        ]
+      },
+      {
+        correctWord: "con gusto",
+        options: [
+          { text: "con gusto", isCorrect: true, correctTip: "“乐意地”。", incorrectTip: "" },
+          { text: "a la fuerza", isCorrect: false, correctTip: "", incorrectTip: "含义相反：被迫。"}
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Imperfecto | Ellos | Ellos prohibían muy bien cuando era niño.
+
+  // Ellos — prohibir
   {
     id: 92,
-    chinese: "他们小时候禁止得很好。",
-    spanish: "Ellos prohibían muy bien cuando era niño.",
+    chinese: "他们小时候在游戏时常常禁止吵架。",
+    spanish: "Ellos prohibían las peleas durante los juegos cuando eran niños.",
     wordChoices: [
-      { 
+      {
         correctWord: "Ellos",
         options: [
-          { 
-            text: "Ellos", 
-            isCorrect: true, 
-            correctTip: "\"Ellos\"表示\"他们\"，此句主语。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "Les", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Les\"是代词\"他们\"的间接宾格形式，不是主语。" 
-          },
-          { 
-            text: "Sus", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Sus\"是所有格形容词\"他们的\"，不是主语。" 
-          }
+          { text: "Ellos", isCorrect: true, correctTip: "", incorrectTip: "" },
+          { text: "Ellas", isCorrect: false, correctTip: "", incorrectTip: "性别不符。" }
         ]
       },
-      { 
+      {
         correctWord: "prohibían",
         options: [
-          { 
-            text: "prohibían", 
-            isCorrect: true, 
-            correctTip: "\"prohibían\"是动词\"prohibir\"（禁止）在第三人称复数不完成过去时的正确变位。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "prohiben", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"prohiben\"是现在时形式，不是不完成过去时。还有拼写错误，正确的现在时应为\"prohíben\"。" 
-          },
-          { 
-            text: "prohibieron", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"prohibieron\"是简单过去时形式，不是不完成过去时。" 
-          }
+          { text: "prohibían", isCorrect: true, correctTip: "\"prohibir\"未完成过去时第三人称复数：prohibían。", incorrectTip: "" },
+          { text: "prohibieron", isCorrect: false, correctTip: "", incorrectTip: "简单过去时。" }
         ]
       },
       {
-        correctWord: "muy bien",
+        correctWord: "las peleas",
         options: [
-          { 
-            text: "muy bien", 
-            isCorrect: true, 
-            correctTip: "\"muy bien\"表示\"非常好\"，修饰动词。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "mucho bien", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "副词\"mucho\"不用于修饰另一个副词\"bien\"，应使用\"muy\"。" 
-          },
-          { 
-            text: "muy buenos", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"muy buenos\"用于修饰复数名词，而不是动词。应使用副词形式\"muy bien\"。" 
-          }
+          { text: "las peleas", isCorrect: true, correctTip: "“打架”。", incorrectTip: "" },
+          { text: "los cantos", isCorrect: false, correctTip: "", incorrectTip: "对象不同。" }
         ]
       },
       {
-        correctWord: "cuando era niño",
+        correctWord: "durante los juegos",
         options: [
-          { 
-            text: "cuando era niño", 
-            isCorrect: true, 
-            correctTip: "\"cuando era niño\"表示\"当他们小时候\"，是时间状语从句，与不完成过去时态相符。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "antes", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"antes\"表示\"以前\"，不如\"cuando era niño\"(当小时候)具体。" 
-          },
-          { 
-            text: "el año pasado", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"el año pasado\"表示\"去年\"，不适合形容童年或长期的过去状态。" 
-          }
+          { text: "durante los juegos", isCorrect: true, correctTip: "时间/场景状语：在游戏时。", incorrectTip: "" },
+          { text: "en clase", isCorrect: false, correctTip: "", incorrectTip: "场景不同。" }
         ]
       }
     ],
-    completed: false,
+    completed: false
   }
 ];

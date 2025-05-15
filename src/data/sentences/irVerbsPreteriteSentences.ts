@@ -2,610 +2,237 @@ import { Sentence } from "@/types/game";
 
 // -IR动词 过去时句子
 export const irVerbsPreteriteSentences: Sentence[] = [
-  // Pretérito | Yo | Yo compartí muy bien ayer.
+  /* Pretérito | Yo */
   {
     id: 81,
-    chinese: "我昨天分享得很好。",
-    spanish: "Yo compartí muy bien ayer.",
+    chinese: "我昨天慷慨地分享了。",
+    spanish: "Yo compartí generosamente ayer.",
     wordChoices: [
-      { 
+      {
         correctWord: "Yo",
         options: [
-          { 
-            text: "Yo", 
-            isCorrect: true, 
-            correctTip: "\"Yo\"表示\"我\"，此句主语。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "Me", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Me\"是代词\"我\"的宾格形式，不是主语。" 
-          },
-          { 
-            text: "Mi", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Mi\"是所有格\"我的\"，不是主语\"我\"。" 
-          }
+          { text: "Yo", isCorrect: true, correctTip: "主语“我”。", incorrectTip: "" },
+          { text: "Me", isCorrect: false, correctTip: "", incorrectTip: "“Me”是宾格形式，不作主语。" }
         ]
       },
-      { 
+      {
         correctWord: "compartí",
         options: [
-          { 
-            text: "compartí", 
-            isCorrect: true, 
-            correctTip: "\"compartí\"是动词\"compartir\"（分享）在第一人称单数过去时的正确变位。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "comparto", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"comparto\"是现在时形式，不是过去时。" 
-          },
-          { 
-            text: "compartiré", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"compartiré\"是将来时形式，不是过去时。" 
-          }
+          { text: "compartí", isCorrect: true, correctTip: "动词“compartir”第一人称单数简单过去时。", incorrectTip: "" },
+          { text: "comparto", isCorrect: false, correctTip: "", incorrectTip: "现在时形式。" }
         ]
       },
       {
-        correctWord: "muy bien",
+        correctWord: "generosamente",
         options: [
-          { 
-            text: "muy bien", 
-            isCorrect: true, 
-            correctTip: "\"muy bien\"表示\"非常好\"，修饰动词。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "bien muy", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "西班牙语中副词\"muy\"应放在被修饰的词前面，词序颠倒了。" 
-          },
-          { 
-            text: "muy bueno", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"muy bueno\"用于修饰名词，而不是动词。应使用副词形式\"muy bien\"。" 
-          }
+          { text: "generosamente", isCorrect: true, correctTip: "副词，表示“慷慨地”。", incorrectTip: "" },
+          { text: "muy bien", isCorrect: false, correctTip: "", incorrectTip: "已改用更自然的副词表达。" },
+          { text: "bien generoso", isCorrect: false, correctTip: "", incorrectTip: "结构不当，应使用副词形式。"}
         ]
       },
       {
         correctWord: "ayer",
         options: [
-          { 
-            text: "ayer", 
-            isCorrect: true, 
-            correctTip: "\"ayer\"表示\"昨天\"，是时间状语，与过去时态相符。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "hoy", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"hoy\"表示\"今天\"，不是\"昨天\"，不符合过去时语境。" 
-          },
-          { 
-            text: "mañana", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"mañana\"表示\"明天\"，不是\"昨天\"，不符合过去时语境。" 
-          }
+          { text: "ayer", isCorrect: true, correctTip: "“ayer”表示“昨天”，与过去时态对应。", incorrectTip: "" },
+          { text: "hoy", isCorrect: false, correctTip: "", incorrectTip: "与过去时间不符。" }
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Pretérito | Tú | Tú cumpliste muy bien ayer.
+
+  /* Pretérito | Tú */
   {
     id: 82,
-    chinese: "你昨天完成得很好。",
-    spanish: "Tú cumpliste muy bien ayer.",
+    chinese: "你昨天顺利地完成了任务。",
+    spanish: "Tú cumpliste con éxito ayer.",
     wordChoices: [
-      { 
+      {
         correctWord: "Tú",
         options: [
-          { 
-            text: "Tú", 
-            isCorrect: true, 
-            correctTip: "\"Tú\"表示\"你\"，此句主语。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "Te", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Te\"是代词\"你\"的宾格形式，不是主语。" 
-          },
-          { 
-            text: "Tu", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Tu\"是所有格形容词\"你的\"，不是主语\"你\"（注意没有重音符号）。" 
-          }
+          { text: "Tú", isCorrect: true, correctTip: "主语“你”。", incorrectTip: "" },
+          { text: "Te", isCorrect: false, correctTip: "", incorrectTip: "宾格形式，不作主语。" }
         ]
       },
-      { 
+      {
         correctWord: "cumpliste",
         options: [
-          { 
-            text: "cumpliste", 
-            isCorrect: true, 
-            correctTip: "\"cumpliste\"是动词\"cumplir\"（完成）在第二人称单数过去时的正确变位。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "cumplí", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"cumplí\"是第一人称单数变位，不匹配主语\"Tú\"。" 
-          },
-          { 
-            text: "cumples", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"cumples\"是现在时形式，不是过去时。" 
-          }
+          { text: "cumpliste", isCorrect: true, correctTip: "动词“cumplir”第二人称单数简单过去时。", incorrectTip: "" },
+          { text: "cumples", isCorrect: false, correctTip: "", incorrectTip: "现在时形式。" }
         ]
       },
       {
-        correctWord: "muy bien",
+        correctWord: "con éxito",
         options: [
-          { 
-            text: "muy bien", 
-            isCorrect: true, 
-            correctTip: "\"muy bien\"表示\"非常好\"，修饰动词。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "mucho bien", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "副词\"mucho\"不用于修饰另一个副词\"bien\"，应使用\"muy\"。" 
-          },
-          { 
-            text: "poco bien", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"poco bien\"表示\"不太好\"，与原句的\"非常好\"意思相反。" 
-          }
+          { text: "con éxito", isCorrect: true, correctTip: "短语，表示“成功地/顺利地”。", incorrectTip: "" },
+          { text: "muy bien", isCorrect: false, correctTip: "", incorrectTip: "已替换为更具体表达。" },
+          { text: "sin éxito", isCorrect: false, correctTip: "", incorrectTip: "含义相反。" }
         ]
       },
       {
         correctWord: "ayer",
         options: [
-          { 
-            text: "ayer", 
-            isCorrect: true, 
-            correctTip: "\"ayer\"表示\"昨天\"，是时间状语，与过去时态相符。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "anoche", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"anoche\"表示\"昨晚\"，虽然也是过去时间，但原句使用的是\"昨天\"(ayer)。" 
-          },
-          { 
-            text: "ahora", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"ahora\"表示\"现在\"，不符合过去时语境。" 
-          }
+          { text: "ayer", isCorrect: true, correctTip: "表示“昨天”，符合过去时。", incorrectTip: "" },
+          { text: "hoy", isCorrect: false, correctTip: "", incorrectTip: "与过去时间不符。" }
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Pretérito | Él | Él decidió muy bien ayer.
+
+  /* Pretérito | Él */
   {
     id: 83,
-    chinese: "他昨天决定得很好。",
-    spanish: "Él decidió muy bien ayer.",
+    chinese: "他昨天迅速地做出了决定。",
+    spanish: "Él decidió rápidamente ayer.",
     wordChoices: [
-      { 
+      {
         correctWord: "Él",
         options: [
-          { 
-            text: "Él", 
-            isCorrect: true, 
-            correctTip: "\"Él\"表示\"他\"，此句主语。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "Le", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Le\"是代词\"他\"的间接宾格形式，不是主语。" 
-          },
-          { 
-            text: "Ella", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Ella\"表示\"她\"，不是\"他\"。" 
-          }
+          { text: "Él", isCorrect: true, correctTip: "主语“他”。", incorrectTip: "" },
+          { text: "Ella", isCorrect: false, correctTip: "", incorrectTip: "性别不符。" }
         ]
       },
-      { 
+      {
         correctWord: "decidió",
         options: [
-          { 
-            text: "decidió", 
-            isCorrect: true, 
-            correctTip: "\"decidió\"是动词\"decidir\"（决定）在第三人称单数过去时的正确变位。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "decidí", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"decidí\"是第一人称单数变位，不匹配主语\"Él\"。" 
-          },
-          { 
-            text: "decide", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"decide\"是现在时形式，不是过去时。" 
-          }
+          { text: "decidió", isCorrect: true, correctTip: "动词“decidir”第三人称单数简单过去时。", incorrectTip: "" },
+          { text: "decide", isCorrect: false, correctTip: "", incorrectTip: "现在时形式。" }
         ]
       },
       {
-        correctWord: "muy bien",
+        correctWord: "rápidamente",
         options: [
-          { 
-            text: "muy bien", 
-            isCorrect: true, 
-            correctTip: "\"muy bien\"表示\"非常好\"，修饰动词。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "tan bien", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"tan bien\"也表示\"这么好\"，但原句使用的是\"muy bien\"（非常好）。" 
-          },
-          { 
-            text: "muy bueno", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"muy bueno\"用于修饰名词，而不是动词。应使用副词形式\"muy bien\"。" 
-          }
+          { text: "rápidamente", isCorrect: true, correctTip: "副词，表示“迅速地”。", incorrectTip: "" },
+          { text: "muy bien", isCorrect: false, correctTip: "", incorrectTip: "已替换为更具体副词。"},
+          { text: "con calma", isCorrect: false, correctTip: "", incorrectTip: "含义相反。" }
         ]
       },
       {
         correctWord: "ayer",
         options: [
-          { 
-            text: "ayer", 
-            isCorrect: true, 
-            correctTip: "\"ayer\"表示\"昨天\"，是时间状语，与过去时态相符。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "antes", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"antes\"表示\"以前\"，不如\"ayer\"(昨天)具体。" 
-          },
-          { 
-            text: "la semana pasada", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"la semana pasada\"表示\"上周\"，不是\"昨天\"。" 
-          }
+          { text: "ayer", isCorrect: true, correctTip: "时间状语“昨天”。", incorrectTip: "" },
+          { text: "antes", isCorrect: false, correctTip: "", incorrectTip: "不够具体。" }
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Pretérito | Nosotros | Nosotros describimos muy bien ayer.
+
+  /* Pretérito | Nosotros */
   {
     id: 84,
-    chinese: "我们昨天描述得很好。",
-    spanish: "Nosotros describimos muy bien ayer.",
+    chinese: "我们昨天详细地进行了描述。",
+    spanish: "Nosotros describimos con detalle ayer.",
     wordChoices: [
-      { 
+      {
         correctWord: "Nosotros",
         options: [
-          { 
-            text: "Nosotros", 
-            isCorrect: true, 
-            correctTip: "\"Nosotros\"表示\"我们\"，此句主语。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "Nos", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Nos\"是代词\"我们\"的宾格形式，不是主语。" 
-          },
-          { 
-            text: "Nuestros", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Nuestros\"是所有格形容词\"我们的\"，不是主语。" 
-          }
+          { text: "Nosotros", isCorrect: true, correctTip: "主语“我们”。", incorrectTip: "" },
+          { text: "Nos", isCorrect: false, correctTip: "", incorrectTip: "宾格形式。" }
         ]
       },
-      { 
+      {
         correctWord: "describimos",
         options: [
-          { 
-            text: "describimos", 
-            isCorrect: true, 
-            correctTip: "\"describimos\"是动词\"describir\"（描述）在第一人称复数过去时的正确变位。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "describíamos", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"describíamos\"是过去未完成时形式，不是简单过去时。" 
-          },
-          { 
-            text: "describió", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"describió\"是第三人称单数变位，不匹配主语\"Nosotros\"。" 
-          }
+          { text: "describimos", isCorrect: true, correctTip: "动词“describir”第一人称复数简单过去时。", incorrectTip: "" },
+          { text: "describíamos", isCorrect: false, correctTip: "", incorrectTip: "未完成过去时形式。" }
         ]
       },
       {
-        correctWord: "muy bien",
+        correctWord: "con detalle",
         options: [
-          { 
-            text: "muy bien", 
-            isCorrect: true, 
-            correctTip: "\"muy bien\"表示\"非常好\"，修饰动词。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "muy buenos", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"muy buenos\"用于修饰复数名词，而不是动词。应使用副词形式\"muy bien\"。" 
-          },
-          { 
-            text: "bastante bien", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"bastante bien\"表示\"相当好\"，程度不如\"muy bien\"（非常好）。" 
-          }
+          { text: "con detalle", isCorrect: true, correctTip: "短语，表示“详细地”。", incorrectTip: "" },
+          { text: "muy bien", isCorrect: false, correctTip: "", incorrectTip: "已用更自然表达替换。" },
+          { text: "brevemente", isCorrect: false, correctTip: "", incorrectTip: "含义不同。" }
         ]
       },
       {
         correctWord: "ayer",
         options: [
-          { 
-            text: "ayer", 
-            isCorrect: true, 
-            correctTip: "\"ayer\"表示\"昨天\"，是时间状语，与过去时态相符。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "hoy", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"hoy\"表示\"今天\"，不是\"昨天\"，不符合过去时语境。" 
-          },
-          { 
-            text: "hace tiempo", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"hace tiempo\"表示\"很久以前\"，比\"昨天\"更久远。" 
-          }
+          { text: "ayer", isCorrect: true, correctTip: "表示“昨天”，符合过去时。", incorrectTip: "" },
+          { text: "hoy", isCorrect: false, correctTip: "", incorrectTip: "与过去时不符。" }
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Pretérito | Vosotros | Vosotros descubristeis muy bien ayer.
+
+  /* Pretérito | Vosotros */
   {
     id: 85,
-    chinese: "你们昨天发现得很好。",
-    spanish: "Vosotros descubristeis muy bien ayer.",
+    chinese: "你们昨天偶然地发现了。",
+    spanish: "Vosotros descubristeis por casualidad ayer.",
     wordChoices: [
-      { 
+      {
         correctWord: "Vosotros",
         options: [
-          { 
-            text: "Vosotros", 
-            isCorrect: true, 
-            correctTip: "\"Vosotros\"表示\"你们\"，此句主语。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "Os", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Os\"是代词\"你们\"的宾格形式，不是主语。" 
-          },
-          { 
-            text: "Ustedes", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Ustedes\"也表示\"你们\"，但在西班牙语中更正式，且动词变位不同。" 
-          }
+          { text: "Vosotros", isCorrect: true, correctTip: "主语“你们”。", incorrectTip: "" },
+          { text: "Ustedes", isCorrect: false, correctTip: "", incorrectTip: "变位不符。" }
         ]
       },
-      { 
+      {
         correctWord: "descubristeis",
         options: [
-          { 
-            text: "descubristeis", 
-            isCorrect: true, 
-            correctTip: "\"descubristeis\"是动词\"descubrir\"（发现）在第二人称复数过去时的正确变位。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "descubrieron", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"descubrieron\"是第三人称复数变位，不匹配主语\"Vosotros\"。" 
-          },
-          { 
-            text: "descubrís", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"descubrís\"是现在时形式，不是过去时。" 
-          }
+          { text: "descubristeis", isCorrect: true, correctTip: "动词“descubrir”第二人称复数简单过去时。", incorrectTip: "" },
+          { text: "descubrieron", isCorrect: false, correctTip: "", incorrectTip: "第三人称形式。" }
         ]
       },
       {
-        correctWord: "muy bien",
+        correctWord: "por casualidad",
         options: [
-          { 
-            text: "muy bien", 
-            isCorrect: true, 
-            correctTip: "\"muy bien\"表示\"非常好\"，修饰动词。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "bien muy", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "西班牙语中副词\"muy\"应放在被修饰的词前面，词序颠倒了。" 
-          },
-          { 
-            text: "demasiado bien", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"demasiado bien\"表示\"太好了\"，程度过了，不同于\"muy bien\"（非常好）。" 
-          }
+          { text: "por casualidad", isCorrect: true, correctTip: "短语，表示“偶然地”。", incorrectTip: "" },
+          { text: "muy bien", isCorrect: false, correctTip: "", incorrectTip: "已替换为更口语表达。" },
+          { text: "a propósito", isCorrect: false, correctTip: "", incorrectTip: "含义相反（故意）。" }
         ]
       },
       {
         correctWord: "ayer",
         options: [
-          { 
-            text: "ayer", 
-            isCorrect: true, 
-            correctTip: "\"ayer\"表示\"昨天\"，是时间状语，与过去时态相符。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "anteayer", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"anteayer\"表示\"前天\"，不是\"昨天\"。" 
-          },
-          { 
-            text: "ahora", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"ahora\"表示\"现在\"，不符合过去时语境。" 
-          }
+          { text: "ayer", isCorrect: true, correctTip: "时间状语“昨天”。", incorrectTip: "" },
+          { text: "ahora", isCorrect: false, correctTip: "", incorrectTip: "与过去时不符。" }
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Pretérito | Ellos | Ellos dividieron muy bien ayer.
+
+  /* Pretérito | Ellos */
   {
     id: 86,
-    chinese: "他们昨天分配得很好。",
-    spanish: "Ellos dividieron muy bien ayer.",
+    chinese: "他们昨天平均地分配了。",
+    spanish: "Ellos dividieron en partes iguales ayer.",
     wordChoices: [
-      { 
+      {
         correctWord: "Ellos",
         options: [
-          { 
-            text: "Ellos", 
-            isCorrect: true, 
-            correctTip: "\"Ellos\"表示\"他们\"，此句主语。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "Les", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Les\"是代词\"他们\"的间接宾格形式，不是主语。" 
-          },
-          { 
-            text: "Sus", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Sus\"是所有格形容词\"他们的\"，不是主语。" 
-          }
-        ]
-      },
-      { 
-        correctWord: "dividieron",
-        options: [
-          { 
-            text: "dividieron", 
-            isCorrect: true, 
-            correctTip: "\"dividieron\"是动词\"dividir\"（分配）在第三人称复数过去时的正确变位。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "dividían", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"dividían\"是过去未完成时形式，不是简单过去时。" 
-          },
-          { 
-            text: "dividen", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"dividen\"是现在时形式，不是过去时。" 
-          }
+          { text: "Ellos", isCorrect: true, correctTip: "主语“他们”。", incorrectTip: "" },
+          { text: "Ellas", isCorrect: false, correctTip: "", incorrectTip: "性别不同。" }
         ]
       },
       {
-        correctWord: "muy bien",
+        correctWord: "dividieron",
         options: [
-          { 
-            text: "muy bien", 
-            isCorrect: true, 
-            correctTip: "\"muy bien\"表示\"非常好\"，修饰动词。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "mucho bien", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "副词\"mucho\"不用于修饰另一个副词\"bien\"，应使用\"muy\"。" 
-          },
-          { 
-            text: "muy buenos", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"muy buenos\"用于修饰复数名词，而不是动词。应使用副词形式\"muy bien\"。" 
-          }
+          { text: "dividieron", isCorrect: true, correctTip: "动词“dividir”第三人称复数简单过去时。", incorrectTip: "" },
+          { text: "dividen", isCorrect: false, correctTip: "", incorrectTip: "现在时形式。" }
+        ]
+      },
+      {
+        correctWord: "en partes iguales",
+        options: [
+          { text: "en partes iguales", isCorrect: true, correctTip: "短语，表示“平均地”。", incorrectTip: "" },
+          { text: "muy bien", isCorrect: false, correctTip: "", incorrectTip: "已替换为更精确表达。" },
+          { text: "al azar", isCorrect: false, correctTip: "", incorrectTip: "含义不同（随机）。" }
         ]
       },
       {
         correctWord: "ayer",
         options: [
-          { 
-            text: "ayer", 
-            isCorrect: true, 
-            correctTip: "\"ayer\"表示\"昨天\"，是时间状语，与过去时态相符。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "mañana", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"mañana\"表示\"明天\"，不是\"昨天\"，不符合过去时语境。" 
-          },
-          { 
-            text: "el mes pasado", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"el mes pasado\"表示\"上个月\"，不是\"昨天\"。" 
-          }
+          { text: "ayer", isCorrect: true, correctTip: "表示“昨天”，符合过去时。", incorrectTip: "" },
+          { text: "mañana", isCorrect: false, correctTip: "", incorrectTip: "与过去时不符。" }
         ]
       }
     ],
-    completed: false,
+    completed: false
   }
 ];

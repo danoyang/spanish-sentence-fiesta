@@ -3,266 +3,232 @@ import { Sentence } from "@/types/game";
 
 // 未完成过去时动词变位句子 (18-23)
 export const imperfectoTenseSentences: Sentence[] = [
-  // Imperfecto | Yo | Yo jugaba al fútbol todos los días cuando era niño.
+  // Imperfecto | Yo | Yo cocinaba muy bien cuando era niño.
   {
     id: 18,
-    chinese: "我小时候每天都踢足球。",
-    spanish: "Yo jugaba al fútbol todos los días cuando era niño.",
+    chinese: "我小时候很会做些简单的菜。",
+    spanish: "Yo cocinaba platos sencillos de pequeño.",
     wordChoices: [
-      { 
+      {
         correctWord: "Yo",
         options: [
-          { 
-            text: "Yo", 
-            isCorrect: true, 
-            correctTip: "\"Yo\"=\"我\"。", 
-            incorrectTip: "" 
-          }
-        ]
-      },
-      { 
-        correctWord: "jugaba",
-        options: [
-          { 
-            text: "jugaba", 
-            isCorrect: true, 
-            correctTip: "\"jugaba\"是动词\"jugar\"(玩，踢)的第一人称未完成过去时变位。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "jugabas", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"jugabas\"是\"你\"的未完成过去时变位。" 
-          },
-          { 
-            text: "jugué", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"jugué\"是\"我\"的简单过去时变位。" 
-          }
+          { text: "Yo", isCorrect: true, correctTip: "\"Yo\"＝我。", incorrectTip: "" },
+          { text: "Tú", isCorrect: false, correctTip: "", incorrectTip: "主语应为第一人称。" }
         ]
       },
       {
-        correctWord: "al fútbol",
+        correctWord: "cocinaba",
         options: [
-          { 
-            text: "al fútbol", 
-            isCorrect: true, 
-            correctTip: "\"al fútbol\"表示\"踢足球\"，是\"a + el fútbol\"的缩写。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "al tenis", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"al tenis\"表示\"打网球\"，与句意不符。" 
-          }
+          { text: "cocinaba", isCorrect: true, correctTip: "未完成过去时：yo cocinaba。", incorrectTip: "" },
+          { text: "cociné", isCorrect: false, correctTip: "", incorrectTip: "简单过去时，不符时态。" }
         ]
       },
       {
-        correctWord: "todos los días cuando era niño",
+        correctWord: "platos sencillos",
         options: [
-          { 
-            text: "todos los días cuando era niño", 
-            isCorrect: true, 
-            correctTip: "\"todos los días cuando era niño\"表示\"小时候每天\"。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "solo los fines de semana", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"solo los fines de semana\"表示\"只在周末\"，与句意不符。" 
-          }
+          { text: "platos sencillos", isCorrect: true, correctTip: "“简单的菜”。", incorrectTip: "" },
+          { text: "comida rápida", isCorrect: false, correctTip: "", incorrectTip: "含义不同。" },
+          { text: "postres caros", isCorrect: false, correctTip: "", incorrectTip: "对象不同。" }
+        ]
+      },
+      {
+        correctWord: "de pequeño",
+        options: [
+          { text: "de pequeño", isCorrect: true, correctTip: "常用表达“小时候”。", incorrectTip: "" },
+          { text: "mañana", isCorrect: false, correctTip: "", incorrectTip: "表示将来时间。" }
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Imperfecto | Tú | Tú leías muchos libros de aventuras cuando eras estudiante.
+
+  // Tú — bailar
   {
     id: 19,
-    chinese: "你当学生的时候读了很多冒险小说。",
-    spanish: "Tú leías muchos libros de aventuras cuando eras estudiante.",
+    chinese: "你小时候跳舞特别棒。",
+    spanish: "Tú bailabas de maravilla de niño.",
     wordChoices: [
-      { 
+      {
         correctWord: "Tú",
         options: [
-          { text: "Tú", isCorrect: true, correctTip: "\"Tú\"=\"你\"。", incorrectTip: "" }
-        ]
-      },
-      { 
-        correctWord: "leías",
-        options: [
-          { text: "leías", isCorrect: true, correctTip: "\"leías\"是动词\"leer\"(读)的第二人称未完成过去时变位。", incorrectTip: "" },
-          { text: "leía", isCorrect: false, correctTip: "", incorrectTip: "\"leía\"是第一或第三人称单数的未完成过去时变位。" },
-          { text: "leíste", isCorrect: false, correctTip: "", incorrectTip: "\"leíste\"是\"你\"的简单过去时变位。" }
+          { text: "Tú", isCorrect: true, correctTip: "\"Tú\"＝你。", incorrectTip: "" },
+          { text: "Yo", isCorrect: false, correctTip: "", incorrectTip: "主语不符。" }
         ]
       },
       {
-        correctWord: "muchos libros de aventuras",
+        correctWord: "bailabas",
         options: [
-          { text: "muchos libros de aventuras", isCorrect: true, correctTip: "\"muchos libros de aventuras\"表示\"很多冒险小说\"。", incorrectTip: "" },
-          { text: "pocas revistas de moda", isCorrect: false, correctTip: "", incorrectTip: "\"pocas revistas de moda\"表示\"几本时尚杂志\"，与句意不符。" }
+          { text: "bailabas", isCorrect: true, correctTip: "未完成过去时：tú bailabas。", incorrectTip: "" },
+          { text: "bailaste", isCorrect: false, correctTip: "", incorrectTip: "简单过去时。" }
         ]
       },
       {
-        correctWord: "cuando eras estudiante",
+        correctWord: "de maravilla",
         options: [
-          { text: "cuando eras estudiante", isCorrect: true, correctTip: "\"cuando eras estudiante\"表示\"当你是学生的时候\"。", incorrectTip: "" },
-          { text: "durante las vacaciones", isCorrect: false, correctTip: "", incorrectTip: "\"durante las vacaciones\"表示\"在假期期间\"，与句意不符。" }
+          { text: "de maravilla", isCorrect: true, correctTip: "“非常棒地”。", incorrectTip: "" },
+          { text: "regular", isCorrect: false, correctTip: "", incorrectTip: "表示一般般。" }
+        ]
+      },
+      {
+        correctWord: "de niño",
+        options: [
+          { text: "de niño", isCorrect: true, correctTip: "“小时候”。", incorrectTip: "" },
+          { text: "ahora", isCorrect: false, correctTip: "", incorrectTip: "表示现在。" }
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Imperfecto | Él | Él siempre llevaba una cámara cuando viajaba por Europa.
+
+  // Él — cantar
   {
     id: 20,
-    chinese: "他在欧洲旅行时总是随身带着一台相机。",
-    spanish: "Él siempre llevaba una cámara cuando viajaba por Europa.",
+    chinese: "他小时候总是唱得很动听。",
+    spanish: "Él cantaba muy bonito cuando era niño.",
     wordChoices: [
-      { 
+      {
         correctWord: "Él",
         options: [
-          { text: "Él", isCorrect: true, correctTip: "\"Él\"=\"他\"。", incorrectTip: "" }
-        ]
-      },
-      { 
-        correctWord: "siempre llevaba",
-        options: [
-          { text: "siempre llevaba", isCorrect: true, correctTip: "\"siempre llevaba\"表示\"总是带着\"，是\"llevar\"(带)的未完成过去时第三人称单数变位。", incorrectTip: "" },
-          { text: "nunca llevaba", isCorrect: false, correctTip: "", incorrectTip: "\"nunca llevaba\"表示\"从不带\"，与句意不符。" },
-          { text: "siempre llevó", isCorrect: false, correctTip: "", incorrectTip: "\"siempre llevó\"是简单过去时，而不是未完成过去时。" }
+          { text: "Él", isCorrect: true, correctTip: "\"Él\"＝他。", incorrectTip: "" },
+          { text: "Ella", isCorrect: false, correctTip: "", incorrectTip: "性别不符。" }
         ]
       },
       {
-        correctWord: "una cámara",
+        correctWord: "cantaba",
         options: [
-          { text: "una cámara", isCorrect: true, correctTip: "\"una cámara\"表示\"一台相机\"。", incorrectTip: "" },
-          { text: "un teléfono", isCorrect: false, correctTip: "", incorrectTip: "\"un teléfono\"表示\"一部电话\"，与句意不符。" }
+          { text: "cantaba", isCorrect: true, correctTip: "未完成过去时：él cantaba。", incorrectTip: "" },
+          { text: "cantó", isCorrect: false, correctTip: "", incorrectTip: "简单过去时。" }
         ]
       },
       {
-        correctWord: "cuando viajaba por Europa",
+        correctWord: "muy bonito",
         options: [
-          { text: "cuando viajaba por Europa", isCorrect: true, correctTip: "\"cuando viajaba por Europa\"表示\"当他在欧洲旅行时\"。", incorrectTip: "" },
-          { text: "cuando estaba en casa", isCorrect: false, correctTip: "", incorrectTip: "\"cuando estaba en casa\"表示\"当他在家时\"，与句意不符。" }
+          { text: "muy bonito", isCorrect: true, correctTip: "“很动听”。", incorrectTip: "" },
+          { text: "muy alto", isCorrect: false, correctTip: "", incorrectTip: "形容词不同。" }
+        ]
+      },
+      {
+        correctWord: "cuando era niño",
+        options: [
+          { text: "cuando era niño", isCorrect: true, correctTip: "时间背景。", incorrectTip: "" },
+          { text: "mañana", isCorrect: false, correctTip: "", incorrectTip: "将来时间。" }
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Imperfecto | Nosotros | Nosotros vivíamos en un pequeño pueblo cuando éramos niños.
+
+  // Nosotros — limpiar
   {
     id: 21,
-    chinese: "我们小时候住在一个小村子里。",
-    spanish: "Nosotros vivíamos en un pequeño pueblo cuando éramos niños.",
+    chinese: "我们小时候打扫得很仔细。",
+    spanish: "Nosotros limpiábamos a fondo cuando éramos niños.",
     wordChoices: [
-      { 
+      {
         correctWord: "Nosotros",
         options: [
-          { text: "Nosotros", isCorrect: true, correctTip: "\"Nosotros\"=\"我们\"。", incorrectTip: "" }
-        ]
-      },
-      { 
-        correctWord: "vivíamos",
-        options: [
-          { text: "vivíamos", isCorrect: true, correctTip: "\"vivíamos\"是\"vivir\"(生活，居住)的第一人称复数未完成过去时变位。", incorrectTip: "" },
-          { text: "vivían", isCorrect: false, correctTip: "", incorrectTip: "\"vivían\"是\"他们\"的未完成过去时变位，不是\"我们\"的形式。" },
-          { text: "vivimos", isCorrect: false, correctTip: "", incorrectTip: "\"vivimos\"可以是现在时或简单过去时，但这里需要未完成过去时\"vivíamos\"来表达持续的状态。" }
+          { text: "Nosotros", isCorrect: true, correctTip: "\"Nosotros\"＝我们。", incorrectTip: "" },
+          { text: "Vosotros", isCorrect: false, correctTip: "", incorrectTip: "主语不符。" }
         ]
       },
       {
-        correctWord: "en un pequeño pueblo",
+        correctWord: "limpiábamos",
         options: [
-          { text: "en un pequeño pueblo", isCorrect: true, correctTip: "\"en un pequeño pueblo\"表示\"在一个小村子里\"。", incorrectTip: "" },
-          { text: "en una gran ciudad", isCorrect: false, correctTip: "", incorrectTip: "\"en una gran ciudad\"表示\"在一个大城市里\"，与句意不符。" }
+          { text: "limpiábamos", isCorrect: true, correctTip: "未完成过去时：nosotros limpiábamos。", incorrectTip: "" },
+          { text: "limpiamos", isCorrect: false, correctTip: "", incorrectTip: "现在时。" }
+        ]
+      },
+      {
+        correctWord: "a fondo",
+        options: [
+          { text: "a fondo", isCorrect: true, correctTip: "“彻底地、仔细地”。", incorrectTip: "" },
+          { text: "por encima", isCorrect: false, correctTip: "", incorrectTip: "意为“走马观花”，含义相反。" }
         ]
       },
       {
         correctWord: "cuando éramos niños",
         options: [
-          { text: "cuando éramos niños", isCorrect: true, correctTip: "\"cuando éramos niños\"表示\"当我们是小孩子的时候\"。注意\"éramos\"是\"ser\"的我们形式的未完成过去时。", incorrectTip: "" },
-          { text: "cuando fuimos adultos", isCorrect: false, correctTip: "", incorrectTip: "\"cuando fuimos adultos\"表示\"当我们成为成年人时\"，与句意不符。并且\"fuimos\"是简单过去时，不是未完成过去时。" }
+          { text: "cuando éramos niños", isCorrect: true, correctTip: "", incorrectTip: "" },
+          { text: "cuando seremos adultos", isCorrect: false, correctTip: "", incorrectTip: "时间不符。" }
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Imperfecto | Vosotros | Vosotros estudiábais medicina en la universidad de Madrid.
+
+  // Vosotros — tirar
   {
     id: 22,
-    chinese: "你们在马德里大学学医学。",
-    spanish: "Vosotros estudiábais medicina en la universidad de Madrid.",
+    chinese: "你们小时候投掷球非常准。",
+    spanish: "Vosotros tirabais la pelota con precisión de pequeños.",
     wordChoices: [
-      { 
+      {
         correctWord: "Vosotros",
         options: [
-          { text: "Vosotros", isCorrect: true, correctTip: "\"Vosotros\"=\"你们\"。", incorrectTip: "" }
-        ]
-      },
-      { 
-        correctWord: "estudiábais",
-        options: [
-          { text: "estudiábais", isCorrect: true, correctTip: "\"estudiábais\"是\"estudiar\"(学习)的第二人称复数(vosotros)未完成过去时变位。", incorrectTip: "" },
-          { text: "estudiaban", isCorrect: false, correctTip: "", incorrectTip: "\"estudiaban\"是\"他们\"的未完成过去时变位，而不是\"你们\"的形式。" },
-          { text: "estudiasteis", isCorrect: false, correctTip: "", incorrectTip: "\"estudiasteis\"是\"你们\"的简单过去时变位，而不是未完成过去时。简单过去时表示已完成的动作，而未完成过去时表示过去持续进行的动作。" }
+          { text: "Vosotros", isCorrect: true, correctTip: "\"Vosotros\"＝你们。", incorrectTip: "" },
+          { text: "Ellos", isCorrect: false, correctTip: "", incorrectTip: "主语不符。" }
         ]
       },
       {
-        correctWord: "medicina",
+        correctWord: "tirabais",
         options: [
-          { text: "medicina", isCorrect: true, correctTip: "\"medicina\"表示\"医学\"。", incorrectTip: "" },
-          { text: "ingeniería", isCorrect: false, correctTip: "", incorrectTip: "\"ingeniería\"表示\"工程学\"，与句意不符。" }
+          { text: "tirabais", isCorrect: true, correctTip: "未完成过去时：vosotros tirabais。", incorrectTip: "" },
+          { text: "tirasteis", isCorrect: false, correctTip: "", incorrectTip: "简单过去时。" }
         ]
       },
       {
-        correctWord: "en la universidad de Madrid",
+        correctWord: "la pelota",
         options: [
-          { text: "en la universidad de Madrid", isCorrect: true, correctTip: "\"en la universidad de Madrid\"表示\"在马德里大学\"。", incorrectTip: "" },
-          { text: "en el hospital central", isCorrect: false, correctTip: "", incorrectTip: "\"en el hospital central\"表示\"在中心医院\"，与句意不符。" }
+          { text: "la pelota", isCorrect: true, correctTip: "投掷对象：球。", incorrectTip: "" },
+          { text: "la piedra", isCorrect: false, correctTip: "", incorrectTip: "对象不同。" }
+        ]
+      },
+      {
+        correctWord: "con precisión",
+        options: [
+          { text: "con precisión", isCorrect: true, correctTip: "“很准地”。", incorrectTip: "" },
+          { text: "sin fuerza", isCorrect: false, correctTip: "", incorrectTip: "含义不同。" }
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Imperfecto | Ellos | Ellos trabajaban en una fábrica que producía coches.
+
+  // Ellos — saltar
   {
     id: 23,
-    chinese: "他们在一家生产汽车的工厂工作。",
-    spanish: "Ellos trabajaban en una fábrica que producía coches.",
+    chinese: "他们小时候跳得可高了。",
+    spanish: "Ellos saltaban muy alto cuando eran niños.",
     wordChoices: [
-      { 
+      {
         correctWord: "Ellos",
         options: [
-          { text: "Ellos", isCorrect: true, correctTip: "\"Ellos\"=\"他们\"。", incorrectTip: "" }
-        ]
-      },
-      { 
-        correctWord: "trabajaban",
-        options: [
-          { text: "trabajaban", isCorrect: true, correctTip: "\"trabajaban\"是\"trabajar\"(工作)的第三人称复数未完成过去时变位。", incorrectTip: "" },
-          { text: "trabajaron", isCorrect: false, correctTip: "", incorrectTip: "\"trabajaron\"是简单过去时，表示已完成的动作。这里需要未完成过去时\"trabajaban\"来表达过去持续的状态。" },
-          { text: "trabajan", isCorrect: false, correctTip: "", incorrectTip: "\"trabajan\"是现在时，而不是过去时。这里需要未完成过去时\"trabajaban\"。" }
+          { text: "Ellos", isCorrect: true, correctTip: "\"Ellos\"＝他们。", incorrectTip: "" },
+          { text: "Ellas", isCorrect: false, correctTip: "", incorrectTip: "性别不符。" }
         ]
       },
       {
-        correctWord: "en una fábrica",
+        correctWord: "saltaban",
         options: [
-          { text: "en una fábrica", isCorrect: true, correctTip: "\"en una fábrica\"表示\"在一家工厂\"。", incorrectTip: "" },
-          { text: "en un restaurante", isCorrect: false, correctTip: "", incorrectTip: "\"en un restaurante\"表示\"在一家餐厅\"，与句意不符。" }
+          { text: "saltaban", isCorrect: true, correctTip: "未完成过去时：ellos saltaban。", incorrectTip: "" },
+          { text: "saltaron", isCorrect: false, correctTip: "", incorrectTip: "简单过去时。" }
         ]
       },
       {
-        correctWord: "que producía coches",
+        correctWord: "muy alto",
         options: [
-          { text: "que producía coches", isCorrect: true, correctTip: "\"que producía coches\"表示\"生产汽车的\"。注意\"producía\"也是未完成过去时，因为它描述工厂的持续性活动。", incorrectTip: "" },
-          { text: "que vendía ropa", isCorrect: false, correctTip: "", incorrectTip: "\"que vendía ropa\"表示\"销售服装的\"，与句意不符。" }
+          { text: "muy alto", isCorrect: true, correctTip: "“很高地”。", incorrectTip: "" },
+          { text: "muy rápido", isCorrect: false, correctTip: "", incorrectTip: "形容词不同。" }
+        ]
+      },
+      {
+        correctWord: "cuando eran niños",
+        options: [
+          { text: "cuando eran niños", isCorrect: true, correctTip: "", incorrectTip: "" },
+          { text: "cuando sean mayores", isCorrect: false, correctTip: "", incorrectTip: "将来时背景，不符。" }
         ]
       }
     ],
-    completed: false,
+    completed: false
   }
 ];

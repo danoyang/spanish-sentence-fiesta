@@ -2,298 +2,192 @@ import { Sentence } from "@/types/game";
 
 // -IR Verbs in Presente Perfecto (Present Perfect) Tense
 export const irVerbsPresentePerfectoSentences: Sentence[] = [
-  // Presente perfecto | Yo | Yo he suspendido muy bien esta semana.
+  // Presente perfecto | Yo | Yo he concluido el proyecto esta semana.
   {
     id: 105,
-    chinese: "我这周暂停得非常好。",
-    spanish: "Yo he suspendido muy bien esta semana.",
+    chinese: "我这周完成了这个项目。",
+    spanish: "Yo he concluido el proyecto esta semana.",
     wordChoices: [
-      { 
+      {
         correctWord: "Yo",
         options: [
-          { text: "Yo", isCorrect: true, correctTip: "\"Yo\"表示\"我\"，此句主语。", incorrectTip: "" }
-        ]
-      },
-      { 
-        correctWord: "he suspendido",
-        options: [
-          { 
-            text: "he suspendido", 
-            isCorrect: true, 
-            correctTip: "\"he suspendido\"是现在完成时第一人称单数形式，由助动词haber的变位\"he\"加上动词\"suspender\"的过去分词\"suspendido\"组成。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "has suspendido", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"has suspendido\"是第二人称单数(tú)的现在完成时形式，不匹配第一人称主语\"Yo\"。" 
-          },
-          { 
-            text: "ha suspendido", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"ha suspendido\"是第三人称单数(él/ella)的现在完成时形式，不匹配第一人称主语\"Yo\"。" 
-          }
+          { text: "Yo", isCorrect: true, correctTip: "\"Yo\"表示\"我\"，主语。", incorrectTip: "" },
+          { text: "Me", isCorrect: false, correctTip: "", incorrectTip: "宾格代词不能作主语。" }
         ]
       },
       {
-        correctWord: "muy bien esta semana",
+        correctWord: "he concluido",
         options: [
-          { 
-            text: "muy bien esta semana", 
-            isCorrect: true, 
-            correctTip: "\"muy bien esta semana\"表示\"这周非常好\"。", 
-            incorrectTip: "" 
-          }
+          { text: "he concluido", isCorrect: true, correctTip: "现在完成时：haber (he) + concluido。", incorrectTip: "" },
+          { text: "has concluido", isCorrect: false, correctTip: "", incorrectTip: "人称不符。" },
+          { text: "he concluído", isCorrect: false, correctTip: "", incorrectTip: "过去分词拼写错误，正确无重音。" }
+        ]
+      },
+      {
+        correctWord: "el proyecto esta semana",
+        options: [
+          { text: "el proyecto esta semana", isCorrect: true, correctTip: "状语：本周完成项目。", incorrectTip: "" },
+          { text: "un descanso largo", isCorrect: false, correctTip: "", incorrectTip: "含义不符。" }
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Presente perfecto | Tú | Tú has oído muy bien esta semana.
+
+  // Presente perfecto | Tú | Tú has conseguido terminar todo el trabajo esta semana.
   {
     id: 106,
-    chinese: "你这周听得非常好。",
-    spanish: "Tú has oído muy bien esta semana.",
+    chinese: "你这周成功完成了所有工作。",
+    spanish: "Tú has conseguido terminar todo el trabajo esta semana.",
     wordChoices: [
-      { 
+      {
         correctWord: "Tú",
         options: [
-          { text: "Tú", isCorrect: true, correctTip: "\"Tú\"表示\"你\"，此句主语。", incorrectTip: "" }
-        ]
-      },
-      { 
-        correctWord: "has oído",
-        options: [
-          { 
-            text: "has oído", 
-            isCorrect: true, 
-            correctTip: "\"has oído\"是现在完成时第二人称单数形式，由助动词haber的变位\"has\"加上动词\"oír\"的过去分词\"oído\"组成。注意oír的过去分词是不规则的。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "he oído", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"he oído\"是第一人称单数(yo)的现在完成时形式，不匹配第二人称主语\"Tú\"。" 
-          },
-          { 
-            text: "has oido", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"has oido\"拼写错误，正确的过去分词是\"oído\"，带有重音符号。" 
-          }
+          { text: "Tú", isCorrect: true, correctTip: "\"Tú\"表示\"你\"。", incorrectTip: "" },
+          { text: "Vos", isCorrect: false, correctTip: "", incorrectTip: "地区变体与变位不符。" }
         ]
       },
       {
-        correctWord: "muy bien esta semana",
+        correctWord: "has conseguido",
         options: [
-          { 
-            text: "muy bien esta semana", 
-            isCorrect: true, 
-            correctTip: "\"muy bien esta semana\"表示\"这周非常好\"。", 
-            incorrectTip: "" 
-          }
+          { text: "has conseguido", isCorrect: true, correctTip: "现在完成时：has conseguido。", incorrectTip: "" },
+          { text: "he conseguido", isCorrect: false, correctTip: "", incorrectTip: "人称不符。" },
+          { text: "has conseguído", isCorrect: false, correctTip: "", incorrectTip: "过去分词拼写错误。" }
+        ]
+      },
+      {
+        correctWord: "terminar todo el trabajo esta semana",
+        options: [
+          { text: "terminar todo el trabajo esta semana", isCorrect: true, correctTip: "状语：完成所有工作。", incorrectTip: "" },
+          { text: "descansar en casa", isCorrect: false, correctTip: "", incorrectTip: "含义不符。" }
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Presente perfecto | Él | Él ha pulido muy bien esta semana.
+
+  // Presente perfecto | Él | Él ha pulido su presentación a la perfección esta semana.
   {
     id: 107,
-    chinese: "他这周打磨得非常好。",
-    spanish: "Él ha pulido muy bien esta semana.",
+    chinese: "他这周把演讲稿打磨得无可挑剔。",
+    spanish: "Él ha pulido su presentación a la perfección esta semana.",
     wordChoices: [
-      { 
+      {
         correctWord: "Él",
         options: [
-          { text: "Él", isCorrect: true, correctTip: "\"Él\"表示\"他\"，此句主语。", incorrectTip: "" }
+          { text: "Él", isCorrect: true, correctTip: "\"Él\"表示\"他\"。", incorrectTip: "" },
+          { text: "Ella", isCorrect: false, correctTip: "", incorrectTip: "性别不符。" }
         ]
       },
-      { 
+      {
         correctWord: "ha pulido",
         options: [
-          { 
-            text: "ha pulido", 
-            isCorrect: true, 
-            correctTip: "\"ha pulido\"是现在完成时第三人称单数形式，由助动词haber的变位\"ha\"加上动词\"pulir\"的过去分词\"pulido\"组成。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "he pulido", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"he pulido\"是第一人称单数(yo)的现在完成时形式，不匹配第三人称主语\"Él\"。" 
-          },
-          { 
-            text: "has pulido", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"has pulido\"是第二人称单数(tú)的现在完成时形式，不匹配第三人称主语\"Él\"。" 
-          }
+          { text: "ha pulido", isCorrect: true, correctTip: "现在完成时：ha pulido。", incorrectTip: "" },
+          { text: "has pulido", isCorrect: false, correctTip: "", incorrectTip: "人称不符。" },
+          { text: "ha púlido", isCorrect: false, correctTip: "", incorrectTip: "过去分词拼写错误。" }
         ]
       },
       {
-        correctWord: "muy bien esta semana",
+        correctWord: "su presentación a la perfección esta semana",
         options: [
-          { 
-            text: "muy bien esta semana", 
-            isCorrect: true, 
-            correctTip: "\"muy bien esta semana\"表示\"这周非常好\"。", 
-            incorrectTip: "" 
-          }
+          { text: "su presentación a la perfección esta semana", isCorrect: true, correctTip: "状语：本周把演讲稿完善。", incorrectTip: "" },
+          { text: "la mesa rápidamente", isCorrect: false, correctTip: "", incorrectTip: "对象不符。" }
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Presente perfecto | Nosotros | Nosotros hemos salido muy bien esta semana.
+
+  // Presente perfecto | Nosotros | Nosotros hemos salido a correr por el parque casi cada tarde esta semana.
   {
     id: 108,
-    chinese: "我们这周出去得非常好。",
-    spanish: "Nosotros hemos salido muy bien esta semana.",
+    chinese: "我们这周几乎每天傍晚都去公园跑步。",
+    spanish: "Nosotros hemos salido a correr por el parque casi cada tarde esta semana.",
     wordChoices: [
-      { 
+      {
         correctWord: "Nosotros",
         options: [
-          { text: "Nosotros", isCorrect: true, correctTip: "\"Nosotros\"表示\"我们\"，此句主语。", incorrectTip: "" }
+          { text: "Nosotros", isCorrect: true, correctTip: "\"Nosotros\"表示\"我们\"。", incorrectTip: "" },
+          { text: "Vosotros", isCorrect: false, correctTip: "", incorrectTip: "人称不符。" }
         ]
       },
-      { 
+      {
         correctWord: "hemos salido",
         options: [
-          { 
-            text: "hemos salido", 
-            isCorrect: true, 
-            correctTip: "\"hemos salido\"是现在完成时第一人称复数形式，由助动词haber的变位\"hemos\"加上动词\"salir\"的过去分词\"salido\"组成。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "han salido", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"han salido\"是第三人称复数(ellos/ellas)的现在完成时形式，不匹配第一人称复数主语\"Nosotros\"。" 
-          },
-          { 
-            text: "habéis salido", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"habéis salido\"是第二人称复数(vosotros)的现在完成时形式，不匹配第一人称复数主语\"Nosotros\"。" 
-          }
+          { text: "hemos salido", isCorrect: true, correctTip: "现在完成时：hemos salido。", incorrectTip: "" },
+          { text: "han salido", isCorrect: false, correctTip: "", incorrectTip: "人称不符。" }
         ]
       },
       {
-        correctWord: "muy bien esta semana",
+        correctWord: "a correr por el parque casi cada tarde esta semana",
         options: [
-          { 
-            text: "muy bien esta semana", 
-            isCorrect: true, 
-            correctTip: "\"muy bien esta semana\"表示\"这周非常好\"。", 
-            incorrectTip: "" 
-          }
+          { text: "a correr por el parque casi cada tarde esta semana", isCorrect: true, correctTip: "状语：频率与地点。", incorrectTip: "" },
+          { text: "una vez ayer", isCorrect: false, correctTip: "", incorrectTip: "次数与时间不符。" }
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Presente perfecto | Vosotros | Vosotros habéis venido muy bien esta semana.
+
+  // Presente perfecto | Vosotros | Vosotros habéis venido puntuales cada día esta semana.
   {
     id: 109,
-    chinese: "你们这周来得非常好。",
-    spanish: "Vosotros habéis venido muy bien esta semana.",
+    chinese: "你们这周每天都准时到达。",
+    spanish: "Vosotros habéis venido puntuales cada día esta semana.",
     wordChoices: [
-      { 
+      {
         correctWord: "Vosotros",
         options: [
-          { text: "Vosotros", isCorrect: true, correctTip: "\"Vosotros\"表示\"你们\"，此句主语。", incorrectTip: "" }
+          { text: "Vosotros", isCorrect: true, correctTip: "\"Vosotros\"表示\"你们\"。", incorrectTip: "" },
+          { text: "Ustedes", isCorrect: false, correctTip: "", incorrectTip: "形式与变位不符。" }
         ]
       },
-      { 
+      {
         correctWord: "habéis venido",
         options: [
-          { 
-            text: "habéis venido", 
-            isCorrect: true, 
-            correctTip: "\"habéis venido\"是现在完成时第二人称复数形式，由助动词haber的变位\"habéis\"加上动词\"venir\"的过去分词\"venido\"组成。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "hemos venido", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"hemos venido\"是第一人称复数(nosotros)的现在完成时形式，不匹配第二人称复数主语\"Vosotros\"。" 
-          },
-          { 
-            text: "han venido", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"han venido\"是第三人称复数(ellos/ellas)的现在完成时形式，不匹配第二人称复数主语\"Vosotros\"。" 
-          }
+          { text: "habéis venido", isCorrect: true, correctTip: "现在完成时：habéis venido。", incorrectTip: "" },
+          { text: "hemos venido", isCorrect: false, correctTip: "", incorrectTip: "人称不符。" }
         ]
       },
       {
-        correctWord: "muy bien esta semana",
+        correctWord: "puntuales cada día esta semana",
         options: [
-          { 
-            text: "muy bien esta semana", 
-            isCorrect: true, 
-            correctTip: "\"muy bien esta semana\"表示\"这周非常好\"。", 
-            incorrectTip: "" 
-          }
+          { text: "puntuales cada día esta semana", isCorrect: true, correctTip: "状语：每天准时。", incorrectTip: "" },
+          { text: "con retraso hoy", isCorrect: false, correctTip: "", incorrectTip: "含义相反。" }
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Presente perfecto | Ellos | Ellos han sentido muy bien esta semana.
+
+  // Presente perfecto | Ellos | Ellos han construido un cobertizo temporal esta semana.
   {
     id: 110,
-    chinese: "他们这周感觉非常好。",
-    spanish: "Ellos han sentido muy bien esta semana.",
+    chinese: "他们这周搭建了一座临时棚屋。",
+    spanish: "Ellos han construido un cobertizo temporal esta semana.",
     wordChoices: [
-      { 
+      {
         correctWord: "Ellos",
         options: [
-          { text: "Ellos", isCorrect: true, correctTip: "\"Ellos\"表示\"他们\"，此句主语。", incorrectTip: "" }
-        ]
-      },
-      { 
-        correctWord: "han sentido",
-        options: [
-          { 
-            text: "han sentido", 
-            isCorrect: true, 
-            correctTip: "\"han sentido\"是现在完成时第三人称复数形式，由助动词haber的变位\"han\"加上动词\"sentir\"的过去分词\"sentido\"组成。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "hemos sentido", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"hemos sentido\"是第一人称复数(nosotros)的现在完成时形式，不匹配第三人称复数主语\"Ellos\"。" 
-          },
-          { 
-            text: "habéis sentido", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"habéis sentido\"是第二人称复数(vosotros)的现在完成时形式，不匹配第三人称复数主语\"Ellos\"。" 
-          }
+          { text: "Ellos", isCorrect: true, correctTip: "\"Ellos\"表示\"他们\"。", incorrectTip: "" },
+          { text: "Ellas", isCorrect: false, correctTip: "", incorrectTip: "性别不符。" }
         ]
       },
       {
-        correctWord: "muy bien esta semana",
+        correctWord: "han construido",
         options: [
-          { 
-            text: "muy bien esta semana", 
-            isCorrect: true, 
-            correctTip: "\"muy bien esta semana\"表示\"这周非常好\"。", 
-            incorrectTip: "" 
-          }
+          { text: "han construido", isCorrect: true, correctTip: "现在完成时：han construido。", incorrectTip: "" },
+          { text: "habéis construido", isCorrect: false, correctTip: "", incorrectTip: "人称不符。" }
+        ]
+      },
+      {
+        correctWord: "un cobertizo temporal esta semana",
+        options: [
+          { text: "un cobertizo temporal esta semana", isCorrect: true, correctTip: "状语：建造对象与时间。", incorrectTip: "" },
+          { text: "un castillo antiguo", isCorrect: false, correctTip: "", incorrectTip: "对象夸张且不符句意。" }
         ]
       }
     ],
-    completed: false,
-  },
+    completed: false
+  }
 ];

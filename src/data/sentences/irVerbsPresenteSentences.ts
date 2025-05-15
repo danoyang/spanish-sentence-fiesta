@@ -2,610 +2,231 @@ import { Sentence } from "@/types/game";
 
 // -IR动词 现在时句子
 export const irVerbsPresenteSentences: Sentence[] = [
-  // Presente | Yo | Yo vivo muy bien hoy.
+  /* Presente | Yo */
   {
     id: 75,
-    chinese: "我今天生活得很好。",
-    spanish: "Yo vivo muy bien hoy.",
+    chinese: "我今天过得很平静。",
+    spanish: "Yo vivo con tranquilidad hoy.",
     wordChoices: [
-      { 
+      {
         correctWord: "Yo",
         options: [
-          { 
-            text: "Yo", 
-            isCorrect: true, 
-            correctTip: "\"Yo\"表示\"我\"，此句主语。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "Me", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Me\"是代词\"我\"的宾格形式，不是主语。" 
-          },
-          { 
-            text: "Mi", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Mi\"是所有格\"我的\"，不是主语\"我\"。" 
-          }
+          { text: "Yo", isCorrect: true, correctTip: "主语“我”。", incorrectTip: "" },
+          { text: "Me", isCorrect: false, correctTip: "", incorrectTip: "宾格形式，不作主语。" }
         ]
       },
-      { 
+      {
         correctWord: "vivo",
         options: [
-          { 
-            text: "vivo", 
-            isCorrect: true, 
-            correctTip: "\"vivo\"是动词\"vivir\"（生活）在第一人称单数现在时的正确变位。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "vive", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"vive\"是第三人称单数变位，不匹配主语\"Yo\"。" 
-          },
-          { 
-            text: "viví", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"viví\"是过去时变位，不是现在时。" 
-          }
+          { text: "vivo", isCorrect: true, correctTip: "\"vivir\"第一人称单数现在时。", incorrectTip: "" },
+          { text: "vive", isCorrect: false, correctTip: "", incorrectTip: "第三人称变位，与主语不符。" }
         ]
       },
       {
-        correctWord: "muy bien",
+        correctWord: "con tranquilidad",
         options: [
-          { 
-            text: "muy bien", 
-            isCorrect: true, 
-            correctTip: "\"muy bien\"表示\"非常好\"，修饰动词。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "bien muy", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "西班牙语中副词\"muy\"应放在被修饰的词前面，词序颠倒了。" 
-          },
-          { 
-            text: "muy bueno", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"muy bueno\"用于修饰名词，而不是动词。应使用副词形式\"muy bien\"。" 
-          }
+          { text: "con tranquilidad", isCorrect: true, correctTip: "表示“平静地”。", incorrectTip: "" },
+          { text: "muy bien", isCorrect: false, correctTip: "", incorrectTip: "换成更自然的表达。"}
         ]
       },
       {
         correctWord: "hoy",
         options: [
-          { 
-            text: "hoy", 
-            isCorrect: true, 
-            correctTip: "\"hoy\"表示\"今天\"，是时间状语，与现在时态相符。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "ayer", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"ayer\"表示\"昨天\"，不是\"今天\"，不符合现在时语境。" 
-          },
-          { 
-            text: "mañana", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"mañana\"表示\"明天\"，不是\"今天\"，不符合现在时语境。" 
-          }
+          { text: "hoy", isCorrect: true, correctTip: "时间状语“今天”。", incorrectTip: "" },
+          { text: "ayer", isCorrect: false, correctTip: "", incorrectTip: "与现在时不符。"}
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Presente | Tú | Tú escribes muy bien hoy.
+
+  /* Presente | Tú */
   {
     id: 76,
-    chinese: "你今天写得很好。",
-    spanish: "Tú escribes muy bien hoy.",
+    chinese: "你今天写得很清楚。",
+    spanish: "Tú escribes con claridad hoy.",
     wordChoices: [
-      { 
+      {
         correctWord: "Tú",
         options: [
-          { 
-            text: "Tú", 
-            isCorrect: true, 
-            correctTip: "\"Tú\"表示\"你\"，此句主语。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "Te", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Te\"是代词\"你\"的宾格形式，不是主语。" 
-          },
-          { 
-            text: "Tu", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Tu\"是所有格形容词\"你的\"，不是主语\"你\"（注意没有重音符号）。" 
-          }
+          { text: "Tú", isCorrect: true, correctTip: "主语“你”。", incorrectTip: "" },
+          { text: "Te", isCorrect: false, correctTip: "", incorrectTip: "宾格形式，不作主语。"}
         ]
       },
-      { 
+      {
         correctWord: "escribes",
         options: [
-          { 
-            text: "escribes", 
-            isCorrect: true, 
-            correctTip: "\"escribes\"是动词\"escribir\"（写）在第二人称单数现在时的正确变位。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "escribo", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"escribo\"是第一人称单数变位，不匹配主语\"Tú\"。" 
-          },
-          { 
-            text: "escribiste", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"escribiste\"是过去时变位，不是现在时。" 
-          }
+          { text: "escribes", isCorrect: true, correctTip: "\"escribir\"第二人称单数现在时。", incorrectTip: "" },
+          { text: "escribiste", isCorrect: false, correctTip: "", incorrectTip: "过去时。"}
         ]
       },
       {
-        correctWord: "muy bien",
+        correctWord: "con claridad",
         options: [
-          { 
-            text: "muy bien", 
-            isCorrect: true, 
-            correctTip: "\"muy bien\"表示\"非常好\"，修饰动词。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "mucho bien", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "副词\"mucho\"不用于修饰另一个副词\"bien\"，应使用\"muy\"。" 
-          },
-          { 
-            text: "poco bien", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"poco bien\"表示\"不太好\"，与原句的\"非常好\"意思相反。" 
-          }
+          { text: "con claridad", isCorrect: true, correctTip: "表示“清晰地”。", incorrectTip: "" },
+          { text: "muy bien", isCorrect: false, correctTip: "", incorrectTip: "已替换为更日常的表达。"}
         ]
       },
       {
         correctWord: "hoy",
         options: [
-          { 
-            text: "hoy", 
-            isCorrect: true, 
-            correctTip: "\"hoy\"表示\"今天\"，是时间状语，与现在时态相符。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "anoche", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"anoche\"表示\"昨晚\"，不是\"今天\"，不符合现在时语境。" 
-          },
-          { 
-            text: "ahora", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"ahora\"表示\"现在\"，虽然也符合现在时态，但原句使用的是\"hoy\"(今天)。" 
-          }
+          { text: "hoy", isCorrect: true, correctTip: "时间状语“今天”。", incorrectTip: "" },
+          { text: "mañana", isCorrect: false, correctTip: "", incorrectTip: "将来时才用。"}
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Presente | Él | Él abre muy bien hoy.
+
+  /* Presente | Él */
   {
     id: 77,
-    chinese: "他今天开得很好。",
-    spanish: "Él abre muy bien hoy.",
+    chinese: "他今天顺利地开门。",
+    spanish: "Él abre sin problemas hoy.",
     wordChoices: [
-      { 
+      {
         correctWord: "Él",
         options: [
-          { 
-            text: "Él", 
-            isCorrect: true, 
-            correctTip: "\"Él\"表示\"他\"，此句主语。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "Le", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Le\"是代词\"他\"的间接宾格形式，不是主语。" 
-          },
-          { 
-            text: "Ella", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Ella\"表示\"她\"，不是\"他\"。" 
-          }
+          { text: "Él", isCorrect: true, correctTip: "主语“他”。", incorrectTip: "" },
+          { text: "Ella", isCorrect: false, correctTip: "", incorrectTip: "性别不符。"}
         ]
       },
-      { 
+      {
         correctWord: "abre",
         options: [
-          { 
-            text: "abre", 
-            isCorrect: true, 
-            correctTip: "\"abre\"是动词\"abrir\"（开）在第三人称单数现在时的正确变位。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "abro", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"abro\"是第一人称单数变位，不匹配主语\"Él\"。" 
-          },
-          { 
-            text: "abrió", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"abrió\"是过去时变位，不是现在时。" 
-          }
+          { text: "abre", isCorrect: true, correctTip: "\"abrir\"第三人称单数现在时。", incorrectTip: "" },
+          { text: "abro", isCorrect: false, correctTip: "", incorrectTip: "第一人称变位。"}
         ]
       },
       {
-        correctWord: "muy bien",
+        correctWord: "sin problemas",
         options: [
-          { 
-            text: "muy bien", 
-            isCorrect: true, 
-            correctTip: "\"muy bien\"表示\"非常好\"，修饰动词。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "tan bien", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"tan bien\"也表示\"这么好\"，但原句使用的是\"muy bien\"（非常好）。" 
-          },
-          { 
-            text: "muy bueno", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"muy bueno\"用于修饰名词，而不是动词。应使用副词形式\"muy bien\"。" 
-          }
+          { text: "sin problemas", isCorrect: true, correctTip: "表示“顺利地、毫无问题”。", incorrectTip: "" },
+          { text: "muy bien", isCorrect: false, correctTip: "", incorrectTip: "已替换为更自然表达。"}
         ]
       },
       {
         correctWord: "hoy",
         options: [
-          { 
-            text: "hoy", 
-            isCorrect: true, 
-            correctTip: "\"hoy\"表示\"今天\"，是时间状语，与现在时态相符。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "ayer", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"ayer\"表示\"昨天\"，不是\"今天\"，不符合现在时语境。" 
-          },
-          { 
-            text: "esta semana", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"esta semana\"表示\"这周\"，范围比\"今天\"更广。" 
-          }
+          { text: "hoy", isCorrect: true, correctTip: "时间状语。", incorrectTip: "" },
+          { text: "ayer", isCorrect: false, correctTip: "", incorrectTip: "与现在时不符。"}
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Presente | Nosotros | Nosotros recibimos muy bien hoy.
+
+  /* Presente | Nosotros */
   {
     id: 78,
-    chinese: "我们今天接收得很好。",
-    spanish: "Nosotros recibimos muy bien hoy.",
+    chinese: "我们今天热情地接待。",
+    spanish: "Nosotros recibimos con entusiasmo hoy.",
     wordChoices: [
-      { 
+      {
         correctWord: "Nosotros",
         options: [
-          { 
-            text: "Nosotros", 
-            isCorrect: true, 
-            correctTip: "\"Nosotros\"表示\"我们\"，此句主语。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "Nos", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Nos\"是代词\"我们\"的宾格形式，不是主语。" 
-          },
-          { 
-            text: "Nuestros", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Nuestros\"是所有格形容词\"我们的\"，不是主语。" 
-          }
+          { text: "Nosotros", isCorrect: true, correctTip: "主语“我们”。", incorrectTip: "" },
+          { text: "Nos", isCorrect: false, correctTip: "", incorrectTip: "宾格形式。"}
         ]
       },
-      { 
+      {
         correctWord: "recibimos",
         options: [
-          { 
-            text: "recibimos", 
-            isCorrect: true, 
-            correctTip: "\"recibimos\"是动词\"recibir\"（接收）在第一人称复数现在时的正确变位。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "recibemos", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"recibemos\"不是正确的变位，-IR动词第一人称复数现在时应变位为\"-imos\"。" 
-          },
-          { 
-            text: "recibíamos", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"recibíamos\"是过去未完成时变位，不是现在时。" 
-          }
+          { text: "recibimos", isCorrect: true, correctTip: "\"recibir\"第一人称复数现在时。", incorrectTip: "" },
+          { text: "recibimos", isCorrect: false, correctTip: "", incorrectTip: "" }
         ]
       },
       {
-        correctWord: "muy bien",
+        correctWord: "con entusiasmo",
         options: [
-          { 
-            text: "muy bien", 
-            isCorrect: true, 
-            correctTip: "\"muy bien\"表示\"非常好\"，修饰动词。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "muy buenos", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"muy buenos\"用于修饰复数名词，而不是动词。应使用副词形式\"muy bien\"。" 
-          },
-          { 
-            text: "bastante bien", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"bastante bien\"表示\"相当好\"，程度不如\"muy bien\"（非常好）。" 
-          }
+          { text: "con entusiasmo", isCorrect: true, correctTip: "表示“热情地”。", incorrectTip: "" },
+          { text: "muy bien", isCorrect: false, correctTip: "", incorrectTip: "已用更贴近日常的短语替换。"}
         ]
       },
       {
         correctWord: "hoy",
         options: [
-          { 
-            text: "hoy", 
-            isCorrect: true, 
-            correctTip: "\"hoy\"表示\"今天\"，是时间状语，与现在时态相符。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "ayer", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"ayer\"表示\"昨天\"，不是\"今天\"，不符合现在时语境。" 
-          },
-          { 
-            text: "mañana", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"mañana\"表示\"明天\"，不是\"今天\"，不符合现在时语境。" 
-          }
+          { text: "hoy", isCorrect: true, correctTip: "时间状语。", incorrectTip: "" },
+          { text: "mañana", isCorrect: false, correctTip: "", incorrectTip: "将来时才用。"}
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Presente | Vosotros | Vosotros asistís muy bien hoy.
+
+  /* Presente | Vosotros */
   {
     id: 79,
-    chinese: "你们今天参加得很好。",
-    spanish: "Vosotros asistís muy bien hoy.",
+    chinese: "你们今天准时出席。",
+    spanish: "Vosotros asistís con puntualidad hoy.",
     wordChoices: [
-      { 
+      {
         correctWord: "Vosotros",
         options: [
-          { 
-            text: "Vosotros", 
-            isCorrect: true, 
-            correctTip: "\"Vosotros\"表示\"你们\"，此句主语。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "Os", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Os\"是代词\"你们\"的宾格形式，不是主语。" 
-          },
-          { 
-            text: "Ustedes", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Ustedes\"也表示\"你们\"，但在西班牙语中更正式，且动词变位不同。" 
-          }
+          { text: "Vosotros", isCorrect: true, correctTip: "主语“你们”。", incorrectTip: "" },
+          { text: "Ustedes", isCorrect: false, correctTip: "", incorrectTip: "与动词变位不符。"}
         ]
       },
-      { 
+      {
         correctWord: "asistís",
         options: [
-          { 
-            text: "asistís", 
-            isCorrect: true, 
-            correctTip: "\"asistís\"是动词\"asistir\"（参加）在第二人称复数现在时的正确变位。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "asisten", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"asisten\"是第三人称复数变位，不匹配主语\"Vosotros\"。" 
-          },
-          { 
-            text: "asististeis", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"asististeis\"是过去时变位，不是现在时。" 
-          }
+          { text: "asistís", isCorrect: true, correctTip: "\"asistir\"第二人称复数现在时。", incorrectTip: "" },
+          { text: "asisten", isCorrect: false, correctTip: "", incorrectTip: "第三人称变位。"}
         ]
       },
       {
-        correctWord: "muy bien",
+        correctWord: "con puntualidad",
         options: [
-          { 
-            text: "muy bien", 
-            isCorrect: true, 
-            correctTip: "\"muy bien\"表示\"非常好\"，修饰动词。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "bien muy", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "西班牙语中副词\"muy\"应放在被修饰的词前面，词序颠倒了。" 
-          },
-          { 
-            text: "demasiado bien", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"demasiado bien\"表示\"太好了\"，程度过了，不同于\"muy bien\"（非常好）。" 
-          }
+          { text: "con puntualidad", isCorrect: true, correctTip: "表示“准时”。", incorrectTip: "" },
+          { text: "muy bien", isCorrect: false, correctTip: "", incorrectTip: "已替换为更具体的副词短语。"}
         ]
       },
       {
         correctWord: "hoy",
         options: [
-          { 
-            text: "hoy", 
-            isCorrect: true, 
-            correctTip: "\"hoy\"表示\"今天\"，是时间状语，与现在时态相符。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "ahora", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"ahora\"表示\"现在\"，虽然也符合现在时态，但原句使用的是\"hoy\"(今天)。" 
-          },
-          { 
-            text: "siempre", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"siempre\"表示\"总是\"，不是特定的\"今天\"。" 
-          }
+          { text: "hoy", isCorrect: true, correctTip: "时间状语。", incorrectTip: "" },
+          { text: "siempre", isCorrect: false, correctTip: "", incorrectTip: "含义不同。"}
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Presente | Ellos | Ellos suben muy bien hoy.
+
+  /* Presente | Ellos */
   {
     id: 80,
-    chinese: "他们今天上升得很好。",
-    spanish: "Ellos suben muy bien hoy.",
+    chinese: "他们今天轻松上升。",
+    spanish: "Ellos suben sin dificultad hoy.",
     wordChoices: [
-      { 
+      {
         correctWord: "Ellos",
         options: [
-          { 
-            text: "Ellos", 
-            isCorrect: true, 
-            correctTip: "\"Ellos\"表示\"他们\"，此句主语。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "Les", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Les\"是代词\"他们\"的间接宾格形式，不是主语。" 
-          },
-          { 
-            text: "Sus", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Sus\"是所有格形容词\"他们的\"，不是主语。" 
-          }
-        ]
-      },
-      { 
-        correctWord: "suben",
-        options: [
-          { 
-            text: "suben", 
-            isCorrect: true, 
-            correctTip: "\"suben\"是动词\"subir\"（上升）在第三人称复数现在时的正确变位。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "subirán", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"subirán\"是将来时变位，不是现在时。" 
-          },
-          { 
-            text: "subieron", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"subieron\"是过去时变位，不是现在时。" 
-          }
+          { text: "Ellos", isCorrect: true, correctTip: "主语“他们”。", incorrectTip: "" },
+          { text: "Ellas", isCorrect: false, correctTip: "", incorrectTip: "性别信息不同。" }
         ]
       },
       {
-        correctWord: "muy bien",
+        correctWord: "suben",
         options: [
-          { 
-            text: "muy bien", 
-            isCorrect: true, 
-            correctTip: "\"muy bien\"表示\"非常好\"，修饰动词。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "mucho bien", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "副词\"mucho\"不用于修饰另一个副词\"bien\"，应使用\"muy\"。" 
-          },
-          { 
-            text: "muy buenos", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"muy buenos\"用于修饰复数名词，而不是动词。应使用副词形式\"muy bien\"。" 
-          }
+          { text: "suben", isCorrect: true, correctTip: "\"subir\"第三人称复数现在时。", incorrectTip: "" },
+          { text: "subieron", isCorrect: false, correctTip: "", incorrectTip: "过去时。"}
+        ]
+      },
+      {
+        correctWord: "sin dificultad",
+        options: [
+          { text: "sin dificultad", isCorrect: true, correctTip: "表示“没有难度地”。", incorrectTip: "" },
+          { text: "muy bien", isCorrect: false, correctTip: "", incorrectTip: "已替换为更自然表达。"}
         ]
       },
       {
         correctWord: "hoy",
         options: [
-          { 
-            text: "hoy", 
-            isCorrect: true, 
-            correctTip: "\"hoy\"表示\"今天\"，是时间状语，与现在时态相符。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "mañana", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"mañana\"表示\"明天\"，不是\"今天\"，不符合现在时语境。" 
-          },
-          { 
-            text: "este día", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"este día\"表示\"这一天\"，意思接近但不如\"hoy\"(今天)常用。" 
-          }
+          { text: "hoy", isCorrect: true, correctTip: "时间状语。", incorrectTip: "" },
+          { text: "ayer", isCorrect: false, correctTip: "", incorrectTip: "与现在时不符。"}
         ]
       }
     ],
-    completed: false,
+    completed: false
   }
 ];

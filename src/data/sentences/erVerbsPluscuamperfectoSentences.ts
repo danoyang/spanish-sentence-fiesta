@@ -5,295 +5,396 @@ export const erVerbsPluscuamperfectoSentences: Sentence[] = [
   // Pluscuamperfecto | Yo | Yo había tejido muy bien antes.
   {
     id: 111,
-    chinese: "我以前织得非常好。",
-    spanish: "Yo había tejido muy bien antes.",
+    chinese: "冬天来之前，我给妈妈织过一条厚围巾。",
+    spanish: "Yo había tejido una bufanda gruesa para mi madre antes del invierno.",
     wordChoices: [
-      { 
+      {
         correctWord: "Yo",
         options: [
-          { text: "Yo", isCorrect: true, correctTip: "\"Yo\"表示\"我\"，此句主语。", incorrectTip: "" }
+          {
+            text: "Yo",
+            isCorrect: true,
+            correctTip: "\"Yo\"表示\"我\"，此句主语。",
+            incorrectTip: ""
+          },
+          {
+            text: "Tú",
+            isCorrect: false,
+            correctTip: "",
+            incorrectTip: "\"Tú\"是\"你\"，不符合主语。"
+          }
         ]
       },
-      { 
+      {
         correctWord: "había tejido",
         options: [
-          { 
-            text: "había tejido", 
-            isCorrect: true, 
-            correctTip: "\"había tejido\"是过去完成时第一人称单数形式，由助动词haber的过去未完成时变位\"había\"加上动词\"tejer\"的过去分词\"tejido\"组成。", 
-            incorrectTip: "" 
+          {
+            text: "había tejido",
+            isCorrect: true,
+            correctTip: "第一人称单数的过去完成时：haber（había）+ tejido。",
+            incorrectTip: ""
           },
-          { 
-            text: "habías tejido", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"habías tejido\"是第二人称单数(tú)的过去完成时形式，不匹配第一人称主语\"Yo\"。" 
+          {
+            text: "habías tejido",
+            isCorrect: false,
+            correctTip: "",
+            incorrectTip: "第二人称单数变位，与主语不符。"
           },
-          { 
-            text: "he tejido", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"he tejido\"是现在完成时形式，而不是过去完成时。" 
+          {
+            text: "he tejido",
+            isCorrect: false,
+            correctTip: "",
+            incorrectTip: "现在完成时，不是过去完成时。"
           }
         ]
       },
       {
-        correctWord: "muy bien antes",
+        correctWord: "una bufanda gruesa",
         options: [
-          { 
-            text: "muy bien antes", 
-            isCorrect: true, 
-            correctTip: "\"muy bien antes\"表示\"以前非常好\"。", 
-            incorrectTip: "" 
+          {
+            text: "una bufanda gruesa",
+            isCorrect: true,
+            correctTip: "表示“厚围巾”，符合句意。",
+            incorrectTip: ""
+          },
+          {
+            text: "un sombrero ligero",
+            isCorrect: false,
+            correctTip: "",
+            incorrectTip: "这表示“轻便帽子”，与织围巾不符。"
+          },
+          {
+            text: "un abrigo caro",
+            isCorrect: false,
+            correctTip: "",
+            incorrectTip: "这表示“昂贵大衣”，与句意不符。"
           }
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Pluscuamperfecto | Tú | Tú habías escogido muy bien antes.
+
+  // Pluscuamperfecto | Tú
   {
     id: 112,
-    chinese: "你以前选择得非常好。",
-    spanish: "Tú habías escogido muy bien antes.",
+    chinese: "你以前为他生日挑过最合适的礼物。",
+    spanish: "Tú habías escogido el regalo perfecto para su cumpleaños.",
     wordChoices: [
-      { 
+      {
         correctWord: "Tú",
         options: [
-          { text: "Tú", isCorrect: true, correctTip: "\"Tú\"表示\"你\"，此句主语。", incorrectTip: "" }
+          {
+            text: "Tú",
+            isCorrect: true,
+            correctTip: "\"Tú\"表示\"你\"，此句主语。",
+            incorrectTip: ""
+          },
+          {
+            text: "Yo",
+            isCorrect: false,
+            correctTip: "",
+            incorrectTip: "应使用第二人称 \"Tú\"。"
+          }
         ]
       },
-      { 
+      {
         correctWord: "habías escogido",
         options: [
-          { 
-            text: "habías escogido", 
-            isCorrect: true, 
-            correctTip: "\"habías escogido\"是过去完成时第二人称单数形式，由助动词haber的过去未完成时变位\"habías\"加上动词\"escoger\"的过去分词\"escogido\"组成。", 
-            incorrectTip: "" 
+          {
+            text: "habías escogido",
+            isCorrect: true,
+            correctTip: "第二人称单数的过去完成时：haber（habías）+ escogido。",
+            incorrectTip: ""
           },
-          { 
-            text: "había escogido", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"había escogido\"是第一或第三人称单数(yo/él/ella)的过去完成时形式，不匹配第二人称主语\"Tú\"。" 
+          {
+            text: "había escogido",
+            isCorrect: false,
+            correctTip: "",
+            incorrectTip: "第一/第三人称单数，与主语不符。"
           },
-          { 
-            text: "has escogido", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"has escogido\"是现在完成时形式，而不是过去完成时。" 
+          {
+            text: "has escogido",
+            isCorrect: false,
+            correctTip: "",
+            incorrectTip: "现在完成时，不是过去完成时。"
           }
         ]
       },
       {
-        correctWord: "muy bien antes",
+        correctWord: "el regalo perfecto",
         options: [
-          { 
-            text: "muy bien antes", 
-            isCorrect: true, 
-            correctTip: "\"muy bien antes\"表示\"以前非常好\"。", 
-            incorrectTip: "" 
+          {
+            text: "el regalo perfecto",
+            isCorrect: true,
+            correctTip: "意为“最合适的礼物”。",
+            incorrectTip: ""
+          },
+          {
+            text: "una carta larga",
+            isCorrect: false,
+            correctTip: "",
+            incorrectTip: "这表示“一封长信”，并非礼物本身。"
           }
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Pluscuamperfecto | Él | Él había mecido muy bien antes.
+
+  // Pluscuamperfecto | Él
   {
     id: 113,
-    chinese: "他以前摇晃得非常好。",
-    spanish: "Él había mecido muy bien antes.",
+    chinese: "他以前总是在阳台上哄宝宝睡觉。",
+    spanish: "Él había mecido al bebé en el balcón hasta que se durmió.",
     wordChoices: [
-      { 
+      {
         correctWord: "Él",
         options: [
-          { text: "Él", isCorrect: true, correctTip: "\"Él\"表示\"他\"，此句主语。", incorrectTip: "" }
+          {
+            text: "Él",
+            isCorrect: true,
+            correctTip: "\"Él\"表示\"他\"，此句主语。",
+            incorrectTip: ""
+          },
+          {
+            text: "Ella",
+            isCorrect: false,
+            correctTip: "",
+            incorrectTip: "主语应为男性 \"Él\"。"
+          }
         ]
       },
-      { 
+      {
         correctWord: "había mecido",
         options: [
-          { 
-            text: "había mecido", 
-            isCorrect: true, 
-            correctTip: "\"había mecido\"是过去完成时第三人称单数形式，由助动词haber的过去未完成时变位\"había\"加上动词\"mecer\"的过去分词\"mecido\"组成。", 
-            incorrectTip: "" 
+          {
+            text: "había mecido",
+            isCorrect: true,
+            correctTip: "第三人称单数的过去完成时：haber（había）+ mecido。",
+            incorrectTip: ""
           },
-          { 
-            text: "habías mecido", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"habías mecido\"是第二人称单数(tú)的过去完成时形式，不匹配第三人称主语\"Él\"。" 
-          },
-          { 
-            text: "ha mecido", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"ha mecido\"是现在完成时形式，而不是过去完成时。" 
+          {
+            text: "habías mecido",
+            isCorrect: false,
+            correctTip: "",
+            incorrectTip: "第二人称单数，与主语不符。"
           }
         ]
       },
       {
-        correctWord: "muy bien antes",
+        correctWord: "al bebé",
         options: [
-          { 
-            text: "muy bien antes", 
-            isCorrect: true, 
-            correctTip: "\"muy bien antes\"表示\"以前非常好\"。", 
-            incorrectTip: "" 
+          {
+            text: "al bebé",
+            isCorrect: true,
+            correctTip: "表示“给婴儿”。",
+            incorrectTip: ""
+          },
+          {
+            text: "al perro",
+            isCorrect: false,
+            correctTip: "",
+            incorrectTip: "句中摇的是婴儿 (bebé)，不是狗 (perro)。"
           }
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Pluscuamperfecto | Nosotros | Nosotros habíamos sucedido muy bien antes.
+
+  // Pluscuamperfecto | Nosotros
   {
     id: 114,
-    chinese: "我们以前发生得非常好。",
-    spanish: "Nosotros habíamos sucedido muy bien antes.",
+    chinese: "我们以前在类似情境中也发生过。",
+    spanish: "Nosotros habíamos sucedido en una situación parecida antes.",
     wordChoices: [
-      { 
+      {
         correctWord: "Nosotros",
         options: [
-          { text: "Nosotros", isCorrect: true, correctTip: "\"Nosotros\"表示\"我们\"，此句主语。", incorrectTip: "" }
+          {
+            text: "Nosotros",
+            isCorrect: true,
+            correctTip: "\"Nosotros\"表示\"我们\"，此句主语。",
+            incorrectTip: ""
+          },
+          {
+            text: "Vosotros",
+            isCorrect: false,
+            correctTip: "",
+            incorrectTip: "主语应为第一人称复数 \"Nosotros\"。"
+          }
         ]
       },
-      { 
+      {
         correctWord: "habíamos sucedido",
         options: [
-          { 
-            text: "habíamos sucedido", 
-            isCorrect: true, 
-            correctTip: "\"habíamos sucedido\"是过去完成时第一人称复数形式，由助动词haber的过去未完成时变位\"habíamos\"加上动词\"suceder\"的过去分词\"sucedido\"组成。", 
-            incorrectTip: "" 
+          {
+            text: "habíamos sucedido",
+            isCorrect: true,
+            correctTip: "第一人称复数的过去完成时：haber（habíamos）+ sucedido。",
+            incorrectTip: ""
           },
-          { 
-            text: "habían sucedido", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"habían sucedido\"是第三人称复数(ellos/ellas)的过去完成时形式，不匹配第一人称复数主语\"Nosotros\"。" 
+          {
+            text: "habían sucedido",
+            isCorrect: false,
+            correctTip: "",
+            incorrectTip: "第三人称复数，与主语不符。"
           },
-          { 
-            text: "hemos sucedido", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"hemos sucedido\"是现在完成时形式，而不是过去完成时。" 
+          {
+            text: "hemos sucedido",
+            isCorrect: false,
+            correctTip: "",
+            incorrectTip: "现在完成时，不是过去完成时。"
           }
         ]
       },
       {
-        correctWord: "muy bien antes",
+        correctWord: "en una situación parecida",
         options: [
-          { 
-            text: "muy bien antes", 
-            isCorrect: true, 
-            correctTip: "\"muy bien antes\"表示\"以前非常好\"。", 
-            incorrectTip: "" 
+          {
+            text: "en una situación parecida",
+            isCorrect: true,
+            correctTip: "意为“在类似情境中”。",
+            incorrectTip: ""
+          },
+          {
+            text: "en un concierto famoso",
+            isCorrect: false,
+            correctTip: "",
+            incorrectTip: "语境不符，句子讲的是“类似情境”。"
           }
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Pluscuamperfecto | Vosotros | Vosotros habíais cedido muy bien antes.
+
+  // Pluscuamperfecto | Vosotros
   {
     id: 115,
-    chinese: "你们以前让步得非常好。",
-    spanish: "Vosotros habíais cedido muy bien antes.",
+    chinese: "你们以前在路口主动让过其他司机。",
+    spanish: "Vosotros habíais cedido el paso en el cruce.",
     wordChoices: [
-      { 
+      {
         correctWord: "Vosotros",
         options: [
-          { text: "Vosotros", isCorrect: true, correctTip: "\"Vosotros\"表示\"你们\"，此句主语。", incorrectTip: "" }
+          {
+            text: "Vosotros",
+            isCorrect: true,
+            correctTip: "\"Vosotros\"表示\"你们\"，此句主语。",
+            incorrectTip: ""
+          },
+          {
+            text: "Nosotros",
+            isCorrect: false,
+            correctTip: "",
+            incorrectTip: "主语应为 \"Vosotros\"（你们）。"
+          }
         ]
       },
-      { 
+      {
         correctWord: "habíais cedido",
         options: [
-          { 
-            text: "habíais cedido", 
-            isCorrect: true, 
-            correctTip: "\"habíais cedido\"是过去完成时第二人称复数形式，由助动词haber的过去未完成时变位\"habíais\"加上动词\"ceder\"的过去分词\"cedido\"组成。", 
-            incorrectTip: "" 
+          {
+            text: "habíais cedido",
+            isCorrect: true,
+            correctTip: "第二人称复数的过去完成时：haber（habíais）+ cedido。",
+            incorrectTip: ""
           },
-          { 
-            text: "habíamos cedido", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"habíamos cedido\"是第一人称复数(nosotros)的过去完成时形式，不匹配第二人称复数主语\"Vosotros\"。" 
+          {
+            text: "habíamos cedido",
+            isCorrect: false,
+            correctTip: "",
+            incorrectTip: "第一人称复数，与主语不符。"
           },
-          { 
-            text: "habéis cedido", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"habéis cedido\"是现在完成时形式，而不是过去完成时。" 
+          {
+            text: "habéis cedido",
+            isCorrect: false,
+            correctTip: "",
+            incorrectTip: "现在完成时，不是过去完成时。"
           }
         ]
       },
       {
-        correctWord: "muy bien antes",
+        correctWord: "el paso",
         options: [
-          { 
-            text: "muy bien antes", 
-            isCorrect: true, 
-            correctTip: "\"muy bien antes\"表示\"以前非常好\"。", 
-            incorrectTip: "" 
+          {
+            text: "el paso",
+            isCorrect: true,
+            correctTip: "\"ceder el paso\"＝“让路”。",
+            incorrectTip: ""
+          },
+          {
+            text: "la música",
+            isCorrect: false,
+            correctTip: "",
+            incorrectTip: "\"la música\"与让路无关。"
           }
         ]
       }
     ],
-    completed: false,
+    completed: false
   },
-  // Pluscuamperfecto | Ellos | Ellos habían aparecido muy bien antes.
+
+  // Pluscuamperfecto | Ellos
   {
     id: 116,
-    chinese: "他们以前出现得非常好。",
-    spanish: "Ellos habían aparecido muy bien antes.",
+    chinese: "他们以前在聚会上突然出现过。",
+    spanish: "Ellos habían aparecido de repente en la fiesta antes.",
     wordChoices: [
-      { 
+      {
         correctWord: "Ellos",
         options: [
-          { text: "Ellos", isCorrect: true, correctTip: "\"Ellos\"表示\"他们\"，此句主语。", incorrectTip: "" }
-        ]
-      },
-      { 
-        correctWord: "habían aparecido",
-        options: [
-          { 
-            text: "habían aparecido", 
-            isCorrect: true, 
-            correctTip: "\"habían aparecido\"是过去完成时第三人称复数形式，由助动词haber的过去未完成时变位\"habían\"加上动词\"aparecer\"的过去分词\"aparecido\"组成。", 
-            incorrectTip: "" 
+          {
+            text: "Ellos",
+            isCorrect: true,
+            correctTip: "\"Ellos\"表示\"他们\"，此句主语。",
+            incorrectTip: ""
           },
-          { 
-            text: "habíamos aparecido", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"habíamos aparecido\"是第一人称复数(nosotros)的过去完成时形式，不匹配第三人称复数主语\"Ellos\"。" 
-          },
-          { 
-            text: "habíais aparecido", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"habíais aparecido\"是第二人称复数(vosotros)的过去完成时形式，不匹配第三人称复数主语\"Ellos\"。" 
+          {
+            text: "Ellas",
+            isCorrect: false,
+            correctTip: "",
+            incorrectTip: "主语应为阳性或混合性 \"Ellos\"。"
           }
         ]
       },
       {
-        correctWord: "muy bien antes",
+        correctWord: "habían aparecido",
         options: [
-          { 
-            text: "muy bien antes", 
-            isCorrect: true, 
-            correctTip: "\"muy bien antes\"表示\"以前非常好\"。", 
-            incorrectTip: "" 
+          {
+            text: "habían aparecido",
+            isCorrect: true,
+            correctTip: "第三人称复数的过去完成时：haber（habían）+ aparecido。",
+            incorrectTip: ""
+          },
+          {
+            text: "habíamos aparecido",
+            isCorrect: false,
+            correctTip: "",
+            incorrectTip: "第一人称复数，与主语不符。"
+          }
+        ]
+      },
+      {
+        correctWord: "de repente",
+        options: [
+          {
+            text: "de repente",
+            isCorrect: true,
+            correctTip: "表示“突然地”。",
+            incorrectTip: ""
+          },
+          {
+            text: "con calma",
+            isCorrect: false,
+            correctTip: "",
+            incorrectTip: "“con calma”＝“平静地”，与句意相反。"
           }
         ]
       }
     ],
-    completed: false,
-  },
+    completed: false
+  }
 ];

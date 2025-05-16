@@ -2,610 +2,207 @@ import { Sentence } from "@/types/game";
 
 // Subjuntivo Presente (Present Subjunctive) sentences
 export const subjuntivoPresenteSentences: Sentence[] = [
-  // Subjuntivo presente | Yo | Yo repare muy bien aunque sea necesario.
-  {
-    id: 45,
-    chinese: "虽然有必要，我也要修理得非常好。",
-    spanish: "Yo repare muy bien aunque sea necesario.",
-    wordChoices: [
-      { 
-        correctWord: "Yo",
-        options: [
-          { 
-            text: "Yo", 
-            isCorrect: true, 
-            correctTip: "\"Yo\"表示\"我\"，此句主语。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "Tú", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Tú\"表示\"你\"，不是此句的主语。" 
-          },
-          { 
-            text: "Él", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Él\"表示\"他\"，不是此句的主语。" 
-          }
-        ]
-      },
-      { 
-        correctWord: "repare",
-        options: [
-          { 
-            text: "repare", 
-            isCorrect: true, 
-            correctTip: "\"repare\"是动词\"reparar\"（修理）在第一人称现在虚拟式的正确变位。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "repara", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"repara\"是陈述式现在时形式，不是虚拟式。" 
-          },
-          { 
-            text: "reparé", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"reparé\"是过去时形式，不是现在虚拟式。" 
-          }
-        ]
-      },
-      {
-        correctWord: "muy bien",
-        options: [
-          { 
-            text: "muy bien", 
-            isCorrect: true, 
-            correctTip: "\"muy bien\"表示\"非常好\"，修饰动词。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "bien muy", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "西班牙语中副词\"muy\"应放在被修饰的词前面，词序颠倒了。" 
-          },
-          { 
-            text: "muy bueno", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"muy bueno\"用于修饰名词，而不是动词。应使用副词形式\"muy bien\"。" 
-          }
-        ]
-      },
-      {
-        correctWord: "aunque sea necesario",
-        options: [
-          { 
-            text: "aunque sea necesario", 
-            isCorrect: true, 
-            correctTip: "\"aunque sea necesario\"表示\"虽然是必要的\"，是一个让步从句。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "aunque es necesario", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "在让步从句中应使用虚拟式(sea)而不是陈述式(es)。" 
-          },
-          { 
-            text: "porque sea necesario", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"porque\"表示\"因为\"，而不是\"虽然\"，不符合句意。" 
-          }
-        ]
-      }
-    ],
-    completed: false,
-  },
-  // Subjuntivo presente | Tú | Tú soñes muy bien aunque sea necesario.
-  {
-    id: 46,
-    chinese: "虽然有必要，你也要梦想得非常好。",
-    spanish: "Tú soñes muy bien aunque sea necesario.",
-    wordChoices: [
-      { 
-        correctWord: "Tú",
-        options: [
-          { 
-            text: "Tú", 
-            isCorrect: true, 
-            correctTip: "\"Tú\"表示\"你\"，此句主语。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "Yo", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Yo\"表示\"我\"，不是此句的主语。" 
-          },
-          { 
-            text: "Nosotros", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Nosotros\"表示\"我们\"，不是此句的主语。" 
-          }
-        ]
-      },
-      { 
-        correctWord: "soñes",
-        options: [
-          { 
-            text: "soñes", 
-            isCorrect: true, 
-            correctTip: "\"soñes\"是动词\"soñar\"（梦想）在第二人称现在虚拟式的正确变位。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "sueñas", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"sueñas\"是陈述式现在时形式，不是虚拟式。" 
-          },
-          { 
-            text: "soñaras", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"soñaras\"是过去虚拟式，不是现在虚拟式。" 
-          }
-        ]
-      },
-      {
-        correctWord: "muy bien",
-        options: [
-          { 
-            text: "muy bien", 
-            isCorrect: true, 
-            correctTip: "\"muy bien\"表示\"非常好\"，修饰动词。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "mucho bien", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "副词\"mucho\"不用于修饰另一个副词\"bien\"，应使用\"muy\"。" 
-          },
-          { 
-            text: "muy bueno", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"muy bueno\"用于修饰名词，而不是动词。应使用副词形式\"muy bien\"。" 
-          }
-        ]
-      },
-      {
-        correctWord: "aunque sea necesario",
-        options: [
-          { 
-            text: "aunque sea necesario", 
-            isCorrect: true, 
-            correctTip: "\"aunque sea necesario\"表示\"虽然是必要的\"，是一个让步从句。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "si es necesario", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"si es necesario\"表示\"如果有必要\"，而不是\"虽然有必要\"，意思不同。" 
-          },
-          { 
-            text: "cuando sea necesario", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"cuando sea necesario\"表示\"当有必要时\"，与原句的\"虽然有必要\"不符。" 
-          }
-        ]
-      }
-    ],
-    completed: false,
-  },
-  // Subjuntivo presente | Él | Él trabaje muy bien aunque sea necesario.
-  {
-    id: 47,
-    chinese: "虽然有必要，他也要工作得非常好。",
-    spanish: "Él trabaje muy bien aunque sea necesario.",
-    wordChoices: [
-      { 
-        correctWord: "Él",
-        options: [
-          { 
-            text: "Él", 
-            isCorrect: true, 
-            correctTip: "\"Él\"表示\"他\"，此句主语。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "Ella", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Ella\"表示\"她\"，不是此句的主语。" 
-          },
-          { 
-            text: "Ellos", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Ellos\"表示\"他们\"，不是此句的主语。" 
-          }
-        ]
-      },
-      { 
-        correctWord: "trabaje",
-        options: [
-          { 
-            text: "trabaje", 
-            isCorrect: true, 
-            correctTip: "\"trabaje\"是动词\"trabajar\"（工作）在第三人称现在虚拟式的正确变位。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "trabaja", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"trabaja\"是陈述式现在时形式，不是虚拟式。" 
-          },
-          { 
-            text: "trabajara", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"trabajara\"是过去虚拟式，不是现在虚拟式。" 
-          }
-        ]
-      },
-      {
-        correctWord: "muy bien",
-        options: [
-          { 
-            text: "muy bien", 
-            isCorrect: true, 
-            correctTip: "\"muy bien\"表示\"非常好\"，修饰动词。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "bien muy", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "西班牙语中副词\"muy\"应放在被修饰的词前面，词序颠倒了。" 
-          },
-          { 
-            text: "tan bien", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"tan bien\"也表示\"这么好\"，但原句使用的是\"muy bien\"（非常好）。" 
-          }
-        ]
-      },
-      {
-        correctWord: "aunque sea necesario",
-        options: [
-          { 
-            text: "aunque sea necesario", 
-            isCorrect: true, 
-            correctTip: "\"aunque sea necesario\"表示\"虽然是必要的\"，是一个让步从句。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "aunque es necesario", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "在让步从句中应使用虚拟式(sea)而不是陈述式(es)。" 
-          },
-          { 
-            text: "mientras sea necesario", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"mientras sea necesario\"表示\"只要有必要\"，与原句的\"虽然有必要\"不符。" 
-          }
-        ]
-      }
-    ],
-    completed: false,
-  },
-  // Subjuntivo presente | Nosotros | Nosotros viajemos muy bien aunque sea necesario.
-  {
-    id: 48,
-    chinese: "虽然有必要，我们也要旅行得非常好。",
-    spanish: "Nosotros viajemos muy bien aunque sea necesario.",
-    wordChoices: [
-      { 
-        correctWord: "Nosotros",
-        options: [
-          { 
-            text: "Nosotros", 
-            isCorrect: true, 
-            correctTip: "\"Nosotros\"表示\"我们\"，此句主语。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "Vosotros", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Vosotros\"表示\"你们\"，不是此句的主语。" 
-          },
-          { 
-            text: "Ellos", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Ellos\"表示\"他们\"，不是此句的主语。" 
-          }
-        ]
-      },
-      { 
-        correctWord: "viajemos",
-        options: [
-          { 
-            text: "viajemos", 
-            isCorrect: true, 
-            correctTip: "\"viajemos\"是动词\"viajar\"（旅行）在第一人称复数现在虚拟式的正确变位。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "viajamos", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"viajamos\"是陈述式现在时形式，不是虚拟式。" 
-          },
-          { 
-            text: "viajáramos", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"viajáramos\"是过去虚拟式，不是现在虚拟式。" 
-          }
-        ]
-      },
-      {
-        correctWord: "muy bien",
-        options: [
-          { 
-            text: "muy bien", 
-            isCorrect: true, 
-            correctTip: "\"muy bien\"表示\"非常好\"，修饰动词。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "bastante bien", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"bastante bien\"表示\"相当好\"，程度不如\"muy bien\"（非常好）。" 
-          },
-          { 
-            text: "muy buenos", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"muy buenos\"用于修饰复数名词，而不是动词。应使用副词形式\"muy bien\"。" 
-          }
-        ]
-      },
-      {
-        correctWord: "aunque sea necesario",
-        options: [
-          { 
-            text: "aunque sea necesario", 
-            isCorrect: true, 
-            correctTip: "\"aunque sea necesario\"表示\"虽然是必要的\"，是一个让步从句。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "aunque era necesario", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"aunque era necesario\"使用了过去未完成时，而不是现在虚拟式，不符合语法要求。" 
-          },
-          { 
-            text: "a pesar de ser necesario", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"a pesar de ser necesario\"是另一种表达\"尽管必要\"的方式，但原句使用的是\"aunque sea necesario\"。" 
-          }
-        ]
-      }
-    ],
-    completed: false,
-  },
-  // Subjuntivo presente | Vosotros | Vosotros apaguéis muy bien aunque sea necesario.
-  {
-    id: 49,
-    chinese: "虽然有必要，你们也要关闭得非常好。",
-    spanish: "Vosotros apaguéis muy bien aunque sea necesario.",
-    wordChoices: [
-      { 
-        correctWord: "Vosotros",
-        options: [
-          { 
-            text: "Vosotros", 
-            isCorrect: true, 
-            correctTip: "\"Vosotros\"表示\"你们\"，此句主语。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "Nosotros", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Nosotros\"表示\"我们\"，不是此句的主语。" 
-          },
-          { 
-            text: "Ustedes", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Ustedes\"也表示\"你们\"，但在西班牙语中更正式，且动词变位不同。" 
-          }
-        ]
-      },
-      { 
-        correctWord: "apaguéis",
-        options: [
-          { 
-            text: "apaguéis", 
-            isCorrect: true, 
-            correctTip: "\"apaguéis\"是动词\"apagar\"（关闭）在第二人称复数现在虚拟式的正确变位。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "apagáis", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"apagáis\"是陈述式现在时形式，不是虚拟式。" 
-          },
-          { 
-            text: "apagaréis", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"apagaréis\"是将来时形式，不是现在虚拟式。" 
-          }
-        ]
-      },
-      {
-        correctWord: "muy bien",
-        options: [
-          { 
-            text: "muy bien", 
-            isCorrect: true, 
-            correctTip: "\"muy bien\"表示\"非常好\"，修饰动词。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "muy bueno", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"muy bueno\"用于修饰名词，而不是动词。应使用副词形式\"muy bien\"。" 
-          },
-          { 
-            text: "demasiado bien", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"demasiado bien\"表示\"太好了\"，程度过了，不同于\"muy bien\"（非常好）。" 
-          }
-        ]
-      },
-      {
-        correctWord: "aunque sea necesario",
-        options: [
-          { 
-            text: "aunque sea necesario", 
-            isCorrect: true, 
-            correctTip: "\"aunque sea necesario\"表示\"虽然是必要的\"，是一个让步从句。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "aunque será necesario", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"aunque será necesario\"使用了将来时，而不是现在虚拟式，不符合语法要求。" 
-          },
-          { 
-            text: "porque sea necesario", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"porque sea necesario\"表示\"因为有必要\"，而不是\"虽然有必要\"，不符合句意。" 
-          }
-        ]
-      }
-    ],
-    completed: false,
-  },
-  // Subjuntivo presente | Ellos | Ellos celebren muy bien aunque sea necesario.
-  {
-    id: 50,
-    chinese: "虽然有必要，他们也要庆祝得非常好。",
-    spanish: "Ellos celebren muy bien aunque sea necesario.",
-    wordChoices: [
-      { 
-        correctWord: "Ellos",
-        options: [
-          { 
-            text: "Ellos", 
-            isCorrect: true, 
-            correctTip: "\"Ellos\"表示\"他们\"，此句主语。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "Nosotros", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Nosotros\"表示\"我们\"，不是此句的主语。" 
-          },
-          { 
-            text: "Ellas", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"Ellas\"表示\"她们\"，而不是\"他们\"（包括男性或混合性别）。" 
-          }
-        ]
-      },
-      { 
-        correctWord: "celebren",
-        options: [
-          { 
-            text: "celebren", 
-            isCorrect: true, 
-            correctTip: "\"celebren\"是动词\"celebrar\"（庆祝）在第三人称复数现在虚拟式的正确变位。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "celebran", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"celebran\"是陈述式现在时形式，不是虚拟式。" 
-          },
-          { 
-            text: "celebrarán", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"celebrarán\"是将来时形式，不是现在虚拟式。" 
-          }
-        ]
-      },
-      {
-        correctWord: "muy bien",
-        options: [
-          { 
-            text: "muy bien", 
-            isCorrect: true, 
-            correctTip: "\"muy bien\"表示\"非常好\"，修饰动词。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "muy buenos", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"muy buenos\"用于修饰复数名词，而不是动词。应使用副词形式\"muy bien\"。" 
-          },
-          { 
-            text: "poco bien", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"poco bien\"表示\"不太好\"，与原句的\"非常好\"意思相反。" 
-          }
-        ]
-      },
-      {
-        correctWord: "aunque sea necesario",
-        options: [
-          { 
-            text: "aunque sea necesario", 
-            isCorrect: true, 
-            correctTip: "\"aunque sea necesario\"表示\"虽然是必要的\"，是一个让步从句。", 
-            incorrectTip: "" 
-          },
-          { 
-            text: "cuando sea necesario", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"cuando sea necesario\"表示\"当有必要时\"，与原句的\"虽然有必要\"不符。" 
-          },
-          { 
-            text: "si fuera necesario", 
-            isCorrect: false, 
-            correctTip: "", 
-            incorrectTip: "\"si fuera necesario\"表示\"如果有必要的话\"，是条件句而不是让步句。" 
-          }
-        ]
-      }
-    ],
-    completed: false,
-  }
+  // Subjuntivo presente | Yo | reparar
+{
+  id: 45,
+  chinese: "也许我今天会修自行车。",
+  spanish: "Tal vez yo repare la bicicleta hoy.",
+  wordChoices: [
+    {
+      correctWord: "Yo",
+      options: [
+        { text: "Yo",  isCorrect: true,  correctTip: "\"Yo\"表示\"我\"，句中主语。", incorrectTip: "" },
+        { text: "Tú",  isCorrect: false, correctTip: "", incorrectTip: "主语应为第一人称单数。"},
+        { text: "Él",  isCorrect: false, correctTip: "", incorrectTip: "主语应为第一人称单数。"}
+      ]
+    },
+    {
+      correctWord: "repare",
+      options: [
+        { text: "repare", isCorrect: true,  correctTip: "在“Tal vez”后用虚拟式。", incorrectTip: "" },
+        { text: "reparo", isCorrect: false, correctTip: "", incorrectTip: "直陈式现在时，不符虚拟式要求。"},
+        { text: "repararía", isCorrect: false, correctTip: "", incorrectTip: "条件式，不合句意。"}
+      ]
+    },
+    {
+      correctWord: "la bicicleta hoy",
+      options: [
+        { text: "la bicicleta hoy",        isCorrect: true,  correctTip: "指定修理对象与时间。", incorrectTip: "" },
+        { text: "el coche hoy",            isCorrect: false, incorrectTip: "对象与原句不符。", correctTip: "" },
+        { text: "la bicicleta mañana",     isCorrect: false, incorrectTip: "时间状语与原句不符。", correctTip: "" }
+      ]
+    }
+  ],
+  completed: false
+},
+
+// Subjuntivo presente | Tú | soñar
+{
+  id: 46,
+  chinese: "我希望你能憧憬新的项目。",
+  spanish: "Espero que tú sueñes con nuevos proyectos.",
+  wordChoices: [
+    {
+      correctWord: "Tú",
+      options: [
+        { text: "Tú",     isCorrect: true,  correctTip: "\"Tú\"表示\"你\"。", incorrectTip: "" },
+        { text: "Usted",  isCorrect: false, incorrectTip: "变位与主语不匹配。", correctTip: "" },
+        { text: "Vosotros", isCorrect: false, incorrectTip: "主语应为第二人称单数。", correctTip: "" }
+      ]
+    },
+    {
+      correctWord: "sueñes",
+      options: [
+        { text: "sueñes",  isCorrect: true,  correctTip: "第二人称现在虚拟式。", incorrectTip: "" },
+        { text: "sueñas",  isCorrect: false, incorrectTip: "直陈式现在时。", correctTip: "" },
+        { text: "soñaras", isCorrect: false, incorrectTip: "过去虚拟式。", correctTip: "" }
+      ]
+    },
+    {
+      correctWord: "con nuevos proyectos",
+      options: [
+        { text: "con nuevos proyectos", isCorrect: true,  correctTip: "\"soñar con\" 的固定搭配。", incorrectTip: "" },
+        { text: "sobre nuevos proyectos", isCorrect: false, incorrectTip: "介词不搭配 \"soñar\"。", correctTip: "" },
+        { text: "en nuevos proyectos",   isCorrect: false, incorrectTip: "介词不搭配 \"soñar\"。", correctTip: "" }
+      ]
+    }
+  ],
+  completed: false
+},
+
+// Subjuntivo presente | Él | trabajar
+{
+  id: 47,
+  chinese: "他能加班工作也不错。",
+  spanish: "Es bueno que él trabaje horas extra.",
+  wordChoices: [
+    {
+      correctWord: "Él",
+      options: [
+        { text: "Él",   isCorrect: true,  correctTip: "\"Él\"表示\"他\"。", incorrectTip: "" },
+        { text: "Ella", isCorrect: false, incorrectTip: "性别与原句不符。", correctTip: "" },
+        { text: "Yo",   isCorrect: false, incorrectTip: "主语应为第三人称单数。", correctTip: "" }
+      ]
+    },
+    {
+      correctWord: "trabaje",
+      options: [
+        { text: "trabaje",   isCorrect: true,  correctTip: "第三人称现在虚拟式。", incorrectTip: "" },
+        { text: "trabaja",   isCorrect: false, incorrectTip: "直陈式现在时。", correctTip: "" },
+        { text: "trabajara", isCorrect: false, incorrectTip: "过去虚拟式。", correctTip: "" }
+      ]
+    },
+    {
+      correctWord: "horas extra",
+      options: [
+        { text: "horas extra",      isCorrect: true,  correctTip: "说明加班内容。", incorrectTip: "" },
+        { text: "en la oficina",    isCorrect: false, incorrectTip: "缺少“加班”含义。", correctTip: "" },
+        { text: "muy bien",         isCorrect: false, incorrectTip: "已换为具体宾语短语。", correctTip: "" }
+      ]
+    }
+  ],
+  completed: false
+},
+
+// Subjuntivo presente | Nosotros | viajar
+{
+  id: 48,
+  chinese: "可能我们今年夏天会一起去旅行。",
+  spanish: "Es posible que nosotros viajemos juntos este verano.",
+  wordChoices: [
+    {
+      correctWord: "Nosotros",
+      options: [
+        { text: "Nosotros", isCorrect: true,  correctTip: "\"Nosotros\"表示\"我们\"。", incorrectTip: "" },
+        { text: "Vosotros", isCorrect: false, incorrectTip: "主语应为第一人称复数。", correctTip: "" },
+        { text: "Ellos",    isCorrect: false, incorrectTip: "主语应为第一人称复数。", correctTip: "" }
+      ]
+    },
+    {
+      correctWord: "viajemos",
+      options: [
+        { text: "viajemos",   isCorrect: true,  correctTip: "第一人称复数虚拟式。", incorrectTip: "" },
+        { text: "viajamos",   isCorrect: false, incorrectTip: "直陈式现在时。", correctTip: "" },
+        { text: "viajáramos", isCorrect: false, incorrectTip: "过去虚拟式。", correctTip: "" }
+      ]
+    },
+    {
+      correctWord: "juntos este verano",
+      options: [
+        { text: "juntos este verano", isCorrect: true,  correctTip: "方式+时间状语。", incorrectTip: "" },
+        { text: "a la playa este verano", isCorrect: false, incorrectTip: "地点信息与原句不符。", correctTip: "" },
+        { text: "muy bien",            isCorrect: false, incorrectTip: "已替换为具体短语。", correctTip: "" }
+      ]
+    }
+  ],
+  completed: false
+},
+
+// Subjuntivo presente | Vosotros | apagar
+{
+  id: 49,
+  chinese: "我更希望你们走前把灯关掉。",
+  spanish: "Prefiero que vosotros apaguéis las luces antes de salir.",
+  wordChoices: [
+    {
+      correctWord: "Vosotros",
+      options: [
+        { text: "Vosotros", isCorrect: true,  correctTip: "\"Vosotros\"表示\"你们\"。", incorrectTip: "" },
+        { text: "Nosotros", isCorrect: false, incorrectTip: "主语应为第二人称复数。", correctTip: "" },
+        { text: "Ustedes",  isCorrect: false, incorrectTip: "拉美用法，变位不同。", correctTip: "" }
+      ]
+    },
+    {
+      correctWord: "apaguéis",
+      options: [
+        { text: "apaguéis",  isCorrect: true,  correctTip: "第二人称复数虚拟式，g→gu 变音。", incorrectTip: "" },
+        { text: "apagáis",   isCorrect: false, incorrectTip: "直陈式现在时。", correctTip: "" },
+        { text: "apagarais", isCorrect: false, incorrectTip: "过去虚拟式。", correctTip: "" }
+      ]
+    },
+    {
+      correctWord: "las luces antes de salir",
+      options: [
+        { text: "las luces antes de salir", isCorrect: true,  correctTip: "说明关闭对象和时机。", incorrectTip: "" },
+        { text: "los móviles antes de salir", isCorrect: false, incorrectTip: "关闭对象与原句不符。", correctTip: "" },
+        { text: "las luces después de salir", isCorrect: false, incorrectTip: "时间顺序与原句相反。", correctTip: "" }
+      ]
+    }
+  ],
+  completed: false
+},
+
+// Subjuntivo presente | Ellos | celebrar
+{
+  id: 50,
+  chinese: "我很高兴他们一起庆祝这个成就。",
+  spanish: "Me alegra que ellos celebren este logro juntos.",
+  wordChoices: [
+    {
+      correctWord: "Ellos",
+      options: [
+        { text: "Ellos",  isCorrect: true,  correctTip: "\"Ellos\"表示\"他们\"。", incorrectTip: "" },
+        { text: "Nosotros", isCorrect: false, incorrectTip: "主语应为第三人称复数。", correctTip: "" },
+        { text: "Ella",   isCorrect: false, incorrectTip: "性别/数不符。", correctTip: "" }
+      ]
+    },
+    {
+      correctWord: "celebren",
+      options: [
+        { text: "celebren",   isCorrect: true,  correctTip: "第三人称复数现在虚拟式。", incorrectTip: "" },
+        { text: "celebran",   isCorrect: false, incorrectTip: "直陈式现在时。", correctTip: "" },
+        { text: "celebraran", isCorrect: false, incorrectTip: "过去虚拟式。", correctTip: "" }
+      ]
+    },
+    {
+      correctWord: "este logro juntos",
+      options: [
+        { text: "este logro juntos", isCorrect: true,  correctTip: "庆祝的内容与方式。", incorrectTip: "" },
+        { text: "ese logro juntos",  isCorrect: false, incorrectTip: "指示代词改变导致含义不同。", correctTip: "" },
+        { text: "este logro mañana", isCorrect: false, incorrectTip: "时间信息与原句不符。", correctTip: "" }
+      ]
+    }
+  ],
+  completed: false
+}
 ];
